@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/fav.ico">
+    <title>Hotel IT Support FAQs | GGG Technologies</title>
+    <meta name="description" content="Answers to the most common questions about hotel IT support, guest WiFi, PMS systems, cybersecurity, PCI DSS compliance, and more. GGG Technologies — UK's specialist hotel IT partner.">
+    <meta name="keywords" content="hotel IT support FAQ, hotel wifi questions, PMS support questions, hotel cybersecurity FAQ, hotel IT company UK">
+    <meta name="author" content="GGG Technologies">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Hotel IT Support FAQs | GGG Technologies">
+    <meta property="og:description" content="Common questions about hotel IT support, WiFi, PMS, cybersecurity and PCI compliance answered by GGG Technologies.">
+    <meta property="og:image" content="/assets/images/2206124236.jpg">
+    <meta property="og:url" content="https://www.gggtech.co.uk/faq">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hotel IT Support FAQs | GGG Technologies">
+    <meta name="twitter:description" content="Answers to common hotel IT questions from GGG Technologies.">
+    <meta name="twitter:image" content="/assets/images/2206124236.jpg">
+    <link rel="canonical" href="https://www.gggtech.co.uk/faq">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/fonts.css" rel="stylesheet">
+    <script src="/assets/fontawesome/fontawesome.js" crossorigin="anonymous"></script>
+    <script src="/assets/css/tailwind.css"></script>
+    <style>
+        :root {
+            --accent-color: #2563eb;
+            --accent2-color: #10b981;
+            --accent3-color: #f59e0b;
+            --accent4-color: #8b5cf6;
+            --primary-color: #1a3a5c;
+            --font-family-body: 'Inter', sans-serif;
+            --font-family-heading: 'Outfit', sans-serif;
+        }
+        body { font-family: var(--font-family-body); }
+        h1, h2, h3, h4, h5, h6 { font-family: var(--font-family-heading); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; }
+        .faq-item.open .faq-answer { max-height: 600px; }
+        .faq-item.open .faq-icon { transform: rotate(45deg); }
+        .faq-icon { transition: transform 0.3s ease; }
+    </style>
+
+    <!-- Structured Data: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What areas do GGG Technologies cover for hotel IT support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide on-site IT support across London (including Mayfair, Kensington, Chelsea, Westminster, Soho, Covent Garden, Canary Wharf, Shoreditch, South Bank, Bloomsbury, and Paddington), the Midlands, and the South East. Remote support is available nationwide across the UK."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can GGG Technologies respond to an IT emergency at my hotel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our 24/7 helpdesk responds within minutes to critical issues. For on-site emergencies in London, we typically have an engineer on-site within 2–4 hours. We offer guaranteed response time SLAs tailored to your hotel's needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you support all Property Management Systems (PMS)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We have experience with all major hotel PMS platforms including Opera, Mews, Apaleo, Cloudbeds, RoomKey, Protel, and many others. We provide setup, ongoing support, staff training, and integration services with payment gateways, booking engines, and EPOS systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help our hotel become PCI DSS compliant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. PCI DSS compliance is one of our specialist services. We conduct a full audit of your cardholder data environment, identify gaps, implement the required technical controls, assist with documentation, and support you through the self-assessment or QSA audit process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer 24/7 IT support for hotels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Hotels never close, and neither does our helpdesk. We offer 24/7/365 remote support with on-call engineer coverage overnight and at weekends. Our support plans are designed specifically for the round-the-clock demands of the hospitality industry."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a free IT assessment and what does it include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our free on-site IT assessment includes a WiFi coverage audit across guest rooms and public areas, a network security scan, a hardware health check (servers, switches, workstations), and a review of your current IT setup. You receive a detailed written report with prioritised recommendations — with no obligation to proceed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you improve guest WiFi in hotels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We design and deploy enterprise-grade wireless networks using access points from Cisco, Aruba, Ubiquiti, and other leading vendors. Our guest WiFi solutions include proper site surveys, channel planning, bandwidth management to prevent congestion, captive portal login pages, and GDPR-compliant usage tracking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What cybersecurity services do you provide for hotels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our hotel cybersecurity services include next-generation firewall installation and management, endpoint protection, email security, vulnerability assessments, dark web monitoring, staff phishing awareness training, and incident response. Hotels are a high-value target for ransomware and payment data theft — we help you stay protected."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What size hotels do you work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We work with hotels of all sizes — from single-site bed and breakfasts and boutique properties with 10 rooms, to large chain hotels and luxury resorts with 500+ rooms. Our support packages are scalable and priced appropriately for your property size."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help integrate our PMS with third-party booking and payment systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We specialise in PMS integrations including connections to channel managers (like SiteMinder and Cloudbeds), online booking engines, payment gateways (Stripe, Worldline, Adyen), EPOS systems, and door lock systems. We ensure data flows reliably between your core hotel systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer remote IT support or do you have to come on-site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer both. The majority of IT issues — software faults, connectivity problems, PMS issues, user account problems — can be resolved remotely. Our 24/7 helpdesk handles these immediately. For hardware failures, cabling, and installations, we dispatch an engineer on-site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get started with GGG Technologies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The easiest way to get started is to book a free on-site IT assessment at gggtech.co.uk/book-a-visit, or request a no-obligation quote at gggtech.co.uk/get-a-quote. You can also call us on +44 20 3642 4958 or email info@gggtech.co.uk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes GGG Technologies different from a general IT company?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We work exclusively with hotels and hospitality businesses. This means we understand your operational rhythms, your technology stack (PMS, EPOS, door locks, guest WiFi), your compliance requirements (PCI DSS, GDPR), and the pressure of keeping systems up when guests are checking in. A general IT company treats you like any other business — we treat you like a hotel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you install CCTV and access control at our hotel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We supply and install IP-based CCTV systems with remote monitoring access, NVR/DVR recording, and integration with your hotel security team's systems. For access control, we install and configure electronic door entry, key card systems, and biometric access for staff and restricted areas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer IT support contracts for hotels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer flexible managed IT support contracts with monthly pricing, including defined response SLAs, unlimited remote support, on-site visit allowances, proactive monitoring, and patch management. Contracts are tailored to your hotel's size and technology requirements."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "GGG Technologies",
+      "description": "Specialist IT support and infrastructure services for hotels across the UK.",
+      "url": "https://www.gggtech.co.uk",
+      "telephone": "+442036424958",
+      "email": "info@gggtech.co.uk",
+      "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB" },
+      "areaServed": "United Kingdom",
+      "image": "https://www.gggtech.co.uk/assets/images/fav.ico"
+    }
+    </script>
+
+    <!-- Breadcrumb -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gggtech.co.uk/" },
+        { "@type": "ListItem", "position": 2, "name": "FAQs", "item": "https://www.gggtech.co.uk/faq" }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50">
+
+    <!-- Header -->
+    <header id="global-header">
+        <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0f172a]/95 backdrop-blur-md border-b border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <a href="/" class="flex items-center gap-4 group">
+                        <div class="sm:block">
+                            <div class="text-white font-bold text-xl tracking-tight">GGG Technologies</div>
+                            <div class="text-cyan-400 text-xs font-medium tracking-wide">Hotel IT Solutions</div>
+                        </div>
+                    </a>
+                    <div class="hidden lg:flex items-center gap-1">
+                        <a href="/" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">Home</a>
+                        <div class="relative group/menu">
+                            <button class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10 flex items-center gap-1">
+                                Services <i class="fa-solid fa-chevron-down text-xs transition-transform group-hover/menu:rotate-180"></i>
+                            </button>
+                            <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-300">
+                                <div class="bg-white rounded-2xl shadow-2xl p-8 w-[800px] grid grid-cols-4 gap-8">
+                                    <div>
+                                        <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-[#2563eb]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-headset text-[#2563eb]"></i></div><span class="font-bold text-[#1a3a5c]">IT Support</span></div>
+                                        <ul class="space-y-3">
+                                            <li><a href="/services/it-support-maintenance" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">IT Support & Maintenance</a></li>
+                                            <li><a href="/services/24-7-helpdesk" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">24/7 Helpdesk</a></li>
+                                            <li><a href="/services/on-site-support" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">On-Site Support</a></li>
+                                            <li><a href="/services/remote-support" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Remote Support</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-[#10b981]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-wifi text-[#10b981]"></i></div><span class="font-bold text-[#1a3a5c]">Networks</span></div>
+                                        <ul class="space-y-3">
+                                            <li><a href="/services/network-wifi-solutions" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Network & WiFi</a></li>
+                                            <li><a href="/services/guest-wifi" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Guest WiFi</a></li>
+                                            <li><a href="/services/cabling-infrastructure" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Cabling Infrastructure</a></li>
+                                            <li><a href="/services/firewall-security" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Firewall & Security</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-[#f59e0b]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-shield-halved text-[#f59e0b]"></i></div><span class="font-bold text-[#1a3a5c]">Security</span></div>
+                                        <ul class="space-y-3">
+                                            <li><a href="/services/cyber-security" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Cyber Security</a></li>
+                                            <li><a href="/services/cctv-security" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">CCTV & Surveillance</a></li>
+                                            <li><a href="/services/access-control" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Access Control</a></li>
+                                            <li><a href="/services/pci-compliance" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">PCI DSS Compliance</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-[#8b5cf6]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-hotel text-[#8b5cf6]"></i></div><span class="font-bold text-[#1a3a5c]">Hotel Systems</span></div>
+                                        <ul class="space-y-3">
+                                            <li><a href="/services/pms-integration" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">PMS Integration</a></li>
+                                            <li><a href="/services/voice-solutions" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Voice Solutions</a></li>
+                                            <li><a href="/services/digital-signage" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Digital Signage</a></li>
+                                            <li><a href="/services/smart-room" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Smart Room Tech</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative group/menu2">
+                            <button class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10 flex items-center gap-1">
+                                Areas <i class="fa-solid fa-chevron-down text-xs transition-transform group-hover/menu2:rotate-180"></i>
+                            </button>
+                            <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover/menu2:opacity-100 group-hover/menu2:visible transition-all duration-300">
+                                <div class="bg-white rounded-2xl shadow-2xl p-8 w-[600px]">
+                                    <div class="flex items-center gap-3 mb-6"><div class="w-10 h-10 bg-[#2563eb]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-map-location-dot text-[#2563eb]"></i></div><span class="font-bold text-[#1a3a5c]">Coverage Areas</span></div>
+                                    <div class="grid grid-cols-3 gap-4">
+                                        <a href="/areas/london" class="p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all"><i class="fa-solid fa-city text-[#2563eb] mb-2"></i><div class="font-semibold text-[#1a3a5c] text-sm">London</div><div class="text-xs text-gray-400">Greater London</div></a>
+                                        <a href="/areas/south-east" class="p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all"><i class="fa-solid fa-map text-[#10b981] mb-2"></i><div class="font-semibold text-[#1a3a5c] text-sm">South East</div><div class="text-xs text-gray-400">Kent, Sussex, Surrey</div></a>
+                                        <a href="/areas/midlands" class="p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all"><i class="fa-solid fa-building text-[#8b5cf6] mb-2"></i><div class="font-semibold text-[#1a3a5c] text-sm">Midlands</div><div class="text-xs text-gray-400">Birmingham, Coventry</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/solutions" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">Solutions</a>
+                        <a href="/industries" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">Industries</a>
+                        <a href="/insights" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">Insights</a>
+                        <a href="/about" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">About</a>
+                        <a href="/contact" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">Contact</a>
+                    </div>
+                    <div class="hidden lg:block">
+                        <a href="/book-a-visit" class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#2563eb] to-[#1a5bc7] text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-[#2563eb]/30 transition-all duration-300">
+                            Get Free Assessment <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <button data-landingsite-mobile-menu-toggle class="lg:hidden p-2 text-white" aria-label="Toggle menu" aria-expanded="false">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div data-landingsite-mobile-menu class="lg:hidden bg-[#0d2438] border-t border-white/10 hidden">
+                <div class="px-4 py-6 space-y-2">
+                    <a href="/" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Home</a>
+                    <a href="/services" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Services</a>
+                    <a href="/areas" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Areas We Cover</a>
+                    <a href="/solutions" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Solutions</a>
+                    <a href="/industries" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Industries</a>
+                    <a href="/insights" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Insights</a>
+                    <a href="/about" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">About</a>
+                    <a href="/contact" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Contact</a>
+                    <a href="/book-a-visit" class="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-[#2563eb] to-[#10b981] text-white font-semibold rounded-lg mt-4 w-full">Get Free Assessment</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-28 pb-24">
+
+        <!-- Hero -->
+        <section class="bg-[#0d1b2a] text-white py-20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="inline-flex items-center gap-2 bg-[#2563eb]/20 text-[#60a5fa] text-sm font-semibold px-4 py-2 rounded-full mb-6">
+                    <i class="fa-solid fa-circle-question"></i> FAQ
+                </div>
+                <h1 class="text-4xl sm:text-5xl font-black mb-6">Hotel IT Support — Frequently Asked Questions</h1>
+                <p class="text-white/70 text-lg max-w-2xl mx-auto">Everything you need to know about our services, coverage, and how we help hotels run better technology.</p>
+            </div>
+        </section>
+
+        <!-- Category Tabs -->
+        <section class="bg-white border-b border-gray-100 sticky top-20 z-40">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex gap-1 overflow-x-auto py-4 scrollbar-hide">
+                    <button onclick="filterFAQ('all')" class="faq-tab-btn active whitespace-nowrap px-5 py-2 rounded-full text-sm font-semibold bg-[#2563eb] text-white transition-all">All Questions</button>
+                    <button onclick="filterFAQ('support')" class="faq-tab-btn whitespace-nowrap px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all">IT Support</button>
+                    <button onclick="filterFAQ('wifi')" class="faq-tab-btn whitespace-nowrap px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all">WiFi & Networks</button>
+                    <button onclick="filterFAQ('security')" class="faq-tab-btn whitespace-nowrap px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all">Security</button>
+                    <button onclick="filterFAQ('pms')" class="faq-tab-btn whitespace-nowrap px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all">PMS & Systems</button>
+                    <button onclick="filterFAQ('pricing')" class="faq-tab-btn whitespace-nowrap px-5 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all">Pricing & Getting Started</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ List -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+            <!-- IT Support -->
+            <div class="mb-10" data-category="support">
+                <h2 class="text-xl font-bold text-[#1a3a5c] mb-4 flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-xl bg-[#2563eb]/10 flex items-center justify-center"><i class="fa-solid fa-headset text-[#2563eb]"></i></span>
+                    IT Support
+                </h2>
+                <div class="space-y-3">
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="support">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">Do you offer 24/7 IT support for hotels?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">Yes. Hotels never close, and neither does our helpdesk. We offer 24/7/365 remote support with on-call engineer coverage overnight and at weekends. Our support plans are designed specifically for the round-the-clock demands of the hospitality industry.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="support">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">How quickly can you respond to an IT emergency at my hotel?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">Our 24/7 helpdesk responds within minutes to critical issues. For on-site emergencies in London, we typically have an engineer on-site within 2–4 hours. We offer guaranteed response time SLAs tailored to your hotel's needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="support">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">Do you offer remote IT support or do you have to come on-site?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">We offer both. The majority of IT issues — software faults, connectivity problems, PMS issues, user account problems — can be resolved remotely. Our 24/7 helpdesk handles these immediately. For hardware failures, cabling, and installations, we dispatch an engineer on-site.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="support">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">What areas of the UK do you cover for on-site support?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">We provide on-site IT support across London (including Mayfair, Kensington, Chelsea, Westminster, Soho, Covent Garden, Canary Wharf, Shoreditch, South Bank, Bloomsbury, and Paddington), the Midlands, and the South East. Remote support is available nationwide across the UK.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="support">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">Do you offer IT support contracts for hotels?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">Yes. We offer flexible managed IT support contracts with monthly pricing, including defined response SLAs, unlimited remote support, on-site visit allowances, proactive monitoring, and patch management. Contracts are tailored to your hotel's size and technology requirements.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- WiFi & Networks -->
+            <div class="mb-10" data-category="wifi">
+                <h2 class="text-xl font-bold text-[#1a3a5c] mb-4 flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-xl bg-[#10b981]/10 flex items-center justify-center"><i class="fa-solid fa-wifi text-[#10b981]"></i></span>
+                    WiFi & Networks
+                </h2>
+                <div class="space-y-3">
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="wifi">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">How do you improve guest WiFi in hotels?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">We design and deploy enterprise-grade wireless networks using access points from Cisco, Aruba, Ubiquiti, and other leading vendors. Our guest WiFi solutions include proper site surveys, channel planning, bandwidth management to prevent congestion, captive portal login pages, and GDPR-compliant usage tracking.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="wifi">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">Can you install cabling in an operational hotel without disrupting guests?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">Yes. We are experienced in phased infrastructure work within operational hotels. We schedule disruptive work (cabling runs, network closet upgrades) during low-occupancy windows, typically overnight or early morning, to minimise guest impact. All work is planned in advance with your operations team.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="wifi">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">Can you separate guest WiFi from staff and back-office networks?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">Absolutely — and we strongly recommend it. We configure separate VLANs and SSIDs to isolate guest traffic from your PMS, payment systems, and staff networks. This is both a security best practice and a PCI DSS requirement. It also prevents guests from consuming bandwidth that affects your operational systems.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Security -->
+            <div class="mb-10" data-category="security">
+                <h2 class="text-xl font-bold text-[#1a3a5c] mb-4 flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-xl bg-[#f59e0b]/10 flex items-center justify-center"><i class="fa-solid fa-shield-halved text-[#f59e0b]"></i></span>
+                    Security & Compliance
+                </h2>
+                <div class="space-y-3">
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="security">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">What cybersecurity services do you provide for hotels?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">Our hotel cybersecurity services include next-generation firewall installation and management, endpoint protection, email security, vulnerability assessments, dark web monitoring, staff phishing awareness training, and incident response. Hotels are a high-value target for ransomware and payment data theft — we help you stay protected.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="security">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">Can you help our hotel become PCI DSS compliant?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">Absolutely. PCI DSS compliance is one of our specialist services. We conduct a full audit of your cardholder data environment, identify gaps, implement the required technical controls, assist with documentation, and support you through the self-assessment or QSA audit process.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="security">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">Can you install CCTV and access control at our hotel?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">Yes. We supply and install IP-based CCTV systems with remote monitoring access, NVR/DVR recording, and integration with your hotel security team's systems. For access control, we install and configure electronic door entry, key card systems, and biometric access for staff and restricted areas.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PMS & Systems -->
+            <div class="mb-10" data-category="pms">
+                <h2 class="text-xl font-bold text-[#1a3a5c] mb-4 flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-xl bg-[#8b5cf6]/10 flex items-center justify-center"><i class="fa-solid fa-hotel text-[#8b5cf6]"></i></span>
+                    PMS & Hotel Systems
+                </h2>
+                <div class="space-y-3">
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="pms">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">Do you support all Property Management Systems (PMS)?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">Yes. We have experience with all major hotel PMS platforms including Opera, Mews, Apaleo, Cloudbeds, RoomKey, Protel, and many others. We provide setup, ongoing support, staff training, and integration services with payment gateways, booking engines, and EPOS systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="pms">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">Can you integrate our PMS with third-party booking and payment systems?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">Yes. We specialise in PMS integrations including connections to channel managers (like SiteMinder and Cloudbeds), online booking engines, payment gateways (Stripe, Worldline, Adyen), EPOS systems, and door lock systems. We ensure data flows reliably between your core hotel systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="pms">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">Can you help us move to a cloud-based PMS?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">Yes. We help hotels migrate from legacy on-premise PMS platforms to modern cloud-based systems. We manage the data migration, network readiness, staff training, and ensure your integrations with payment and booking systems carry across correctly. We recommend cloud-native platforms that reduce your hardware dependency.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Pricing & Getting Started -->
+            <div class="mb-10" data-category="pricing">
+                <h2 class="text-xl font-bold text-[#1a3a5c] mb-4 flex items-center gap-3">
+                    <span class="w-10 h-10 rounded-xl bg-[#10b981]/10 flex items-center justify-center"><i class="fa-solid fa-sterling-sign text-[#10b981]"></i></span>
+                    Pricing & Getting Started
+                </h2>
+                <div class="space-y-3">
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="pricing">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">What is a free IT assessment and what does it include?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">Our free on-site IT assessment includes a WiFi coverage audit across guest rooms and public areas, a network security scan, a hardware health check (servers, switches, workstations), and a review of your current IT setup. You receive a detailed written report with prioritised recommendations — with no obligation to proceed.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="pricing">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">What size hotels do you work with?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">We work with hotels of all sizes — from single-site bed and breakfasts and boutique properties with 10 rooms, to large chain hotels and luxury resorts with 500+ rooms. Our support packages are scalable and priced appropriately for your property size.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="pricing">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">What makes GGG Technologies different from a general IT company?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">We work exclusively with hotels and hospitality businesses. This means we understand your operational rhythms, your technology stack (PMS, EPOS, door locks, guest WiFi), your compliance requirements (PCI DSS, GDPR), and the pressure of keeping systems up when guests are checking in. A general IT company treats you like any other business — we treat you like a hotel.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden" data-category="pricing">
+                        <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left">
+                            <span class="font-semibold text-[#1a3a5c] text-base">How do I get started with GGG Technologies?</span>
+                            <i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-0">
+                            <p class="text-gray-600 leading-relaxed pb-5">The easiest way to get started is to book a free on-site IT assessment — our team will visit your property, evaluate your current setup, and provide a written report with recommendations. Alternatively, request a quote for a specific project. You can also call us on <a href="tel:+442036424958" class="text-[#2563eb] font-semibold hover:underline">+44 20 3642 4958</a> or email <a href="mailto:info@gggtech.co.uk" class="text-[#2563eb] font-semibold hover:underline">info@gggtech.co.uk</a>.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+            <div class="bg-gradient-to-br from-[#1a3a5c] to-[#0d1b2a] rounded-3xl p-10 lg:p-14 text-center text-white">
+                <h2 class="text-3xl font-black mb-4">Still have a question?</h2>
+                <p class="text-white/70 mb-8 max-w-xl mx-auto">Our team is happy to help. Book a free assessment or get in touch and we'll respond the same day.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/book-a-visit" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#2563eb] text-white font-bold rounded-xl hover:bg-[#1a5bc7] transition-all">
+                        Book Free Assessment <i class="fa-solid fa-calendar-check"></i>
+                    </a>
+                    <a href="/contact" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white font-bold rounded-xl hover:bg-white/20 transition-all border border-white/20">
+                        Contact Us <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0d1b2a] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+                <div class="col-span-2 lg:col-span-2">
+                    <a href="/" class="inline-block mb-6"><div class="flex items-center gap-3"><div><div class="text-white font-bold text-lg">GGG Technologies</div><div class="text-cyan-400 text-xs">Hotel IT Solutions</div></div></div></a>
+                    <p class="text-white/70 mb-6 leading-relaxed">GGG Technologies provides specialized IT support and infrastructure solutions for hotels across the UK. Your trusted partner for reliable, secure, and scalable hotel technology.</p>
+                    <div class="flex items-center gap-4"><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#2563eb] transition-colors"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#2563eb] transition-colors"><i class="fa-brands fa-twitter"></i></a><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#2563eb] transition-colors"><i class="fa-brands fa-facebook-f"></i></a></div>
+                </div>
+                <div><h4 class="text-lg font-bold mb-6 text-white">Services</h4><ul class="space-y-3"><li><a href="/services/it-support-maintenance" class="text-white/70 hover:text-white transition-colors">IT Support & Maintenance</a></li><li><a href="/services/network-wifi-solutions" class="text-white/70 hover:text-white transition-colors">Network & WiFi Solutions</a></li><li><a href="/services/cyber-security" class="text-white/70 hover:text-white transition-colors">Cyber Security</a></li><li><a href="/services/pms-hotel-systems" class="text-white/70 hover:text-white transition-colors">PMS & Hotel Systems</a></li><li><a href="/services/cctv-security" class="text-white/70 hover:text-white transition-colors">CCTV & Security</a></li><li><a href="/services" class="text-white/70 hover:text-white transition-colors">View All Services</a></li></ul></div>
+                <div><h4 class="text-lg font-bold mb-6 text-white">Solutions</h4><ul class="space-y-3"><li><a href="/solutions/24-7-it-support" class="text-white/70 hover:text-white transition-colors">24/7 IT Support</a></li><li><a href="/solutions/it-consultancy-project-management" class="text-white/70 hover:text-white transition-colors">IT Consultancy</a></li><li><a href="/solutions/cyber-security" class="text-white/70 hover:text-white transition-colors">Cyber Security</a></li><li><a href="/solutions/disaster-recovery-backup" class="text-white/70 hover:text-white transition-colors">Disaster Recovery</a></li><li><a href="/solutions" class="text-white/70 hover:text-white transition-colors">View All Solutions</a></li></ul></div>
+                <div><h4 class="text-lg font-bold mb-6 text-white">Company</h4><ul class="space-y-3"><li><a href="/about" class="text-white/70 hover:text-white transition-colors">About Us</a></li><li><a href="/industries" class="text-white/70 hover:text-white transition-colors">Industries</a></li><li><a href="/faq" class="text-white/70 hover:text-white transition-colors">FAQ</a></li><li><a href="/insights" class="text-white/70 hover:text-white transition-colors">Insights</a></li><li><a href="/contact" class="text-white/70 hover:text-white transition-colors">Contact</a></li><li><a href="/book-a-visit" class="text-white/70 hover:text-white transition-colors">Book a Visit</a></li></ul></div>
+            </div>
+        </div>
+        <div class="border-t border-white/10"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6"><div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4"><div class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-sm"><a href="tel:+442036424958" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors"><i class="fa-solid fa-phone text-[#2563eb]"></i>+44 20 3642 4958</a><a href="mailto:info@gggtech.co.uk" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors"><i class="fa-solid fa-envelope text-[#2563eb]"></i>info@gggtech.co.uk</a><div class="flex items-center gap-2 text-white/70"><i class="fa-solid fa-location-dot text-[#2563eb]"></i>London, United Kingdom</div></div><div class="text-sm text-white/50">© 2026 GGG Technologies. All rights reserved.</div></div></div></div>
+        <div class="border-t border-white/10"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4"><div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-white/50"><a href="#" class="hover:text-white transition-colors">Privacy Policy</a><span class="hidden sm:block">•</span><a href="#" class="hover:text-white transition-colors">Terms of Service</a><span class="hidden sm:block">•</span><a href="#" class="hover:text-white transition-colors">Cookie Policy</a></div></div></div>
+    </footer>
+
+    <script>
+        function toggleFAQ(btn) {
+            const item = btn.closest('.faq-item');
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+            if (!isOpen) item.classList.add('open');
+        }
+
+        function filterFAQ(cat) {
+            document.querySelectorAll('.faq-tab-btn').forEach(b => {
+                b.classList.remove('bg-[#2563eb]', 'text-white');
+                b.classList.add('bg-gray-100', 'text-gray-700');
+            });
+            event.currentTarget.classList.add('bg-[#2563eb]', 'text-white');
+            event.currentTarget.classList.remove('bg-gray-100', 'text-gray-700');
+
+            document.querySelectorAll('[data-category]').forEach(el => {
+                if (cat === 'all' || el.dataset.category === cat) {
+                    el.style.display = '';
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+        }
+
+        document.querySelector('[data-landingsite-mobile-menu-toggle]')?.addEventListener('click', function() {
+            const menu = document.querySelector('[data-landingsite-mobile-menu]');
+            if (menu) {
+                menu.classList.toggle('hidden');
+                this.setAttribute('aria-expanded', menu.classList.contains('hidden') ? 'false' : 'true');
+            }
+        });
+    </script>
+</body>
+</html>

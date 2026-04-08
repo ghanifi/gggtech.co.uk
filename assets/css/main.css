@@ -1,0 +1,51 @@
+/* Main CSS File */
+@import url('/assets/css/fonts.css');
+
+/* Global Styles */
+:root {
+    --accent-color: #2563eb;
+    --accent2-color: #10b981;
+    --accent3-color: #f59e0b;
+    --accent4-color: #8b5cf6;
+    --primary-color: #1a3a5c;
+    --dark-text-color: #1a1a1a;
+    --gray-text-color: #6b7280;
+    --font-family-body: 'Inter', sans-serif;
+    --light-text-color: #ffffff;
+    --dark-border-color: #374151;
+    --light-border-color: #e5e7eb;
+    --font-family-heading: 'Outfit', sans-serif;
+    --button-rounded-radius: 8px;
+    --dark-background-color: #0d1b2a;
+    --light-background-color: #f5f8fb;
+    --medium-background-color: #edf2f7;
+    --primary-button-text-color: #ffffff;
+    --secondary-button-bg-color: #f8f9fb;
+    --secondary-button-text-color: #1a3a5c;
+    --primary-button-hover-bg-color: #0d2438;
+    --primary-button-hover-text-color: #ffffff;
+    --secondary-button-hover-bg-color: #e8ecf2;
+    --secondary-button-hover-text-color: #1a3a5c;
+}
+
+body {
+    font-family: var(--font-family-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-heading);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: float 4s ease-in-out infinite;
+    animation-delay: 1s;
+}

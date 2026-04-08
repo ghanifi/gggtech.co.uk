@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/fav.ico">
+    <title>404 - Page Not Found | GGG Technologies</title>
+    <meta name="description" content="The page you're looking for could not be found. Return to GGG Technologies for 24/7 hotel IT support.">
+    <meta name="robots" content="noindex, follow">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/fonts.css" rel="stylesheet">
+    <script src="/assets/fontawesome/fontawesome.js" crossorigin="anonymous"></script>
+    <script src="/assets/css/tailwind.css"></script>
+    <style>
+        :root {
+            --accent-color: #2563eb;
+            --accent2-color: #10b981;
+            --accent3-color: #f59e0b;
+            --accent4-color: #8b5cf6;
+            --primary-color: #1a3a5c;
+            --dark-text-color: #1a1a1a;
+            --gray-text-color: #6b7280;
+            --font-family-body: 'Inter', sans-serif;
+            --light-text-color: #ffffff;
+            --dark-border-color: #374151;
+            --light-border-color: #e5e7eb;
+            --font-family-heading: 'Outfit', sans-serif;
+            --button-rounded-radius: 8px;
+            --dark-background-color: #0d1b2a;
+            --light-background-color: #f5f8fb;
+            --medium-background-color: #edf2f7;
+            --primary-button-text-color: #ffffff;
+            --secondary-button-bg-color: #f8f9fb;
+            --secondary-button-text-color: #1a3a5c;
+            --primary-button-hover-bg-color: #0d2438;
+            --primary-button-hover-text-color: #ffffff;
+            --secondary-button-hover-bg-color: #e8ecf2;
+            --secondary-button-hover-text-color: #1a3a5c;
+        }
+        body {
+            font-family: var(--font-family-body);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-family-heading);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(6, 182, 212, 0.3); }
+            50% { box-shadow: 0 0 30px rgba(6, 182, 212, 0.6); }
+        }
+        .animate-pulse-glow {
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Header -->
+    <header id="global-header">
+        <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0f172a]/95 backdrop-blur-md border-b border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <a href="/" class="flex items-center gap-4 group">
+                        <div class="sm:block">
+                            <div class="text-white font-bold text-xl tracking-tight">
+                                GGG Technologies
+                            </div>
+                            <div class="text-cyan-400 text-xs font-medium tracking-wide">
+                                Hotel IT Solutions
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="hidden lg:flex items-center gap-1">
+                        <a href="/" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">Home</a>
+                        <div class="relative group/menu">
+                            <button class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10 flex items-center gap-1">
+                                Services
+                                <i class="fa-solid fa-chevron-down text-xs transition-transform group-hover/menu:rotate-180"></i>
+                            </button>
+                            <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-300">
+                                <div class="bg-white rounded-2xl shadow-2xl p-8 w-[800px] grid grid-cols-4 gap-8">
+                                    <div>
+                                        <div class="flex items-center gap-3 mb-4">
+                                            <div class="w-10 h-10 bg-[#2563eb]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-headset text-[#2563eb]"></i></div>
+                                            <span class="font-bold text-[#1a3a5c]">IT Support</span>
+                                        </div>
+                                        <ul class="space-y-3">
+                                            <li><a href="/services/it-support-maintenance" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">IT Support & Maintenance</a></li>
+                                            <li><a href="/services/24-7-helpdesk" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">24/7 Helpdesk</a></li>
+                                            <li><a href="/services/on-site-support" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">On-Site Support</a></li>
+                                            <li><a href="/services/remote-support" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Remote Support</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-3 mb-4">
+                                            <div class="w-10 h-10 bg-[#10b981]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-wifi text-[#10b981]"></i></div>
+                                            <span class="font-bold text-[#1a3a5c]">Networks</span>
+                                        </div>
+                                        <ul class="space-y-3">
+                                            <li><a href="/services/network-wifi-solutions" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Network & WiFi</a></li>
+                                            <li><a href="/services/guest-wifi" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Guest WiFi</a></li>
+                                            <li><a href="/services/cabling-infrastructure" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Cabling Infrastructure</a></li>
+                                            <li><a href="/services/firewall-security" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Firewall & Security</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-3 mb-4">
+                                            <div class="w-10 h-10 bg-[#f59e0b]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-shield-halved text-[#f59e0b]"></i></div>
+                                            <span class="font-bold text-[#1a3a5c]">Security</span>
+                                        </div>
+                                        <ul class="space-y-3">
+                                            <li><a href="/services/cyber-security" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Cyber Security</a></li>
+                                            <li><a href="/services/cctv-security" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">CCTV & Surveillance</a></li>
+                                            <li><a href="/services/access-control" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Access Control</a></li>
+                                            <li><a href="/services/pci-compliance" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">PCI DSS Compliance</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-3 mb-4">
+                                            <div class="w-10 h-10 bg-[#8b5cf6]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-hotel text-[#8b5cf6]"></i></div>
+                                            <span class="font-bold text-[#1a3a5c]">Hotel Systems</span>
+                                        </div>
+                                        <ul class="space-y-3">
+                                            <li><a href="/services/pms-integration" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">PMS Integration</a></li>
+                                            <li><a href="/services/voice-solutions" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Voice Solutions</a></li>
+                                            <li><a href="/services/hotel-management-systems" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Hotel Management Systems</a></li>
+                                            <li><a href="/services/energy-management" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Energy Management</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/industries.html" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">Industries</a>
+                        <a href="/about.html" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">About</a>
+                        <a href="/insights.html" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">Insights</a>
+                        <a href="/contact.html" class="ml-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-medium rounded-lg transition-colors">Contact</a>
+                    </div>
+                    <div class="lg:hidden">
+                        <button class="p-2 text-white hover:bg-white/10 rounded-lg">
+                            <i class="fa-solid fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Error Container -->
+            <div class="text-center">
+                <!-- 404 Number with Animation -->
+                <div class="mb-12">
+                    <div class="relative inline-block">
+                        <div class="text-9xl font-bold font-[Outfit] bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 bg-clip-text text-transparent animate-pulse-glow">
+                            404
+                        </div>
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl"></div>
+                        <div class="absolute -bottom-4 -left-8 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl"></div>
+                    </div>
+                </div>
+
+                <!-- Heading -->
+                <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-4 font-[Outfit]">
+                    Page Not Found
+                </h1>
+
+                <!-- Description -->
+                <p class="text-lg sm:text-xl text-slate-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    We couldn't find the page you're looking for. It may have been moved, deleted, or the link might be incorrect. Let's get you back on track.
+                </p>
+
+                <!-- Quick Links -->
+                <div class="mb-12 p-8 bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl border border-slate-200">
+                    <h2 class="text-xl font-semibold text-slate-900 mb-6 font-[Outfit]">Quick Links</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <a href="/" class="flex items-center gap-3 p-4 bg-white rounded-lg hover:shadow-md transition-shadow border border-slate-200">
+                            <i class="fas fa-home text-cyan-500 text-xl"></i>
+                            <span class="text-left">
+                                <div class="font-semibold text-slate-900">Home</div>
+                                <div class="text-sm text-slate-600">Return to homepage</div>
+                            </span>
+                        </a>
+                        <a href="/services.html" class="flex items-center gap-3 p-4 bg-white rounded-lg hover:shadow-md transition-shadow border border-slate-200">
+                            <i class="fas fa-cogs text-blue-500 text-xl"></i>
+                            <span class="text-left">
+                                <div class="font-semibold text-slate-900">Services</div>
+                                <div class="text-sm text-slate-600">Explore our offerings</div>
+                            </span>
+                        </a>
+                        <a href="/about.html" class="flex items-center gap-3 p-4 bg-white rounded-lg hover:shadow-md transition-shadow border border-slate-200">
+                            <i class="fas fa-info-circle text-purple-500 text-xl"></i>
+                            <span class="text-left">
+                                <div class="font-semibold text-slate-900">About</div>
+                                <div class="text-sm text-slate-600">Learn about us</div>
+                            </span>
+                        </a>
+                        <a href="/contact.html" class="flex items-center gap-3 p-4 bg-white rounded-lg hover:shadow-md transition-shadow border border-slate-200">
+                            <i class="fas fa-envelope text-emerald-500 text-xl"></i>
+                            <span class="text-left">
+                                <div class="font-semibold text-slate-900">Contact</div>
+                                <div class="text-sm text-slate-600">Get in touch</div>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Primary CTA -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <a href="/" class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold px-8 py-4 rounded-lg transition-all shadow-lg hover:shadow-xl">
+                        <i class="fas fa-arrow-left"></i>
+                        Go Back Home
+                    </a>
+                    <a href="/contact.html" class="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold px-8 py-4 rounded-lg transition-all">
+                        <i class="fas fa-headset"></i>
+                        Contact Support
+                    </a>
+                </div>
+
+                <!-- Support Message -->
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-lightbulb text-blue-600 text-2xl mt-1"></i>
+                        <div class="text-left">
+                            <h3 class="font-semibold text-slate-900 mb-2">Need Help?</h3>
+                            <p class="text-slate-600 mb-3">If you believe this page should exist, or need immediate assistance, our support team is available 24/7.</p>
+                            <a href="tel:+441234567890" class="text-cyan-600 hover:text-cyan-700 font-medium flex items-center gap-2">
+                                <i class="fas fa-phone"></i>
+                                Call us now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0d1b2a] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+                <div class="col-span-2 lg:col-span-2">
+                    <a href="/" class="inline-block mb-6"><div class="flex items-center gap-3"><div><div class="text-white font-bold text-lg">GGG Technologies</div><div class="text-cyan-400 text-xs">Hotel IT Solutions</div></div></div></a>
+                    <p class="text-white/70 mb-6 leading-relaxed">GGG Technologies provides specialized IT support and infrastructure solutions for hotels across the UK. Your trusted partner for reliable, secure, and scalable hotel technology.</p>
+                    <div class="flex items-center gap-4"><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#2563eb] transition-colors"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#2563eb] transition-colors"><i class="fa-brands fa-twitter"></i></a><a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#2563eb] transition-colors"><i class="fa-brands fa-facebook-f"></i></a></div>
+                </div>
+                <div><h4 class="text-lg font-bold mb-6 text-white">Services</h4><ul class="space-y-3"><li><a href="/services/it-support-maintenance" class="text-white/70 hover:text-white transition-colors">IT Support & Maintenance</a></li><li><a href="/services/network-wifi-solutions" class="text-white/70 hover:text-white transition-colors">Network & WiFi Solutions</a></li><li><a href="/services/cyber-security-compliance" class="text-white/70 hover:text-white transition-colors">Cyber Security</a></li><li><a href="/services/pms-hotel-systems" class="text-white/70 hover:text-white transition-colors">PMS & Hotel Systems</a></li><li><a href="/services/cctv-security-systems" class="text-white/70 hover:text-white transition-colors">CCTV & Security</a></li><li><a href="/services" class="text-white/70 hover:text-white transition-colors">View All Services</a></li></ul></div>
+                <div><h4 class="text-lg font-bold mb-6 text-white">Solutions</h4><ul class="space-y-3"><li><a href="/solutions/24-7-it-support" class="text-white/70 hover:text-white transition-colors">24/7 IT Support</a></li><li><a href="/solutions/it-consultancy-project-management" class="text-white/70 hover:text-white transition-colors">IT Consultancy</a></li><li><a href="/solutions/cyber-security" class="text-white/70 hover:text-white transition-colors">Cyber Security</a></li><li><a href="/solutions/disaster-recovery-backup" class="text-white/70 hover:text-white transition-colors">Disaster Recovery</a></li><li><a href="/solutions" class="text-white/70 hover:text-white transition-colors">View All Solutions</a></li></ul></div>
+                <div><h4 class="text-lg font-bold mb-6 text-white">Company</h4><ul class="space-y-3"><li><a href="/about" class="text-white/70 hover:text-white transition-colors">About Us</a></li><li><a href="/industries" class="text-white/70 hover:text-white transition-colors">Industries</a></li><li><a href="/insights" class="text-white/70 hover:text-white transition-colors">Insights</a></li><li><a href="/contact" class="text-white/70 hover:text-white transition-colors">Contact</a></li><li><a href="/book-a-visit" class="text-white/70 hover:text-white transition-colors">Book a Visit</a></li><li><a href="/get-a-quote" class="text-white/70 hover:text-white transition-colors">Get a Quote</a></li></ul></div>
+            </div>
+        </div>
+        <div class="border-t border-white/10"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6"><div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4"><div class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-sm"><a href="tel:+442036424958" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors"><i class="fa-solid fa-phone text-[#2563eb]"></i>+44 20 3642 4958</a><a href="mailto:info@gggtech.co.uk" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors"><i class="fa-solid fa-envelope text-[#2563eb]"></i>info@gggtech.co.uk</a><div class="flex items-center gap-2 text-white/70"><i class="fa-solid fa-location-dot text-[#2563eb]"></i>London, United Kingdom</div></div><div class="text-sm text-white/50">© 2026 GGG Technologies. All rights reserved.</div></div></div></div>
+        <div class="border-t border-white/10"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4"><div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-white/50"><a href="#" class="hover:text-white transition-colors">Privacy Policy</a><span class="hidden sm:block">•</span><a href="#" class="hover:text-white transition-colors">Terms of Service</a><span class="hidden sm:block">•</span><a href="#" class="hover:text-white transition-colors">Cookie Policy</a></div></div></div>
+    </footer>
+
+</body>
+</html>

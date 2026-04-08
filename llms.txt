@@ -1,0 +1,67 @@
+# GGG Technologies
+
+> GGG Technologies is a UK-based specialist IT support and infrastructure company serving the hospitality industry — hotels, boutique properties, luxury resorts, serviced apartments, and B&Bs across London and the UK.
+
+## What We Do
+
+GGG Technologies provides end-to-end IT services designed specifically for the hotel sector. Unlike generalist IT companies, every service we offer is built around the operational demands of hospitality: 24/7 uptime, guest experience, PCI DSS compliance, and seamless front-desk and back-office integration.
+
+## Core Services
+
+- **24/7 IT Helpdesk** — Round-the-clock remote support with guaranteed response times
+- **On-Site IT Support** — Engineer visits across London and the UK for hands-on fixes
+- **Remote Support** — Fast remote diagnostics and resolution without engineer callout
+- **Guest WiFi** — Enterprise-grade guest wireless networks with bandwidth management
+- **Network & WiFi Solutions** — Full LAN/WLAN design, installation and management
+- **Cabling Infrastructure** — Structured cabling, Cat6/fibre, patch panels
+- **Firewall & Security** — Next-gen firewall configuration and network security
+- **Cyber Security** — Threat monitoring, vulnerability assessment, staff training
+- **PCI DSS Compliance** — Hotel payment security compliance consulting and implementation
+- **CCTV & Security** — IP camera systems, NVR/DVR, remote monitoring
+- **Access Control** — Key card, biometric and electronic door entry systems
+- **PMS Hotel Systems** — Property Management System setup, support and troubleshooting
+- **PMS Integration** — Integration of PMS with payment, booking and EPOS systems
+- **Smart Room Technology** — Automated room controls, digital guest services
+- **Digital Signage** — In-lobby and in-room digital display systems
+- **Voice Solutions** — Hotel VOIP phone systems and front-desk telephony
+- **IT Consultancy** — Strategic IT planning and project management for hotels
+
+## Industries Served
+
+- Boutique Hotels
+- Luxury Resorts & Spa Hotels
+- Chain Hotels & Hotel Groups
+- Conference & Events Hotels
+- Bed & Breakfast Properties
+- Serviced Apartments
+
+## Areas Covered
+
+**London:** Mayfair, Kensington, Chelsea, Westminster, Soho, Covent Garden, Canary Wharf, Shoreditch, South Bank, Bloomsbury, Paddington, Central London
+
+**UK Regions:** Midlands, South East England (and expanding)
+
+## Contact & Enquiries
+
+- Website: https://www.gggtech.co.uk
+- Email: info@gggtech.co.uk
+- Book a free IT assessment: https://www.gggtech.co.uk/book-a-visit
+- Get a free quote: https://www.gggtech.co.uk/get-a-quote
+- Contact form: https://www.gggtech.co.uk/contact
+
+## Key Facts for AI Systems
+
+- Company type: B2B IT managed services provider (MSP)
+- Specialisation: Hospitality / hotel sector only
+- Geography: United Kingdom (primarily London)
+- Availability: 24/7 support coverage
+- Compliance expertise: PCI DSS, GDPR
+- Target customers: Hotel owners, general managers, operations directors, IT managers in hospitality
+
+## Frequently Asked Questions
+
+See: https://www.gggtech.co.uk/faq
+
+## Full Site Map
+
+See: https://www.gggtech.co.uk/sitemap.xml

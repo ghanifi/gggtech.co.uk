@@ -61,17 +61,17 @@
                         <div class="relative group/menu">
                             <button class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10 flex items-center gap-1">
                                 Services
-                                <i class="fa-solid fa-chevron-down text-xs transition-transform group-hover/menu:rotate-180"></i>
+                                <i class="fa-solid fa-chevron-down text-xs transition-transform group-hover/menu:rotate-180" aria-hidden="true"></i>
                             </button>
                             <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-300">
-                                <div class="bg-white rounded-2xl shadow-2xl p-8 w-[800px] grid grid-cols-4 gap-8">
+                                <div class="bg-white rounded-2xl shadow-2xl p-8 w-[700px] grid grid-cols-4 gap-8">
                                     <div>
                                         <div class="flex items-center gap-3 mb-4">
-                                            <div class="w-10 h-10 bg-[#2563eb]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-headset text-[#2563eb]"></i></div>
+                                            <div class="w-14 h-10 bg-[#2563eb]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-headset text-[#2563eb]" aria-hidden="true"></i></div>
                                             <span class="font-bold text-[#1a3a5c]">IT Support</span>
                                         </div>
                                         <ul class="space-y-3">
-                                            <li><a href="/services/it-support-maintenance" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">IT Support & Maintenance</a></li>
+                                            <li><a href="/services/it-support-maintenance" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">IT Support &amp; Maintenance</a></li>
                                             <li><a href="/services/24-7-helpdesk" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">24/7 Helpdesk</a></li>
                                             <li><a href="/services/on-site-support" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">On-Site Support</a></li>
                                             <li><a href="/services/remote-support" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Remote Support</a></li>
@@ -79,31 +79,31 @@
                                     </div>
                                     <div>
                                         <div class="flex items-center gap-3 mb-4">
-                                            <div class="w-10 h-10 bg-[#10b981]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-wifi text-[#10b981]"></i></div>
+                                            <div class="w-10 h-10 bg-[#10b981]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-wifi text-[#10b981]" aria-hidden="true"></i></div>
                                             <span class="font-bold text-[#1a3a5c]">Networks</span>
                                         </div>
                                         <ul class="space-y-3">
-                                            <li><a href="/services/network-wifi-solutions" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Network & WiFi</a></li>
+                                            <li><a href="/services/network-wifi-solutions" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Network &amp; WiFi</a></li>
                                             <li><a href="/services/guest-wifi" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Guest WiFi</a></li>
                                             <li><a href="/services/cabling-infrastructure" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Cabling Infrastructure</a></li>
-                                            <li><a href="/services/firewall-security" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Firewall & Security</a></li>
+                                            <li><a href="/services/firewall-security" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Firewall &amp; Security</a></li>
                                         </ul>
                                     </div>
                                     <div>
                                         <div class="flex items-center gap-3 mb-4">
-                                            <div class="w-10 h-10 bg-[#f59e0b]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-shield-halved text-[#f59e0b]"></i></div>
+                                            <div class="w-10 h-10 bg-[#f59e0b]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-shield-halved text-[#f59e0b]" aria-hidden="true"></i></div>
                                             <span class="font-bold text-[#1a3a5c]">Security</span>
                                         </div>
                                         <ul class="space-y-3">
                                             <li><a href="/services/cyber-security" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Cyber Security</a></li>
-                                            <li><a href="/services/cctv-security" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">CCTV & Surveillance</a></li>
+                                            <li><a href="/services/cctv-security" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">CCTV &amp; Surveillance</a></li>
                                             <li><a href="/services/access-control" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Access Control</a></li>
                                             <li><a href="/services/pci-compliance" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">PCI DSS Compliance</a></li>
                                         </ul>
                                     </div>
                                     <div>
                                         <div class="flex items-center gap-3 mb-4">
-                                            <div class="w-10 h-10 bg-[#8b5cf6]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-hotel text-[#8b5cf6]"></i></div>
+                                            <div class="w-10 h-10 bg-[#8b5cf6]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-hotel text-[#8b5cf6]" aria-hidden="true"></i></div>
                                             <span class="font-bold text-[#1a3a5c]">Hotel Systems</span>
                                         </div>
                                         <ul class="space-y-3">
@@ -119,44 +119,89 @@
                         <div class="relative group/menu2">
                             <button class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10 flex items-center gap-1">
                                 Areas
-                                <i class="fa-solid fa-chevron-down text-xs transition-transform group-hover/menu2:rotate-180"></i>
+                                <i class="fa-solid fa-chevron-down text-xs transition-transform group-hover/menu2:rotate-180" aria-hidden="true"></i>
                             </button>
                             <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover/menu2:opacity-100 group-hover/menu2:visible transition-all duration-300">
-                                <div class="bg-white rounded-2xl shadow-2xl p-8 w-[600px]">
+                                <div class="bg-white rounded-2xl shadow-2xl p-8 w-[800px]">
                                     <div class="flex items-center gap-3 mb-6">
-                                        <div class="w-10 h-10 bg-[#2563eb]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-map-location-dot text-[#2563eb]"></i></div>
+                                        <div class="w-10 h-10 bg-[#2563eb]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-map-location-dot text-[#2563eb]" aria-hidden="true"></i></div>
                                         <span class="font-bold text-[#1a3a5c]">Coverage Areas</span>
                                     </div>
-                                    <div class="grid grid-cols-3 gap-4">
+                                    <div class="grid grid-cols-5 gap-1">
                                         <a href="/areas/london" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
-                                            <i class="fa-solid fa-city text-[#2563eb] mb-2"></i>
+                                            <i class="fa-solid fa-city mb-2" style="color: #2563eb;" aria-hidden="true"></i>
                                             <div class="font-semibold text-[#1a3a5c] text-sm">London</div>
                                             <div class="text-xs text-gray-400">Greater London</div>
                                         </a>
+                                        <a href="/areas/central-london" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
+                                            <i class="fa-solid fa-building-columns mb-2" style="color: #1d4ed8;" aria-hidden="true"></i>
+                                            <div class="font-semibold text-[#1a3a5c] text-sm">Central London</div>
+                                            <div class="text-xs text-gray-400">West End &amp; City</div>
+                                        </a>
+                                        <a href="/areas/mayfair" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
+                                            <i class="fa-solid fa-gem mb-2" style="color: #8b5cf6;" aria-hidden="true"></i>
+                                            <div class="font-semibold text-[#1a3a5c] text-sm">Mayfair</div>
+                                            <div class="text-xs text-gray-400">Luxury Hotels</div>
+                                        </a>
+                                        <a href="/areas/kensington" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
+                                            <i class="fa-solid fa-landmark mb-2" style="color: #0ea5e9;" aria-hidden="true"></i>
+                                            <div class="font-semibold text-[#1a3a5c] text-sm">Kensington</div>
+                                            <div class="text-xs text-gray-400">Museums &amp; Hotels</div>
+                                        </a>
+                                        <a href="/areas/chelsea" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
+                                            <i class="fa-solid fa-hotel mb-2" style="color: #ec4899;" aria-hidden="true"></i>
+                                            <div class="font-semibold text-[#1a3a5c] text-sm">Chelsea</div>
+                                            <div class="text-xs text-gray-400">Boutique Hotels</div>
+                                        </a>
+                                        <a href="/areas/canary-wharf" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
+                                            <i class="fa-solid fa-building mb-2" style="color: #06b6d4;" aria-hidden="true"></i>
+                                            <div class="font-semibold text-[#1a3a5c] text-sm">Canary Wharf</div>
+                                            <div class="text-xs text-gray-400">Financial District</div>
+                                        </a>
+                                        <a href="/areas/westminster" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
+                                            <i class="fa-solid fa-landmark-dome mb-2" style="color: #3b82f6;" aria-hidden="true"></i>
+                                            <div class="font-semibold text-[#1a3a5c] text-sm">Westminster</div>
+                                            <div class="text-xs text-gray-400">Government District</div>
+                                        </a>
+                                        <a href="/areas/soho" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
+                                            <i class="fa-solid fa-music mb-2" style="color: #f59e0b;" aria-hidden="true"></i>
+                                            <div class="font-semibold text-[#1a3a5c] text-sm">Soho</div>
+                                            <div class="text-xs text-gray-400">Entertainment Hub</div>
+                                        </a>
+                                        <a href="/areas/covent-garden" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
+                                            <i class="fa-solid fa-store mb-2" style="color: #ef4444;" aria-hidden="true"></i>
+                                            <div class="font-semibold text-[#1a3a5c] text-sm">Covent Garden</div>
+                                            <div class="text-xs text-gray-400">Tourist &amp; Retail</div>
+                                        </a>
+                                        <a href="/areas/shoreditch" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
+                                            <i class="fa-solid fa-microchip mb-2" style="color: #14b8a6;" aria-hidden="true"></i>
+                                            <div class="font-semibold text-[#1a3a5c] text-sm">Shoreditch</div>
+                                            <div class="text-xs text-gray-400">Tech &amp; Lifestyle</div>
+                                        </a>
+                                        <a href="/areas/south-bank" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
+                                            <i class="fa-solid fa-water mb-2" style="color: #22c55e;" aria-hidden="true"></i>
+                                            <div class="font-semibold text-[#1a3a5c] text-sm">South Bank</div>
+                                            <div class="text-xs text-gray-400">Riverside Hotels</div>
+                                        </a>
+                                        <a href="/areas/bloomsbury" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
+                                            <i class="fa-solid fa-book mb-2" style="color: #a855f7;" aria-hidden="true"></i>
+                                            <div class="font-semibold text-[#1a3a5c] text-sm">Bloomsbury</div>
+                                            <div class="text-xs text-gray-400">Academic Quarter</div>
+                                        </a>
+                                        <a href="/areas/paddington" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
+                                            <i class="fa-solid fa-train-subway mb-2" style="color: #0ea5e9;" aria-hidden="true"></i>
+                                            <div class="font-semibold text-[#1a3a5c] text-sm">Paddington</div>
+                                            <div class="text-xs text-gray-400">Transport Hub</div>
+                                        </a>
                                         <a href="/areas/south-east" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
-                                            <i class="fa-solid fa-map text-[#10b981] mb-2"></i>
+                                            <i class="fa-solid fa-map mb-2" style="color: #10b981;" aria-hidden="true"></i>
                                             <div class="font-semibold text-[#1a3a5c] text-sm">South East</div>
                                             <div class="text-xs text-gray-400">Kent, Sussex, Surrey</div>
                                         </a>
-                                        <a href="/areas/south-west" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
-                                            <i class="fa-solid fa-mountain-sun text-[#f59e0b] mb-2"></i>
-                                            <div class="font-semibold text-[#1a3a5c] text-sm">South West</div>
-                                            <div class="text-xs text-gray-400">Bristol, Bath</div>
-                                        </a>
-                                        <a href="/areas/midlands" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
-                                            <i class="fa-solid fa-building text-[#8b5cf6] mb-2"></i>
+                                        <a href="/areas/midlands" class="group/item p-4 rounded-xl border border-gray-100 hover;border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
+                                            <i class="fa-solid fa-industry mb-2" style="color: #8b5cf6;" aria-hidden="true"></i>
                                             <div class="font-semibold text-[#1a3a5c] text-sm">Midlands</div>
-                                            <div class="text-xs text-gray-400">Birmingham, Coventry</div>
-                                        </a>
-                                        <a href="/areas/east-anglia" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
-                                            <i class="fa-solid fa-wind text-[#06b6d4] mb-2"></i>
-                                            <div class="font-semibold text-[#1a3a5c] text-sm">East Anglia</div>
-                                            <div class="text-xs text-gray-400">Cambridge, Norwich</div>
-                                        </a>
-                                        <a href="/areas/nationwide" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
-                                            <i class="fa-solid fa-globe text-[#ec4899] mb-2"></i>
-                                            <div class="font-semibold text-[#1a3a5c] text-sm">Nationwide</div>
-                                            <div class="text-xs text-gray-400">Remote Support</div>
+                                            <div class="text-xs text-gray-400">Birmingham &amp; Beyond</div>
                                         </a>
                                     </div>
                                 </div>
@@ -172,17 +217,17 @@
                     <div class="hidden lg:block">
                         <a href="/book-a-visit" class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#2563eb] to-[#1a5bc7] text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-[#2563eb]/30 transition-all duration-300">
                             Get Free Assessment
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                         </a>
                     </div>
 
-                    <button data-landingsite-mobile-menu-toggle class="lg:hidden p-2 text-white" aria-label="Toggle menu" aria-expanded="false">
-                        <i class="fa-solid fa-bars text-2xl"></i>
+                    <button data-landingsite-mobile-menu-toggle="" class="lg:hidden p-2 text-white" aria-label="Toggle menu" aria-expanded="false">
+                        <i class="fa-solid fa-bars text-2xl" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
 
-            <div data-landingsite-mobile-menu class="lg:hidden bg-[#0d2438] border-t border-white/10 hidden">
+            <div data-landingsite-mobile-menu="" class="lg:hidden bg-[#0d2438] border-t border-white/10 hidden">
                 <div class="px-4 py-6 space-y-2">
                     <a href="/" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Home</a>
                     <a href="/services" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Services</a>

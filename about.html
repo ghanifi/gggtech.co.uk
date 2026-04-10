@@ -44,15 +44,15 @@
     <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.gggtech.co.uk/"},{"@type":"ListItem","position":2,"name":"About","item":"https://www.gggtech.co.uk/about"}]}
     </script>
-    <link href="/assets/css/main.css" rel="stylesheet">
+    <link rel="preload" href="/assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link href="/assets/css/fonts.css" rel="stylesheet">
-    <script src="/assets/fontawesome/fontawesome.js" crossorigin="anonymous"></script>
-    <script src="/assets/css/tailwind.css"></script>
+    <script src="/assets/fontawesome/fontawesome.js" crossorigin="anonymous" defer></script>
+    <script src="/assets/css/tailwind.css" defer></script>
     <style>
         :root {
             --accent-color: #2563eb;
             --accent2-color: #10b981;
-            --accent3-color: #f59e0b;
+            --accent3-color: #92400e;
             --accent4-color: #8b5cf6;
             --primary-color: #1a3a5c;
             --font-family-body: 'Inter', sans-serif;

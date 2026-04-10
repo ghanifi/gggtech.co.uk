@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.gggtech.co.uk/sitemap.xml
+Sitemap: https://gggtech.co.uk/sitemap.xml
 
 # AI crawlers — welcome, full access
 User-agent: GPTBot

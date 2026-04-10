@@ -43,11 +43,11 @@ GGG Technologies provides end-to-end IT services designed specifically for the h
 
 ## Contact & Enquiries
 
-- Website: https://www.gggtech.co.uk
+- Website: https://gggtech.co.uk
 - Email: info@gggtech.co.uk
-- Book a free IT assessment: https://www.gggtech.co.uk/book-a-visit
-- Get a free quote: https://www.gggtech.co.uk/get-a-quote
-- Contact form: https://www.gggtech.co.uk/contact
+- Book a free IT assessment: https://gggtech.co.uk/book-a-visit
+- Get a free quote: https://gggtech.co.uk/get-a-quote
+- Contact form: https://gggtech.co.uk/contact
 
 ## Key Facts for AI Systems
 
@@ -60,8 +60,8 @@ GGG Technologies provides end-to-end IT services designed specifically for the h
 
 ## Frequently Asked Questions
 
-See: https://www.gggtech.co.uk/faq
+See: https://gggtech.co.uk/faq
 
 ## Full Site Map
 
-See: https://www.gggtech.co.uk/sitemap.xml
+See: https://gggtech.co.uk/sitemap.xml

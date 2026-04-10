@@ -1,140 +1,140 @@
 {
   "name": "GGG Technologies",
   "description": "UK specialist IT support and infrastructure provider for the hospitality industry. Serving hotels, boutique properties, luxury resorts and serviced apartments across London and the UK.",
-  "url": "https://www.gggtech.co.uk",
+  "url": "https://gggtech.co.uk",
   "email": "info@gggtech.co.uk",
-  "logo": "https://www.gggtech.co.uk/assets/images/fav.ico",
+  "logo": "https://gggtech.co.uk/assets/images/fav.ico",
   "founded": "United Kingdom",
   "industry": "IT Managed Services — Hospitality Sector",
   "geography": ["London", "Midlands", "South East England", "UK"],
   "availability": "24/7",
   "compliance": ["PCI DSS", "GDPR"],
-  "llms_txt": "https://www.gggtech.co.uk/llms.txt",
-  "sitemap": "https://www.gggtech.co.uk/sitemap.xml",
-  "faq": "https://www.gggtech.co.uk/faq",
+  "llms_txt": "https://gggtech.co.uk/llms.txt",
+  "sitemap": "https://gggtech.co.uk/sitemap.xml",
+  "faq": "https://gggtech.co.uk/faq",
   "services": [
     {
       "name": "24/7 IT Helpdesk",
-      "url": "https://www.gggtech.co.uk/services/24-7-helpdesk",
+      "url": "https://gggtech.co.uk/services/24-7-helpdesk",
       "description": "Round-the-clock remote IT support with guaranteed response times for hotels"
     },
     {
       "name": "IT Support & Maintenance",
-      "url": "https://www.gggtech.co.uk/services/it-support-maintenance",
+      "url": "https://gggtech.co.uk/services/it-support-maintenance",
       "description": "Proactive and reactive IT support and maintenance for hotel operations"
     },
     {
       "name": "On-Site IT Support",
-      "url": "https://www.gggtech.co.uk/services/on-site-support",
+      "url": "https://gggtech.co.uk/services/on-site-support",
       "description": "Engineer on-site visits across London and UK for hands-on IT resolution"
     },
     {
       "name": "Remote IT Support",
-      "url": "https://www.gggtech.co.uk/services/remote-support",
+      "url": "https://gggtech.co.uk/services/remote-support",
       "description": "Fast remote diagnostics and resolution without engineer callout"
     },
     {
       "name": "Guest WiFi",
-      "url": "https://www.gggtech.co.uk/services/guest-wifi",
+      "url": "https://gggtech.co.uk/services/guest-wifi",
       "description": "Enterprise-grade guest wireless networks with bandwidth management and captive portals"
     },
     {
       "name": "Network & WiFi Solutions",
-      "url": "https://www.gggtech.co.uk/services/network-wifi-solutions",
+      "url": "https://gggtech.co.uk/services/network-wifi-solutions",
       "description": "Full LAN/WLAN design, installation and ongoing management"
     },
     {
       "name": "Cabling Infrastructure",
-      "url": "https://www.gggtech.co.uk/services/cabling-infrastructure",
+      "url": "https://gggtech.co.uk/services/cabling-infrastructure",
       "description": "Structured cabling, Cat6/fibre optic, patch panels and cable management"
     },
     {
       "name": "Firewall & Security",
-      "url": "https://www.gggtech.co.uk/services/firewall-security",
+      "url": "https://gggtech.co.uk/services/firewall-security",
       "description": "Next-gen firewall configuration, VPN and perimeter network security"
     },
     {
       "name": "Cyber Security",
-      "url": "https://www.gggtech.co.uk/services/cyber-security",
+      "url": "https://gggtech.co.uk/services/cyber-security",
       "description": "Threat monitoring, vulnerability assessment, endpoint protection and staff training"
     },
     {
       "name": "PCI DSS Compliance",
-      "url": "https://www.gggtech.co.uk/services/pci-compliance",
+      "url": "https://gggtech.co.uk/services/pci-compliance",
       "description": "Hotel payment card industry compliance consulting and implementation"
     },
     {
       "name": "CCTV & Security Systems",
-      "url": "https://www.gggtech.co.uk/services/cctv-security",
+      "url": "https://gggtech.co.uk/services/cctv-security",
       "description": "IP camera systems, NVR/DVR installation and remote monitoring"
     },
     {
       "name": "Access Control",
-      "url": "https://www.gggtech.co.uk/services/access-control",
+      "url": "https://gggtech.co.uk/services/access-control",
       "description": "Key card, biometric and electronic door entry systems for hotels"
     },
     {
       "name": "PMS Hotel Systems",
-      "url": "https://www.gggtech.co.uk/services/pms-hotel-systems",
+      "url": "https://gggtech.co.uk/services/pms-hotel-systems",
       "description": "Property Management System setup, support, training and troubleshooting"
     },
     {
       "name": "PMS Integration",
-      "url": "https://www.gggtech.co.uk/services/pms-integration",
+      "url": "https://gggtech.co.uk/services/pms-integration",
       "description": "Integration of PMS with payment gateways, booking engines and EPOS systems"
     },
     {
       "name": "Smart Room Technology",
-      "url": "https://www.gggtech.co.uk/services/smart-room",
+      "url": "https://gggtech.co.uk/services/smart-room",
       "description": "Automated room controls, digital guest services and smart room systems"
     },
     {
       "name": "Digital Signage",
-      "url": "https://www.gggtech.co.uk/services/digital-signage",
+      "url": "https://gggtech.co.uk/services/digital-signage",
       "description": "In-lobby and in-room digital display and wayfinding systems"
     },
     {
       "name": "Voice Solutions",
-      "url": "https://www.gggtech.co.uk/services/voice-solutions",
+      "url": "https://gggtech.co.uk/services/voice-solutions",
       "description": "Hotel VOIP phone systems and front-desk telephony"
     },
     {
       "name": "IT Consultancy",
-      "url": "https://www.gggtech.co.uk/services/it-consultancy",
+      "url": "https://gggtech.co.uk/services/it-consultancy",
       "description": "Strategic IT planning, technology roadmaps and project management for hotels"
     }
   ],
   "industries": [
-    { "name": "Boutique Hotels", "url": "https://www.gggtech.co.uk/industries/boutique-hotels" },
-    { "name": "Luxury Resorts", "url": "https://www.gggtech.co.uk/industries/luxury-resorts" },
-    { "name": "Chain Hotels", "url": "https://www.gggtech.co.uk/industries/chain-hotels" },
-    { "name": "Conference Hotels", "url": "https://www.gggtech.co.uk/industries/conference-hotels" },
-    { "name": "Bed & Breakfast", "url": "https://www.gggtech.co.uk/industries/bed-breakfast" },
-    { "name": "Serviced Apartments", "url": "https://www.gggtech.co.uk/industries/serviced-apartments" }
+    { "name": "Boutique Hotels", "url": "https://gggtech.co.uk/industries/boutique-hotels" },
+    { "name": "Luxury Resorts", "url": "https://gggtech.co.uk/industries/luxury-resorts" },
+    { "name": "Chain Hotels", "url": "https://gggtech.co.uk/industries/chain-hotels" },
+    { "name": "Conference Hotels", "url": "https://gggtech.co.uk/industries/conference-hotels" },
+    { "name": "Bed & Breakfast", "url": "https://gggtech.co.uk/industries/bed-breakfast" },
+    { "name": "Serviced Apartments", "url": "https://gggtech.co.uk/industries/serviced-apartments" }
   ],
   "areas": [
-    { "name": "London", "url": "https://www.gggtech.co.uk/areas/london" },
-    { "name": "Central London", "url": "https://www.gggtech.co.uk/areas/central-london" },
-    { "name": "Mayfair", "url": "https://www.gggtech.co.uk/areas/mayfair" },
-    { "name": "Kensington", "url": "https://www.gggtech.co.uk/areas/kensington" },
-    { "name": "Chelsea", "url": "https://www.gggtech.co.uk/areas/chelsea" },
-    { "name": "Westminster", "url": "https://www.gggtech.co.uk/areas/westminster" },
-    { "name": "Soho", "url": "https://www.gggtech.co.uk/areas/soho" },
-    { "name": "Covent Garden", "url": "https://www.gggtech.co.uk/areas/covent-garden" },
-    { "name": "Canary Wharf", "url": "https://www.gggtech.co.uk/areas/canary-wharf" },
-    { "name": "Shoreditch", "url": "https://www.gggtech.co.uk/areas/shoreditch" },
-    { "name": "South Bank", "url": "https://www.gggtech.co.uk/areas/south-bank" },
-    { "name": "Bloomsbury", "url": "https://www.gggtech.co.uk/areas/bloomsbury" },
-    { "name": "Paddington", "url": "https://www.gggtech.co.uk/areas/paddington" },
-    { "name": "Midlands", "url": "https://www.gggtech.co.uk/areas/midlands" },
-    { "name": "South East", "url": "https://www.gggtech.co.uk/areas/south-east" },
-    { "name": "South West", "url": "https://www.gggtech.co.uk/areas/south-west" },
-    { "name": "East Anglia", "url": "https://www.gggtech.co.uk/areas/east-anglia" },
-    { "name": "Nationwide", "url": "https://www.gggtech.co.uk/areas/nationwide" }
+    { "name": "London", "url": "https://gggtech.co.uk/areas/london" },
+    { "name": "Central London", "url": "https://gggtech.co.uk/areas/central-london" },
+    { "name": "Mayfair", "url": "https://gggtech.co.uk/areas/mayfair" },
+    { "name": "Kensington", "url": "https://gggtech.co.uk/areas/kensington" },
+    { "name": "Chelsea", "url": "https://gggtech.co.uk/areas/chelsea" },
+    { "name": "Westminster", "url": "https://gggtech.co.uk/areas/westminster" },
+    { "name": "Soho", "url": "https://gggtech.co.uk/areas/soho" },
+    { "name": "Covent Garden", "url": "https://gggtech.co.uk/areas/covent-garden" },
+    { "name": "Canary Wharf", "url": "https://gggtech.co.uk/areas/canary-wharf" },
+    { "name": "Shoreditch", "url": "https://gggtech.co.uk/areas/shoreditch" },
+    { "name": "South Bank", "url": "https://gggtech.co.uk/areas/south-bank" },
+    { "name": "Bloomsbury", "url": "https://gggtech.co.uk/areas/bloomsbury" },
+    { "name": "Paddington", "url": "https://gggtech.co.uk/areas/paddington" },
+    { "name": "Midlands", "url": "https://gggtech.co.uk/areas/midlands" },
+    { "name": "South East", "url": "https://gggtech.co.uk/areas/south-east" },
+    { "name": "South West", "url": "https://gggtech.co.uk/areas/south-west" },
+    { "name": "East Anglia", "url": "https://gggtech.co.uk/areas/east-anglia" },
+    { "name": "Nationwide", "url": "https://gggtech.co.uk/areas/nationwide" }
   ],
   "cta": {
-    "book_assessment": "https://www.gggtech.co.uk/book-a-visit",
-    "get_quote": "https://www.gggtech.co.uk/get-a-quote",
-    "contact": "https://www.gggtech.co.uk/contact"
+    "book_assessment": "https://gggtech.co.uk/book-a-visit",
+    "get_quote": "https://gggtech.co.uk/get-a-quote",
+    "contact": "https://gggtech.co.uk/contact"
   }
 }

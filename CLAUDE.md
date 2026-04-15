@@ -75,6 +75,72 @@ When adding or updating nav/footer items, you must update **every** `.html` file
 | Areas (detail) | `areas/*.html` — 15 area pages |
 | Industries (detail) | `industries/*.html` — 6 industry pages |
 | Solutions (detail) | `solutions/*.html` — 2 solution pages |
+| Blog articles | `insights/*.html` — see template below |
+
+## Blog Article Template
+
+All blog articles live in `insights/` and **must follow the design of `insights/hotel-wifi-problems-guide.html`** exactly. Reference that file as the canonical template.
+
+### URL convention
+`/insights/[kebab-case-slug].html`
+
+### Required `<head>` tags
+```html
+<title>[Article Title] | GGG Technologies</title>  <!-- ≤60 chars -->
+<meta name="description" content="...">            <!-- 150-160 chars -->
+<meta property="og:type" content="article">        <!-- not "website" -->
+<link rel="canonical" href="https://gggtech.co.uk/insights/[slug]">
+<!-- Article JSON-LD schema (not LocalBusiness) -->
+<script type="application/ld+json">
+{ "@type": "Article", "headline": "...", "datePublished": "YYYY-MM-DD", ... }
+</script>
+<!-- BreadcrumbList JSON-LD -->
+```
+
+### Page structure (in order)
+
+1. **`<main class="pt-20">`**
+
+2. **Full-bleed hero** — background image + dark gradient overlay + content on top:
+   - `min-h-[580px] lg:min-h-[640px]` with `position: relative`
+   - Gradient: `bg-gradient-to-t from-[#0a1628] via-[#0a1628]/75 to-[#0f172a]/40`
+   - Content: breadcrumb → category badge (coloured, solid fill) + read time + date → H1 → standfirst → author + share buttons row with `border-t border-white/15`
+
+3. **Article body** — `max-w-7xl` container, `py-16`:
+   - Grid: `lg:grid lg:grid-cols-[1fr_320px] lg:gap-16`
+   - **First column** is a wrapper `<div>` containing:
+     - `<div class="prose max-w-none">` — all article text content
+     - CTA box **outside** `.prose` (prose CSS overrides Tailwind text colours via `.prose h3` / `.prose p` selectors)
+   - **Second column** — `<aside class="toc-sidebar">` with `sticky top-28`
+
+4. **CTA box** (outside `.prose`, inside first column wrapper):
+   - Two-tone card: dark navy header strip (`bg-[#1a3a5c]`) + light body (`bg-gray-50`)
+   - Header: green icon + title `<p style="font-family:var(--font-family-heading)">` + subtitle
+   - Body: description text + two buttons (primary blue, secondary white/bordered)
+   - Use `style="font-family:..."` on text elements inside CTA — Tailwind font classes are overridden by `.prose` CSS even outside `.prose` if the element is a descendant
+
+5. **Prose CSS** — define in `<style>` block (not inline):
+   - `.prose h2/h3` — Outfit font, `#1a3a5c` colour
+   - `.prose p/ul/ol` — Inter font, `#374151` colour, `line-height: 1.8`
+   - `.prose ul li::before` — blue dot bullet
+
+6. **Back to Insights link** at bottom: `← Back to All Insights` → `/insights`
+
+### Category colours
+| Category | Badge colour |
+|---|---|
+| WiFi & Networking | `#10b981` (green) |
+| Cybersecurity | `#f59e0b` (amber) |
+| PMS & Systems | `#8b5cf6` (purple) |
+| IT Support | `#2563eb` (blue) |
+
+### TOC sidebar
+- `display: none` on mobile (CSS class `.toc-sidebar { @media <1024px { display:none } }`)
+- Scroll-spy via `IntersectionObserver` — adds `.active` class to matching `.toc-link`
+- Sidebar CTA card below TOC linking to `/book-a-visit`
+
+### After publishing a new article
+Update `insights.html` to add the new article card (with correct `data-category` attribute for JS filtering) and update the featured article slot if appropriate.
 
 ## Key Rules (from AGENTS.md)
 

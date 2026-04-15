@@ -11,7 +11,13 @@
       "Bash(where jq:*)",
       "Bash(python:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(wc:*)",
+      "Bash(git:*)",
+      "Bash(ls -la /c/Users/Administrator/Desktop/GGGTECH-HTML/gggtech.co.uk-1/areas/*.html)",
+      "Bash(head -10 echo \"---\" grep -n \"FAQ\\\\|CHALLENGE\\\\|Services for\\\\|FAQPage\\\\|fa-chevron-down\" /c/Users/Administrator/Desktop/GGGTECH-HTML/gggtech.co.uk-1/areas/nationwide.html)",
+      "Bash(head -10 echo \"---\" grep -n \"FAQ\\\\|CHALLENGE\\\\|Services for\\\\|FAQPage\\\\|fa-chevron-down\" /c/Users/Administrator/Desktop/GGGTECH-HTML/gggtech.co.uk-1/areas/east-anglia.html)"
     ]
   },
   "hooks": {

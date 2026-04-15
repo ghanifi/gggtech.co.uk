@@ -44,6 +44,15 @@
     <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://gggtech.co.uk/"},{"@type":"ListItem","position":2,"name":"Areas","item":"https://gggtech.co.uk/areas"},{"@type":"ListItem","position":3,"name":"Westminster","item":"https://gggtech.co.uk/areas/westminster"}]}
     </script>
+    <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Can you provide enhanced cybersecurity for a Westminster hotel hosting government events?","acceptedAnswer":{"@type":"Answer","text":"Yes. For properties that regularly host government officials or sensitive corporate events, we offer an enhanced security package including network isolation for specific events, IDS/IPS monitoring, regular penetration testing, and staff cybersecurity training. All engineers assigned to Westminster clients hold enhanced DBS clearance."}},
+{"@type":"Question","name":"Do you build redundant network infrastructure for Westminster hotels?","acceptedAnswer":{"@type":"Answer","text":"Yes. Redundancy is standard for all Westminster hotel deployments. We configure dual WAN connections from independent ISPs, automatic failover routing, and redundant core switching. In the event of a primary connection failure, traffic switches to the backup line within seconds."}},
+{"@type":"Question","name":"What is your response time for a Westminster hotel IT emergency?","acceptedAnswer":{"@type":"Answer","text":"Westminster is approximately 20-25 minutes from our EC2A hub. For emergency situations affecting government or high-profile events, we can typically have an engineer on-site within 30-40 minutes. Our 24/7 helpdesk can provide immediate remote diagnosis while an engineer is in transit."}},
+{"@type":"Question","name":"Do your engineers hold security clearances for working in sensitive Westminster environments?","acceptedAnswer":{"@type":"Answer","text":"All GGG Technologies engineers hold enhanced DBS clearance as a minimum. For specific high-security requirements, we can discuss additional vetting procedures. We are experienced in working within environments subject to Official Secrets considerations."}},
+{"@type":"Question","name":"Can you provide dedicated on-site IT cover for a Westminster hotel during a major event?","acceptedAnswer":{"@type":"Answer","text":"Yes. For state visits, government conferences, or other major events, we offer dedicated on-site engineer cover for the duration. This engineer will be briefed on the event's requirements and will be the sole point of contact for all technical issues during that period."}}
+]}
+    </script>
     <link href="/assets/css/main.css" rel="stylesheet">
     <link href="/assets/css/fonts.css" rel="stylesheet">
     <script src="/assets/fontawesome/fontawesome.js" crossorigin="anonymous"></script>
@@ -267,12 +276,13 @@
     </header>
 
     <main class="pt-32 pb-20">
+        <!-- HERO -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
                 <div>
                     <span class="inline-block px-4 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-full mb-6 uppercase tracking-widest">Iconic District</span>
                     <h1 class="text-4xl lg:text-6xl font-black text-[#1a3a5c] mb-6 leading-tight">Westminster <br><span class="text-cyan-600">Hospitality IT</span></h1>
-                    <p class="text-lg text-gray-600 mb-8">Home to the UK's most iconic landmarks and government institutions, Westminster hotels require the highest levels of security and technical excellence. We provide specialized support for landmark properties across SW1.</p>
+                    <p class="text-lg text-gray-600 mb-8">Home to the UK's most iconic landmarks and government institutions, Westminster hotels require the highest levels of security and technical excellence. We provide specialized support for landmark properties across SW1, combining enterprise-grade infrastructure with the discretion and reliability that high-profile environments demand.</p>
                     <div class="flex gap-4">
                         <a href="/contact" class="px-8 py-4 bg-[#1a3a5c] text-white font-bold rounded-full hover:bg-black transition-all">Request Westminster Visit</a>
                     </div>
@@ -281,21 +291,186 @@
                     <img src="/assets/images/2206124236.jpg" alt="Westminster London" class="w-full h-full object-cover">
                 </div>
             </div>
+        </div>
 
+        <!-- CHALLENGES SECTION -->
+        <div class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-start">
+                    <div>
+                        <h2 class="text-3xl font-black text-[#1a3a5c] mb-6">Hotel IT in Westminster: What Makes It Different</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">Westminster (SW1) is London's seat of government and one of its most high-profile hotel destinations. Properties near Parliament Square, Whitehall, and Victoria attract government officials, visiting dignitaries, international delegations, and high-security corporate events. This creates IT requirements that go beyond typical hospitality — hotels here must maintain networks that can support classified communications infrastructure, comply with government security advisories, and operate without a single point of failure.</p>
+                        <p class="text-gray-600 leading-relaxed">GGG Technologies' Westminster service is designed for environments where reliability is non-negotiable. We build redundant network architectures with failover connectivity, implement advanced firewall and IDS systems appropriate for politically sensitive environments, and train hotel IT staff on cybersecurity awareness. Our engineers hold enhanced DBS checks and are experienced in working within high-security environments.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-5 bg-gray-50 rounded-2xl">
+                            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-shield-halved text-[#2563eb]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-[#1a3a5c] mb-1">High-Security Networks</h4>
+                                <p class="text-sm text-gray-500">Westminster hotels must meet elevated cybersecurity standards given the sensitivity of many guests' activities. We implement network segmentation, VPN isolation, advanced threat detection, and regular penetration testing as standard for Westminster clients.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-5 bg-gray-50 rounded-2xl">
+                            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-rotate text-[#2563eb]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-[#1a3a5c] mb-1">Zero-Downtime Infrastructure</h4>
+                                <p class="text-sm text-gray-500">A network outage at a Westminster hotel during a government delegation's stay is not acceptable. We build redundant infrastructure with automatic failover — dual WAN connections from independent providers, redundant core switches, and UPS systems throughout.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-5 bg-gray-50 rounded-2xl">
+                            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-landmark text-[#2563eb]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-[#1a3a5c] mb-1">Sensitive Environment Operations</h4>
+                                <p class="text-sm text-gray-500">Westminster properties frequently host state events, political receptions, and high-profile meetings. Our engineers are briefed on confidentiality requirements, carry minimal visible equipment, and are available for out-of-hours work to avoid disruption to sensitive activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURE CARDS -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
             <div class="bg-slate-50 rounded-[3rem] p-10 lg:p-20">
                 <div class="max-w-3xl">
                     <h2 class="text-3xl font-black text-[#1a3a5c] mb-8">Serving the Heart of SW1</h2>
                     <p class="text-gray-600 mb-6 leading-relaxed">Westminster's unique mix of historic architecture and high-profile guests demands a specialized approach to IT. Our engineers are experienced in working with properties near the Houses of Parliament, Whitehall, and Victoria, where security and discretion are paramount.</p>
                     <ul class="grid md:grid-cols-2 gap-6 mt-10">
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-cyan-500 mt-1"></i> <div><span class="font-bold text-[#1a3a5c]">Enhanced Cyber Security</span><p class="text-xs text-gray-500">Protecting against high-level threats in a sensitive district.</p></div></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-cyan-500 mt-1"></i> <div><span class="font-bold text-[#1a3a5c]">Rapid On-Site Support</span><p class="text-xs text-gray-500">Fast access to properties across Westminster and Victoria.</p></div></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-cyan-500 mt-1"></i> <div><span class="font-bold text-[#1a3a5c]">Heritage Building Specialists</span><p class="text-xs text-gray-500">Installing modern tech in historic Westminster structures.</p></div></li>
-                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-cyan-500 mt-1"></i> <div><span class="font-bold text-[#1a3a5c]">VIP Tech Concierge</span><p class="text-xs text-gray-500">Priority support for your most important hotel guests.</p></div></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-cyan-500 mt-1"></i> <div><span class="font-bold text-[#1a3a5c]">Enhanced Cyber Security</span><p class="text-xs text-gray-500">Protecting against high-level threats in a sensitive district. We deploy IDS/IPS systems, conduct regular penetration tests, and maintain detailed security audit logs to meet government-adjacent standards.</p></div></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-cyan-500 mt-1"></i> <div><span class="font-bold text-[#1a3a5c]">Rapid On-Site Support</span><p class="text-xs text-gray-500">Fast access to properties across Westminster and Victoria. Our EC2A base puts us 20-25 minutes from SW1, with 24/7 on-call cover for urgent incidents affecting critical events.</p></div></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-cyan-500 mt-1"></i> <div><span class="font-bold text-[#1a3a5c]">Heritage Building Specialists</span><p class="text-xs text-gray-500">Installing modern tech in historic Westminster structures with care for listed building considerations. We route cabling discretely and work within heritage planning constraints without compromising network performance.</p></div></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-cyan-500 mt-1"></i> <div><span class="font-bold text-[#1a3a5c]">VIP Tech Concierge</span><p class="text-xs text-gray-500">Priority support for your most important hotel guests. We can provide dedicated technical assistance for specific high-profile stays, ensuring seamless connectivity and immediate resolution of any issues.</p></div></li>
                     </ul>
                 </div>
             </div>
         </div>
 
+        <!-- SERVICES SECTION -->
+        <div class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-black text-[#1a3a5c] mb-4 text-center">IT Services for Westminster Hotels</h2>
+                <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">Comprehensive hotel technology services delivered to SW1 properties with the security and reliability that government-adjacent environments require.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="/services/cyber-security" class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#2563eb] transition-all group">
+                        <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-shield-halved text-[#2563eb]"></i>
+                        </div>
+                        <h3 class="font-bold text-[#1a3a5c] mb-2 group-hover:text-[#2563eb] transition-colors">Cyber Security</h3>
+                        <p class="text-sm text-gray-500">Advanced threat protection tailored for Westminster's high-security environment. We provide IDS/IPS monitoring, network segmentation, penetration testing, and staff security awareness training for hotels hosting government guests.</p>
+                    </a>
+                    <a href="/services/network-wifi-solutions" class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#2563eb] transition-all group">
+                        <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-network-wired text-[#2563eb]"></i>
+                        </div>
+                        <h3 class="font-bold text-[#1a3a5c] mb-2 group-hover:text-[#2563eb] transition-colors">Network & WiFi Solutions</h3>
+                        <p class="text-sm text-gray-500">Redundant network architectures designed for zero-downtime operation in Westminster's demanding environment. We build dual-WAN failover systems and enterprise WiFi deployments suited to historic SW1 buildings.</p>
+                    </a>
+                    <a href="/services/on-site-support" class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#2563eb] transition-all group">
+                        <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-wrench text-[#2563eb]"></i>
+                        </div>
+                        <h3 class="font-bold text-[#1a3a5c] mb-2 group-hover:text-[#2563eb] transition-colors">On-Site Support</h3>
+                        <p class="text-sm text-gray-500">Discreet, professional on-site engineering support for Westminster hotels. Our DBS-cleared engineers are experienced in working within sensitive environments and available out-of-hours for critical events.</p>
+                    </a>
+                    <a href="/services/24-7-helpdesk" class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#2563eb] transition-all group">
+                        <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-clock text-[#2563eb]"></i>
+                        </div>
+                        <h3 class="font-bold text-[#1a3a5c] mb-2 group-hover:text-[#2563eb] transition-colors">24/7 Helpdesk</h3>
+                        <p class="text-sm text-gray-500">Round-the-clock technical support for Westminster hotels where issues cannot wait until morning. Our helpdesk provides immediate remote diagnosis and can escalate to on-site response within 30-40 minutes.</p>
+                    </a>
+                    <a href="/services/pms-hotel-systems" class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#2563eb] transition-all group">
+                        <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-server text-[#2563eb]"></i>
+                        </div>
+                        <h3 class="font-bold text-[#1a3a5c] mb-2 group-hover:text-[#2563eb] transition-colors">PMS & Hotel Systems</h3>
+                        <p class="text-sm text-gray-500">Property management system support and integration for Westminster hotels. We connect PMS platforms with access control, telephony, and billing systems, ensuring seamless operations for your front-of-house team.</p>
+                    </a>
+                    <a href="/services/firewall-security" class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#2563eb] transition-all group">
+                        <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-fire text-[#2563eb]"></i>
+                        </div>
+                        <h3 class="font-bold text-[#1a3a5c] mb-2 group-hover:text-[#2563eb] transition-colors">Firewall & Security</h3>
+                        <p class="text-sm text-gray-500">Enterprise firewall configuration and management for Westminster's security-conscious hotel environment. We deploy and maintain next-generation firewalls with regular rule audits and compliance reporting.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOCAL EXPERTISE -->
+        <div class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-[#1a3a5c] rounded-[3rem] p-10 lg:p-16 text-white">
+                    <div class="max-w-3xl">
+                        <h2 class="text-3xl font-black mb-6">Local Westminster Expertise</h2>
+                        <p class="text-white/80 leading-relaxed mb-6">Our engineers are regularly on-site in Westminster and Victoria, giving us an intimate understanding of the area's building stock, infrastructure constraints, and operational demands. We know which SW1 buildings have heritage restrictions on cabling routes, which properties have basement plant rooms that need specialist attention, and how to work around the security procedures of Westminster's most sensitive venues.</p>
+                        <p class="text-white/80 leading-relaxed">From the boutique properties near St James's Park to the large conference hotels along Victoria Street, GGG Technologies has the local knowledge and technical capability to serve Westminster's entire hospitality sector.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ SECTION -->
+        <div class="py-20 bg-white">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-black text-[#1a3a5c] mb-12 text-center">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                        <button class="w-full text-left px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('i').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-[#1a3a5c]">Can you provide enhanced cybersecurity for a Westminster hotel hosting government events?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="hidden px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">Yes. For properties that regularly host government officials or sensitive corporate events, we offer an enhanced security package including network isolation for specific events, IDS/IPS monitoring, regular penetration testing, and staff cybersecurity training. All engineers assigned to Westminster clients hold enhanced DBS clearance.</p>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                        <button class="w-full text-left px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('i').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-[#1a3a5c]">Do you build redundant network infrastructure for Westminster hotels?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="hidden px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">Yes. Redundancy is standard for all Westminster hotel deployments. We configure dual WAN connections from independent ISPs, automatic failover routing, and redundant core switching. In the event of a primary connection failure, traffic switches to the backup line within seconds.</p>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                        <button class="w-full text-left px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('i').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-[#1a3a5c]">What is your response time for a Westminster hotel IT emergency?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="hidden px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">Westminster is approximately 20-25 minutes from our EC2A hub. For emergency situations affecting government or high-profile events, we can typically have an engineer on-site within 30-40 minutes. Our 24/7 helpdesk can provide immediate remote diagnosis while an engineer is in transit.</p>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                        <button class="w-full text-left px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('i').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-[#1a3a5c]">Do your engineers hold security clearances for working in sensitive Westminster environments?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="hidden px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">All GGG Technologies engineers hold enhanced DBS clearance as a minimum. For specific high-security requirements, we can discuss additional vetting procedures. We are experienced in working within environments subject to Official Secrets considerations.</p>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                        <button class="w-full text-left px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('i').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-[#1a3a5c]">Can you provide dedicated on-site IT cover for a Westminster hotel during a major event?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="hidden px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">Yes. For state visits, government conferences, or other major events, we offer dedicated on-site engineer cover for the duration. This engineer will be briefed on the event's requirements and will be the sole point of contact for all technical issues during that period.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COVERAGE LINKS -->
         <div class="py-12 border-t border-gray-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h3 class="text-2xl font-black text-[#1a3a5c] mb-6">Explore All Coverage Areas</h3>

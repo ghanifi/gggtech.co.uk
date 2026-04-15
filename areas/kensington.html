@@ -44,6 +44,15 @@
     <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://gggtech.co.uk/"},{"@type":"ListItem","position":2,"name":"Areas","item":"https://gggtech.co.uk/areas"},{"@type":"ListItem","position":3,"name":"Kensington","item":"https://gggtech.co.uk/areas/kensington"}]}
     </script>
+    <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Do you cover hotels in South Kensington as well as Kensington itself?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our Kensington coverage includes the SW7, W8, and W14 postcodes, covering South Kensington, High Street Kensington, and Holland Park. Many of our Kensington clients are located within a five-minute walk of the major museums."}},
+{"@type":"Question","name":"How do you handle demand spikes during Royal Albert Hall events?","acceptedAnswer":{"@type":"Answer","text":"We monitor network utilisation in real time for all managed clients. When events at the Royal Albert Hall or major museum openings are known in advance, we proactively increase available bandwidth and have an engineer on standby. Most spikes are handled automatically by our traffic management systems."}},
+{"@type":"Question","name":"Can you support an aparthotel or serviced apartments in Kensington?","acceptedAnswer":{"@type":"Answer","text":"Yes. Aparthotels and serviced apartments require more complex network design than traditional hotels, including per-unit network isolation, individual bandwidth controls, and self-service WiFi portals. We have designed and deployed these systems for multiple Kensington properties."}},
+{"@type":"Question","name":"How quickly can you respond to an IT issue in Kensington?","acceptedAnswer":{"@type":"Answer","text":"Kensington is approximately 25-30 minutes from our EC2A headquarters. For emergency call-outs during business hours, we typically arrive within 45-60 minutes. Our 24/7 helpdesk provides immediate remote support for issues that can be resolved without a site visit."}},
+{"@type":"Question","name":"Do you provide WiFi for hotel conference rooms and event spaces in Kensington?","acceptedAnswer":{"@type":"Answer","text":"Yes. We design dedicated, isolated conference WiFi networks with guaranteed bandwidth allocation, separate from the guest network. This ensures that a packed conference room does not degrade WiFi for guests elsewhere in the building."}}
+]}
+    </script>
     <link href="/assets/css/main.css" rel="stylesheet">
     <link href="/assets/css/fonts.css" rel="stylesheet">
     <script src="/assets/fontawesome/fontawesome.js" crossorigin="anonymous"></script>
@@ -272,7 +281,7 @@
                 <div>
                     <span class="inline-block px-4 py-1 bg-indigo-50 text-indigo-600 text-xs font-bold rounded-full mb-6 uppercase tracking-widest">Royal Borough</span>
                     <h1 class="text-4xl lg:text-6xl font-black text-[#1a3a5c] mb-6 leading-tight">Kensington <br><span class="text-blue-600">Premium IT</span></h1>
-                    <p class="text-lg text-gray-600 mb-8">Serving the Royal Borough's finest hotels, from the grand Victorian properties of South Kensington to modern boutique stays. We deliver technical excellence with the white-glove service Kensington demands.</p>
+                    <p class="text-lg text-gray-600 mb-8">Serving the Royal Borough's finest hotels, from the grand Victorian properties of South Kensington to modern boutique stays. We deliver technical excellence with the white-glove service Kensington demands. With coverage across SW7, W8, and W14, we understand the unique hospitality rhythms of this museum-rich neighbourhood.</p>
                     <div class="flex gap-4">
                         <a href="/contact" class="px-8 py-4 bg-[#1a3a5c] text-white font-bold rounded-full hover:bg-black transition-all shadow-lg">Request Kensington Audit</a>
                     </div>
@@ -281,22 +290,175 @@
                     <img src="/assets/images/2162978963.jpg" alt="Grand Kensington Architecture" class="w-full h-full object-cover">
                 </div>
             </div>
+        </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="p-8 bg-gray-50 rounded-3xl border border-gray-100">
-                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-blue-600 mb-6"><i class="fa-solid fa-wifi text-xl"></i></div>
-                    <h3 class="text-xl font-bold text-[#1a3a5c] mb-4">High-Density WiFi</h3>
-                    <p class="text-sm text-gray-500">Optimizing wireless signal through Kensington's thick-walled historic structures for a flawless guest experience.</p>
+        <!-- Challenges Section -->
+        <div class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-start">
+                    <div>
+                        <h2 class="text-3xl font-black text-[#1a3a5c] mb-6">Hotel IT in Kensington: What Makes It Different</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">Kensington (SW7/W8) is one of London's most visited tourist destinations, with the Natural History Museum, Victoria and Albert Museum, Science Museum, and Royal Albert Hall all within walking distance of the area's hotels. This creates a distinctive hospitality pattern: peaks during school holidays, event nights at the Royal Albert Hall, and major exhibition openings, combined with a strong baseline of international tourists year-round. The area's Victorian and Edwardian mansion conversions provide accommodation character, but create real challenges for modern wireless infrastructure.</p>
+                        <p class="text-gray-600 leading-relaxed">We serve multiple hotel properties in Kensington and understand the unique rhythms of the area. Our managed WiFi solutions are designed to scale automatically with demand — important for a neighbourhood that can see hotel occupancy spike during major museum events or Proms season. We also support the area's growing number of aparthotel and serviced apartment properties, which often require more complex network segmentation than traditional hotels.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-5 bg-gray-50 rounded-2xl">
+                            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-graduation-cap text-[#2563eb]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-[#1a3a5c] mb-1">Museum &amp; Event Surges</h4>
+                                <p class="text-sm text-gray-500">Royal Albert Hall concerts, V&amp;A exhibition launches, and school holiday periods create predictable demand spikes. We pre-position additional bandwidth and increase monitoring during these periods as standard for all Kensington clients.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-5 bg-gray-50 rounded-2xl">
+                            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-building text-[#2563eb]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-[#1a3a5c] mb-1">Victorian Conversions</h4>
+                                <p class="text-sm text-gray-500">Kensington's stock of large Victorian and Edwardian terraced hotels presents specific challenges for WiFi coverage. Thick internal walls and multiple floor configurations require careful access point positioning and often a wireless mesh topology rather than a traditional infrastructure.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-5 bg-gray-50 rounded-2xl">
+                            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-globe text-[#2563eb]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-[#1a3a5c] mb-1">International Guest Base</h4>
+                                <p class="text-sm text-gray-500">Kensington hotels attract a high proportion of international tourists, particularly from the US, Middle East, and Asia. Providing a seamless WiFi onboarding experience in multiple languages, with automatic portal translation, is something we build into all our guest network deployments.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-8 bg-gray-50 rounded-3xl border border-gray-100">
-                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-blue-600 mb-6"><i class="fa-solid fa-headset text-xl"></i></div>
-                    <h3 class="text-xl font-bold text-[#1a3a5c] mb-4">24/7 Managed Support</h3>
-                    <p class="text-sm text-gray-500">Dedicated helpdesk and rapid on-site response for all Kensington and Chelsea properties.</p>
+            </div>
+        </div>
+
+        <!-- Feature Cards -->
+        <div class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-8 bg-white rounded-3xl border border-gray-100">
+                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-blue-600 mb-6"><i class="fa-solid fa-wifi text-xl"></i></div>
+                        <h3 class="text-xl font-bold text-[#1a3a5c] mb-4">High-Density WiFi</h3>
+                        <p class="text-sm text-gray-500">Optimising wireless signal through Kensington's thick-walled historic structures for a flawless guest experience. We deploy enterprise-grade access points with precise placement surveys, ensuring consistent coverage from basement breakfast rooms to top-floor suites in Victorian terraces.</p>
+                    </div>
+                    <div class="p-8 bg-white rounded-3xl border border-gray-100">
+                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-blue-600 mb-6"><i class="fa-solid fa-headset text-xl"></i></div>
+                        <h3 class="text-xl font-bold text-[#1a3a5c] mb-4">24/7 Managed Support</h3>
+                        <p class="text-sm text-gray-500">Dedicated helpdesk and rapid on-site response for all Kensington properties. Our engineers are 25-30 minutes from the Royal Borough and can attend most emergency call-outs within 45-60 minutes, with phone and remote support always available immediately.</p>
+                    </div>
+                    <div class="p-8 bg-white rounded-3xl border border-gray-100">
+                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-blue-600 mb-6"><i class="fa-solid fa-shield-halved text-xl"></i></div>
+                        <h3 class="text-xl font-bold text-[#1a3a5c] mb-4">Security Compliance</h3>
+                        <p class="text-sm text-gray-500">Full PCI DSS and GDPR compliance management for Kensington hotels processing card payments. We design, implement, and maintain the network architecture required to demonstrate compliance and protect guest data from increasingly sophisticated cyber threats.</p>
+                    </div>
                 </div>
-                <div class="p-8 bg-gray-50 rounded-3xl border border-gray-100">
-                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-blue-600 mb-6"><i class="fa-solid fa-shield-halved text-xl"></i></div>
-                    <h3 class="text-xl font-bold text-[#1a3a5c] mb-4">Security Compliance</h3>
-                    <p class="text-sm text-gray-500">Full PCI DSS and GDPR compliance management for high-end hospitality data protection.</p>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-black text-[#1a3a5c] mb-4 text-center">IT Services for Kensington Hotels</h2>
+                <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">Managed IT services designed for the Royal Borough's hotels, from large museum-district properties to boutique serviced apartments.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="/services/guest-wifi" class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#2563eb] transition-all group">
+                        <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-wifi text-[#2563eb]"></i>
+                        </div>
+                        <h3 class="font-bold text-[#1a3a5c] mb-2 group-hover:text-[#2563eb] transition-colors">Guest WiFi</h3>
+                        <p class="text-sm text-gray-500">High-density WiFi designed for Kensington's Victorian and Edwardian hotel stock. We conduct RF surveys to map signal behaviour through thick masonry, and deploy wireless mesh solutions to guarantee coverage in buildings where traditional cable runs are impractical.</p>
+                    </a>
+                    <a href="/services/on-site-support" class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#2563eb] transition-all group">
+                        <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-wrench text-[#2563eb]"></i>
+                        </div>
+                        <h3 class="font-bold text-[#1a3a5c] mb-2 group-hover:text-[#2563eb] transition-colors">On-Site Support</h3>
+                        <p class="text-sm text-gray-500">Engineer visits to Kensington hotels within our guaranteed response windows. Our teams carry spare hardware for the most common failure scenarios and are trained to work discreetly in occupied hotel environments to avoid disturbing guests.</p>
+                    </a>
+                    <a href="/services/24-7-helpdesk" class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#2563eb] transition-all group">
+                        <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-clock text-[#2563eb]"></i>
+                        </div>
+                        <h3 class="font-bold text-[#1a3a5c] mb-2 group-hover:text-[#2563eb] transition-colors">24/7 Helpdesk</h3>
+                        <p class="text-sm text-gray-500">Always-on remote and telephone support for Kensington hotels. Our helpdesk is staffed by hospitality IT specialists who understand your systems — not generic agents reading from scripts — ensuring faster diagnosis and resolution at any hour.</p>
+                    </a>
+                    <a href="/services/pms-hotel-systems" class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#2563eb] transition-all group">
+                        <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-server text-[#2563eb]"></i>
+                        </div>
+                        <h3 class="font-bold text-[#1a3a5c] mb-2 group-hover:text-[#2563eb] transition-colors">PMS &amp; Hotel Systems</h3>
+                        <p class="text-sm text-gray-500">PMS support and integration for Kensington hotels, ensuring your property management system integrates reliably with WiFi, telephony, and EPOS. We support all major platforms and manage upgrade projects to minimise operational disruption.</p>
+                    </a>
+                    <a href="/services/network-wifi-solutions" class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#2563eb] transition-all group">
+                        <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-network-wired text-[#2563eb]"></i>
+                        </div>
+                        <h3 class="font-bold text-[#1a3a5c] mb-2 group-hover:text-[#2563eb] transition-colors">Network &amp; WiFi Solutions</h3>
+                        <p class="text-sm text-gray-500">Complete network infrastructure design, installation, and management for Kensington hotels. From core switching and routing to WiFi access points and conference room connectivity, we design resilient networks that scale with your occupancy demands.</p>
+                    </a>
+                    <a href="/services/cyber-security" class="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-[#2563eb] transition-all group">
+                        <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-shield-halved text-[#2563eb]"></i>
+                        </div>
+                        <h3 class="font-bold text-[#1a3a5c] mb-2 group-hover:text-[#2563eb] transition-colors">Cyber Security</h3>
+                        <p class="text-sm text-gray-500">Comprehensive cybersecurity for Kensington hotels protecting guest data, payment systems, and back-office operations. We manage firewall configuration, endpoint security, and PCI DSS compliance, and provide staff training to reduce the risk of phishing attacks.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="py-20 bg-white">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-black text-[#1a3a5c] mb-12 text-center">Frequently Asked Questions</h2>
+                <div class="space-y-4" id="faq-kensington">
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                        <button class="w-full text-left px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('i').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-[#1a3a5c]">Do you cover hotels in South Kensington as well as Kensington itself?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="hidden px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">Yes. Our Kensington coverage includes the SW7, W8, and W14 postcodes, covering South Kensington, High Street Kensington, and Holland Park. Many of our Kensington clients are located within a five-minute walk of the major museums.</p>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                        <button class="w-full text-left px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('i').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-[#1a3a5c]">How do you handle demand spikes during Royal Albert Hall events?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="hidden px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">We monitor network utilisation in real time for all managed clients. When events at the Royal Albert Hall or major museum openings are known in advance, we proactively increase available bandwidth and have an engineer on standby. Most spikes are handled automatically by our traffic management systems.</p>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                        <button class="w-full text-left px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('i').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-[#1a3a5c]">Can you support an aparthotel or serviced apartments in Kensington?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="hidden px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">Yes. Aparthotels and serviced apartments require more complex network design than traditional hotels, including per-unit network isolation, individual bandwidth controls, and self-service WiFi portals. We have designed and deployed these systems for multiple Kensington properties.</p>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                        <button class="w-full text-left px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('i').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-[#1a3a5c]">How quickly can you respond to an IT issue in Kensington?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="hidden px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">Kensington is approximately 25-30 minutes from our EC2A headquarters. For emergency call-outs during business hours, we typically arrive within 45-60 minutes. Our 24/7 helpdesk provides immediate remote support for issues that can be resolved without a site visit.</p>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden">
+                        <button class="w-full text-left px-6 py-5 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('i').classList.toggle('rotate-180')">
+                            <span class="font-semibold text-[#1a3a5c]">Do you provide WiFi for hotel conference rooms and event spaces in Kensington?</span>
+                            <i class="fa-solid fa-chevron-down text-gray-400 transition-transform"></i>
+                        </button>
+                        <div class="hidden px-6 pb-5">
+                            <p class="text-gray-600 leading-relaxed">Yes. We design dedicated, isolated conference WiFi networks with guaranteed bandwidth allocation, separate from the guest network. This ensures that a packed conference room does not degrade WiFi for guests elsewhere in the building.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

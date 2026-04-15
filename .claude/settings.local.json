@@ -1,7 +1,31 @@
 {
   "permissions": {
     "allow": [
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "Bash(grep:*)",
+      "Bash(grep -h \"<title>\" \"/c/Users/Administrator/Desktop/GGGTECH-HTML/gggtech.co.uk-1/areas/\"*.html)",
+      "Bash(sed 's/<[^>]*>//g')",
+      "Skill(commit-commands:commit-push-pr)",
+      "Skill(update-config)",
+      "Bash(bash \"/c/Users/Administrator/Desktop/GGGTECH-HTML/gggtech.co.uk-1/scripts/generate-sitemap.sh\")",
+      "Bash(where jq:*)",
+      "Bash(python:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "file=$(python -c \"import sys,json; d=json.load(sys.stdin); print(d.get('tool_input',{}).get('file_path',''))\"); echo \"$file\" | grep -q '\\.html$' && bash \"/c/Users/Administrator/Desktop/GGGTECH-HTML/gggtech.co.uk-1/scripts/generate-sitemap.sh\" 2>/dev/null || true",
+            "statusMessage": "Updating sitemap..."
+          }
+        ]
+      }
     ]
   }
 }

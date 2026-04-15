@@ -192,36 +192,69 @@
         </nav>
     </header>
 
-    <main class="pt-24">
+    <main class="pt-20">
 
-        <!-- Article Hero -->
-        <div class="bg-gradient-to-br from-[#0f172a] to-[#1a3a5c] py-16 lg:py-24">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Article Hero — full bleed image with overlay -->
+        <div class="relative min-h-[580px] lg:min-h-[640px] flex items-end overflow-hidden">
+            <!-- Background image -->
+            <img src="/assets/images/2206124236.jpg" alt="Hotel IT professional managing network infrastructure" class="absolute inset-0 w-full h-full object-cover object-center">
+            <!-- Gradient overlay: dark at bottom, semi-dark at top -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/75 to-[#0f172a]/40"></div>
+            <!-- Subtle grid pattern overlay -->
+            <div class="absolute inset-0 opacity-10" style="background-image: url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\");"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-14 pt-32">
                 <!-- Breadcrumb -->
-                <nav class="flex items-center gap-2 text-sm text-white/50 mb-8">
+                <nav class="flex items-center gap-2 text-sm text-white/50 mb-8" aria-label="Breadcrumb">
                     <a href="/" class="hover:text-white transition-colors">Home</a>
-                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                    <i class="fa-solid fa-chevron-right text-xs opacity-50"></i>
                     <a href="/insights" class="hover:text-white transition-colors">Insights</a>
-                    <i class="fa-solid fa-chevron-right text-xs"></i>
-                    <span class="text-white/80">Hotel WiFi Problems Guide</span>
+                    <i class="fa-solid fa-chevron-right text-xs opacity-50"></i>
+                    <span class="text-white/70">Hotel WiFi Problems Guide</span>
                 </nav>
-                <div class="max-w-3xl">
-                    <div class="flex items-center gap-3 mb-6">
-                        <span class="inline-block px-3 py-1 bg-[#10b981]/20 text-[#10b981] text-xs font-bold rounded-full uppercase tracking-widest">WiFi &amp; Networking</span>
-                        <span class="text-white/50 text-sm">9 min read</span>
-                        <span class="text-white/50 text-sm">•</span>
-                        <span class="text-white/50 text-sm">15 April 2026</span>
-                    </div>
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-6">Hotel WiFi Problems: Why Guests Complain and How to Fix It</h1>
-                    <p class="text-lg text-white/70 leading-relaxed">Slow speeds, dead zones, dropped connections — WiFi complaints consistently rank among the top negative reviews for hotels. Here's how to diagnose every common problem and fix it for good.</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Hero Image -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="h-72 lg:h-96 rounded-b-[2rem] overflow-hidden -mt-1 shadow-2xl">
-                <img src="/assets/images/2206124236.jpg" alt="Hotel IT professional managing network infrastructure" class="w-full h-full object-cover">
+                <div class="max-w-3xl">
+                    <!-- Category + meta row -->
+                    <div class="flex flex-wrap items-center gap-3 mb-6">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#10b981] text-white text-xs font-bold rounded-full uppercase tracking-widest">
+                            <i class="fa-solid fa-wifi text-xs"></i> WiFi &amp; Networking
+                        </span>
+                        <span class="flex items-center gap-1.5 text-white/60 text-sm">
+                            <i class="fa-regular fa-clock text-xs"></i> 9 min read
+                        </span>
+                        <span class="text-white/30 text-sm hidden sm:inline">•</span>
+                        <span class="flex items-center gap-1.5 text-white/60 text-sm">
+                            <i class="fa-regular fa-calendar text-xs"></i> 15 April 2026
+                        </span>
+                    </div>
+
+                    <!-- Title -->
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.25rem] font-black text-white leading-[1.1] tracking-tight mb-6">
+                        Hotel WiFi Problems:<br class="hidden sm:block"> Why Guests Complain<br class="hidden sm:block"> and How to Fix It
+                    </h1>
+
+                    <!-- Standfirst -->
+                    <p class="text-lg sm:text-xl text-white/75 leading-relaxed max-w-2xl mb-8">
+                        Slow speeds, dead zones, dropped connections — WiFi complaints consistently rank among the top negative reviews for hotels. Here's how to diagnose every common problem and fix it for good.
+                    </p>
+
+                    <!-- Author + share row -->
+                    <div class="flex items-center justify-between flex-wrap gap-4 pt-6 border-t border-white/15">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#2563eb] to-[#10b981] flex items-center justify-center text-white font-black text-sm flex-shrink-0">GG</div>
+                            <div>
+                                <p class="text-sm font-bold text-white">GGG Technologies</p>
+                                <p class="text-xs text-white/50">Hotel IT Specialists · London, UK</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-white/40 text-xs font-medium uppercase tracking-wider mr-1">Share</span>
+                            <a href="https://twitter.com/intent/tweet?url=https://gggtech.co.uk/insights/hotel-wifi-problems-guide" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white/70 hover:text-white transition-all" aria-label="Share on Twitter"><i class="fa-brands fa-x-twitter text-xs"></i></a>
+                            <a href="https://www.linkedin.com/shareArticle?url=https://gggtech.co.uk/insights/hotel-wifi-problems-guide" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white/70 hover:text-white transition-all" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

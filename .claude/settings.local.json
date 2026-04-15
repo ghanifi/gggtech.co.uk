@@ -18,7 +18,12 @@
       "Bash(ls -la /c/Users/Administrator/Desktop/GGGTECH-HTML/gggtech.co.uk-1/areas/*.html)",
       "Bash(head -10 echo \"---\" grep -n \"FAQ\\\\|CHALLENGE\\\\|Services for\\\\|FAQPage\\\\|fa-chevron-down\" /c/Users/Administrator/Desktop/GGGTECH-HTML/gggtech.co.uk-1/areas/nationwide.html)",
       "Bash(head -10 echo \"---\" grep -n \"FAQ\\\\|CHALLENGE\\\\|Services for\\\\|FAQPage\\\\|fa-chevron-down\" /c/Users/Administrator/Desktop/GGGTECH-HTML/gggtech.co.uk-1/areas/east-anglia.html)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(./node_modules/.bin/tailwindcss -i ./src/input.css -o ./assets/css/tailwind.css --minify)",
+      "Bash(ls:*)",
+      "Bash(node node_modules/tailwindcss/lib/cli.js -i ./src/input.css -o ./assets/css/tailwind.css --minify)"
     ]
   },
   "hooks": {

@@ -268,84 +268,174 @@
 
     <main class="pt-32 pb-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-16">
+
+            <!-- Hero -->
+            <div class="mb-12">
                 <h1 class="text-4xl lg:text-6xl font-black text-[#1a3a5c] mb-6">Insights & News</h1>
                 <p class="text-lg text-gray-600 max-w-2xl">Expert advice, industry news, and technology tips to help your hotel stay ahead of the curve.</p>
             </div>
 
+            <!-- Category Filters -->
+            <div class="flex flex-wrap gap-3 mb-14" id="category-filters">
+                <button onclick="filterArticles('all')" data-cat="all" class="filter-btn active px-5 py-2 rounded-full text-sm font-bold border-2 border-[#1a3a5c] bg-[#1a3a5c] text-white transition-all">All</button>
+                <button onclick="filterArticles('wifi')" data-cat="wifi" class="filter-btn px-5 py-2 rounded-full text-sm font-bold border-2 border-[#10b981] text-[#10b981] hover:bg-[#10b981] hover:text-white transition-all">WiFi &amp; Networking</button>
+                <button onclick="filterArticles('security')" data-cat="security" class="filter-btn px-5 py-2 rounded-full text-sm font-bold border-2 border-[#f59e0b] text-[#f59e0b] hover:bg-[#f59e0b] hover:text-white transition-all">Cybersecurity</button>
+                <button onclick="filterArticles('pms')" data-cat="pms" class="filter-btn px-5 py-2 rounded-full text-sm font-bold border-2 border-[#8b5cf6] text-[#8b5cf6] hover:bg-[#8b5cf6] hover:text-white transition-all">PMS &amp; Systems</button>
+                <button onclick="filterArticles('support')" data-cat="support" class="filter-btn px-5 py-2 rounded-full text-sm font-bold border-2 border-[#2563eb] text-[#2563eb] hover:bg-[#2563eb] hover:text-white transition-all">IT Support</button>
+            </div>
+
             <!-- Featured Post -->
-            <div class="mb-16 group cursor-pointer">
-                <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-xl grid lg:grid-cols-2">
-                    <div class="h-[400px] overflow-hidden">
-                        <img src="/assets/images/2206124236.jpg" alt="Featured insight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    </div>
-                    <div class="p-10 lg:p-16 flex flex-col justify-center">
-                        <span class="inline-block px-4 py-1 bg-blue-50 text-[#2563eb] text-xs font-bold rounded-full mb-6 w-fit uppercase tracking-widest">Featured Article</span>
-                        <h2 class="text-3xl lg:text-4xl font-black text-[#1a3a5c] mb-6 leading-tight group-hover:text-[#2563eb] transition-colors">The Future of Hotel Guest WiFi: What to Expect in 2026</h2>
-                        <p class="text-gray-500 text-lg mb-8">As guest expectations for high-speed connectivity continue to rise, we explore the emerging technologies that will define hotel WiFi in the coming years.</p>
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-full bg-gray-200"></div>
-                            <div>
-                                <p class="text-sm font-bold text-[#1a3a5c]">Michael Roberts</p>
-                                <p class="text-xs text-gray-400">April 4, 2026 • 8 min read</p>
+            <div class="mb-16 group" data-category="wifi" id="featured-article">
+                <a href="/insights/hotel-wifi-problems-guide" class="block">
+                    <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-xl grid lg:grid-cols-2">
+                        <div class="h-[400px] overflow-hidden">
+                            <img src="/assets/images/2206124236.jpg" alt="Hotel WiFi problems guide" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="p-10 lg:p-16 flex flex-col justify-center">
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="inline-block px-3 py-1 bg-[#10b981]/10 text-[#10b981] text-xs font-bold rounded-full uppercase tracking-widest">WiFi &amp; Networking</span>
+                                <span class="text-xs text-gray-400">9 min read</span>
+                            </div>
+                            <h2 class="text-3xl lg:text-4xl font-black text-[#1a3a5c] mb-6 leading-tight group-hover:text-[#2563eb] transition-colors">Hotel WiFi Problems: Why Guests Complain and How to Fix It</h2>
+                            <p class="text-gray-500 text-lg mb-8">Slow speeds, dead zones, dropped connections — hotel WiFi complaints are among the most common negative reviews online. Here's how to diagnose and solve every common problem.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#2563eb] to-[#10b981] flex items-center justify-center text-white font-bold text-sm">GG</div>
+                                    <div>
+                                        <p class="text-sm font-bold text-[#1a3a5c]">GGG Technologies</p>
+                                        <p class="text-xs text-gray-400">15 April 2026</p>
+                                    </div>
+                                </div>
+                                <span class="inline-flex items-center gap-2 text-[#2563eb] font-bold text-sm group-hover:gap-4 transition-all">Read Article <i class="fa-solid fa-arrow-right text-xs"></i></span>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <!-- Articles Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Article 1 -->
-                <article class="bg-white rounded-[2rem] overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all group">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10" id="articles-grid">
+
+                <!-- Article: Cybersecurity -->
+                <article class="bg-white rounded-[2rem] overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all group" data-category="security">
                     <div class="h-56 overflow-hidden">
-                        <img src="/assets/images/2162978963.jpg" alt="Cybersecurity" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="/assets/images/2162978963.jpg" alt="Hotel cybersecurity threats" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-8">
-                        <span class="text-[#10b981] text-xs font-bold uppercase tracking-widest">Cybersecurity</span>
-                        <h3 class="text-xl font-bold text-[#1a3a5c] mt-4 mb-4 group-hover:text-[#2563eb] transition-colors">5 Critical Security Threats Facing UK Hotels Today</h3>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-[#f59e0b] text-xs font-bold uppercase tracking-widest">Cybersecurity</span>
+                            <span class="text-xs text-gray-400">• 6 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#1a3a5c] mb-4 group-hover:text-[#2563eb] transition-colors">5 Critical Security Threats Facing UK Hotels Today</h3>
                         <p class="text-gray-500 text-sm leading-relaxed mb-6">Protect your property and guest data from these common but evolving digital threats.</p>
-                        <a href="#" class="text-[#1a3a5c] font-bold text-sm inline-flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-400">Coming soon</span>
+                            <span class="text-[#1a3a5c] font-bold text-sm inline-flex items-center gap-2 opacity-40">Read More <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                        </div>
                     </div>
                 </article>
 
-                <!-- Article 2 -->
-                <article class="bg-white rounded-[2rem] overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all group">
+                <!-- Article: PMS -->
+                <article class="bg-white rounded-[2rem] overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all group" data-category="pms">
                     <div class="h-56 overflow-hidden">
-                        <img src="/assets/images/2250496388.jpg" alt="Operations" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="/assets/images/2250496388.jpg" alt="Hotel PMS integration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-8">
-                        <span class="text-[#f59e0b] text-xs font-bold uppercase tracking-widest">Operations</span>
-                        <h3 class="text-xl font-bold text-[#1a3a5c] mt-4 mb-4 group-hover:text-[#2563eb] transition-colors">Streamlining Hotel Operations with PMS Integration</h3>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-[#8b5cf6] text-xs font-bold uppercase tracking-widest">PMS &amp; Systems</span>
+                            <span class="text-xs text-gray-400">• 7 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#1a3a5c] mb-4 group-hover:text-[#2563eb] transition-colors">Streamlining Hotel Operations with PMS Integration</h3>
                         <p class="text-gray-500 text-sm leading-relaxed mb-6">How connecting your property management system to your broader IT infrastructure can save time and money.</p>
-                        <a href="#" class="text-[#1a3a5c] font-bold text-sm inline-flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-400">Coming soon</span>
+                            <span class="text-[#1a3a5c] font-bold text-sm inline-flex items-center gap-2 opacity-40">Read More <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                        </div>
                     </div>
                 </article>
 
-                <!-- Article 3 -->
-                <article class="bg-white rounded-[2rem] overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all group">
+                <!-- Article: IT Support -->
+                <article class="bg-white rounded-[2rem] overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all group" data-category="support">
                     <div class="h-56 overflow-hidden">
-                        <img src="/assets/images/2248277514.jpg" alt="Guest Experience" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="/assets/images/2248277514.jpg" alt="Hotel IT support" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-8">
-                        <span class="text-[#8b5cf6] text-xs font-bold uppercase tracking-widest">Guest Experience</span>
-                        <h3 class="text-xl font-bold text-[#1a3a5c] mt-4 mb-4 group-hover:text-[#2563eb] transition-colors">The Impact of In-Room Smart Tech on Guest Satisfaction</h3>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-[#2563eb] text-xs font-bold uppercase tracking-widest">IT Support</span>
+                            <span class="text-xs text-gray-400">• 5 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#1a3a5c] mb-4 group-hover:text-[#2563eb] transition-colors">The Impact of In-Room Smart Tech on Guest Satisfaction</h3>
                         <p class="text-gray-500 text-sm leading-relaxed mb-6">From smart mirrors to voice control, we look at which technologies actually matter to your guests.</p>
-                        <a href="#" class="text-[#1a3a5c] font-bold text-sm inline-flex items-center gap-2 group-hover:gap-4 transition-all">Read More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-400">Coming soon</span>
+                            <span class="text-[#1a3a5c] font-bold text-sm inline-flex items-center gap-2 opacity-40">Read More <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                        </div>
                     </div>
                 </article>
             </div>
 
-            <!-- Pagination -->
-            <div class="mt-20 flex justify-center gap-4">
-                <button class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center bg-white hover:bg-gray-50 transition-colors"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="w-12 h-12 rounded-full bg-[#1a3a5c] text-white flex items-center justify-center font-bold">1</button>
-                <button class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center bg-white hover:bg-gray-50 transition-colors">2</button>
-                <button class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center bg-white hover:bg-gray-50 transition-colors">3</button>
-                <button class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center bg-white hover:bg-gray-50 transition-colors"><i class="fa-solid fa-chevron-right"></i></button>
+            <!-- No results message -->
+            <div id="no-results" class="hidden text-center py-20 text-gray-400">
+                <i class="fa-solid fa-newspaper text-5xl mb-4 opacity-30"></i>
+                <p class="text-lg font-medium">More articles in this category coming soon.</p>
             </div>
+
         </div>
     </main>
+
+    <script>
+        function filterArticles(cat) {
+            // Update button styles
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+                const c = btn.dataset.cat;
+                const colors = { wifi:'#10b981', security:'#f59e0b', pms:'#8b5cf6', support:'#2563eb', all:'#1a3a5c' };
+                if (c === 'all') {
+                    btn.className = 'filter-btn px-5 py-2 rounded-full text-sm font-bold border-2 border-[#1a3a5c] text-[#1a3a5c] hover:bg-[#1a3a5c] hover:text-white transition-all';
+                }
+            });
+            const activeBtn = document.querySelector(`[data-cat="${cat}"]`);
+            if (activeBtn) {
+                const activeColors = { wifi:'bg-[#10b981]', security:'bg-[#f59e0b]', pms:'bg-[#8b5cf6]', support:'bg-[#2563eb]', all:'bg-[#1a3a5c]' };
+                activeBtn.classList.add('text-white');
+                activeBtn.style.backgroundColor = { wifi:'#10b981', security:'#f59e0b', pms:'#8b5cf6', support:'#2563eb', all:'#1a3a5c' }[cat];
+                activeBtn.style.color = 'white';
+            }
+
+            const featured = document.getElementById('featured-article');
+            const cards = document.querySelectorAll('#articles-grid article');
+            let visibleCount = 0;
+
+            // Filter featured
+            if (cat === 'all' || featured.dataset.category === cat) {
+                featured.style.display = '';
+                visibleCount++;
+            } else {
+                featured.style.display = 'none';
+            }
+
+            // Filter cards
+            cards.forEach(card => {
+                if (cat === 'all' || card.dataset.category === cat) {
+                    card.style.display = '';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            document.getElementById('no-results').classList.toggle('hidden', visibleCount > 0);
+        }
+
+        document.querySelector('[data-landingsite-mobile-menu-toggle]')?.addEventListener('click', function() {
+            const menu = document.querySelector('[data-landingsite-mobile-menu]');
+            if (menu) {
+                menu.classList.toggle('hidden');
+                const expanded = menu.classList.contains('hidden') ? 'false' : 'true';
+                this.setAttribute('aria-expanded', expanded);
+            }
+        });
+    </script>
 
     <!-- Footer -->
     <footer class="bg-[#0d1b2a] text-white">
@@ -365,15 +455,6 @@
         <div class="border-t border-white/10"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4"><div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-white/50"><a href="#" class="hover:text-white transition-colors">Privacy Policy</a><span class="hidden sm:block">•</span><a href="#" class="hover:text-white transition-colors">Terms of Service</a><span class="hidden sm:block">•</span><a href="#" class="hover:text-white transition-colors">Cookie Policy</a></div></div></div>
     </footer>
 
-    <script>
-        document.querySelector('[data-landingsite-mobile-menu-toggle]')?.addEventListener('click', function() {
-            const menu = document.querySelector('[data-landingsite-mobile-menu]');
-            if (menu) {
-                menu.classList.toggle('hidden');
-                const expanded = menu.classList.contains('hidden') ? 'false' : 'true';
-                this.setAttribute('aria-expanded', expanded);
-            }
-        });
-    </script>
+
 </body>
 </html>

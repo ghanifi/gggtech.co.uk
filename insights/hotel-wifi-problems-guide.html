@@ -263,6 +263,7 @@
             <div class="lg:grid lg:grid-cols-[1fr_320px] lg:gap-16">
 
                 <!-- Main Content -->
+                <div>
                 <div class="prose max-w-none">
 
                     <p>Ask any hotel guest what frustrated them most during their stay and WiFi will frequently top the list — ahead of noise complaints, room service delays, and even uncomfortable beds. In an era where remote work is the norm and guests expect seamless streaming, a poor wireless connection isn't just an inconvenience. It directly impacts reviews, repeat bookings, and revenue.</p>
@@ -404,31 +405,32 @@
                         <li>Set up continuous network monitoring to catch problems before guests do</li>
                     </ul>
 
-                    <!-- CTA Box -->
-                    <div class="not-prose mt-10 rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
-                        <div class="bg-[#1a3a5c] px-8 py-6 flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-[#10b981] flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-wifi text-white text-lg"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-black text-white mb-0.5">Still experiencing WiFi problems?</h3>
-                                <p class="text-white/70 text-sm">Free on-site assessment — no obligation.</p>
-                            </div>
+                </div><!-- end .prose -->
+
+                <!-- CTA Box — outside .prose to avoid CSS override -->
+                <div class="mt-10 rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
+                    <div class="bg-[#1a3a5c] px-8 py-6 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-[#10b981] flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-wifi text-white text-lg"></i>
                         </div>
-                        <div class="bg-gray-50 px-8 py-6">
-                            <p class="text-gray-600 mb-6">Our engineers will survey your property, identify every problem, and give you a clear remediation plan — at no cost.</p>
-                            <div class="flex flex-col sm:flex-row gap-3">
-                                <a href="/book-a-visit" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#2563eb] text-white font-bold rounded-xl hover:bg-[#1a5bc7] transition-colors shadow-sm">
-                                    <i class="fa-solid fa-calendar-check"></i> Book Free Assessment
-                                </a>
-                                <a href="/services/guest-wifi" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-[#1a3a5c] font-bold rounded-xl hover:bg-gray-100 transition-colors border border-gray-200 shadow-sm">
-                                    <i class="fa-solid fa-wifi text-[#10b981]"></i> View WiFi Services
-                                </a>
-                            </div>
+                        <div>
+                            <p class="text-xl font-black text-white leading-tight mb-0.5" style="font-family:var(--font-family-heading)">Still experiencing WiFi problems?</p>
+                            <p class="text-white/70 text-sm">Free on-site assessment — no obligation.</p>
                         </div>
                     </div>
+                    <div class="bg-gray-50 px-8 py-6">
+                        <p class="text-gray-600 mb-6" style="font-family:var(--font-family-body)">Our engineers will survey your property, identify every problem, and give you a clear remediation plan — at no cost.</p>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="/book-a-visit" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#2563eb] text-white font-bold rounded-xl hover:bg-[#1a5bc7] transition-colors shadow-sm" style="font-family:var(--font-family-body)">
+                                <i class="fa-solid fa-calendar-check"></i> Book Free Assessment
+                            </a>
+                            <a href="/services/guest-wifi" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-[#1a3a5c] font-bold rounded-xl hover:bg-gray-100 transition-colors border border-gray-200 shadow-sm" style="font-family:var(--font-family-body)">
+                                <i class="fa-solid fa-wifi" style="color:#10b981"></i> View WiFi Services
+                            </a>
+                        </div>
                     </div>
                 </div>
+                </div><!-- end first column wrapper -->
 
                 <!-- Sidebar TOC -->
                 <aside class="toc-sidebar">

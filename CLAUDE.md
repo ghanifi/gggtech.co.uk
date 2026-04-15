@@ -92,7 +92,7 @@ All blog articles live in `insights/` and **must follow the design of `insights/
 <link rel="canonical" href="https://gggtech.co.uk/insights/[slug]">
 <!-- Article JSON-LD schema (not LocalBusiness) -->
 <script type="application/ld+json">
-{ "@type": "Article", "headline": "...", "datePublished": "YYYY-MM-DD", ... }
+{ "@type": "Article", "headline": "...", "datePublished": "YYYY-MM-DDT00:00:00+00:00", "dateModified": "YYYY-MM-DDT00:00:00+00:00", ... }
 </script>
 <!-- BreadcrumbList JSON-LD -->
 ```

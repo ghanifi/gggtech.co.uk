@@ -408,29 +408,24 @@
                 .map(cb => cb.closest('label')?.querySelector('span')?.textContent.trim())
                 .filter(Boolean).join(', ') || '—';
 
+            // Flat fields for the n8n notifications webhook, which formats them
+            // for Slack and the notifications dashboard
             const payload = {
-                blocks: [
-                    { type: 'header', text: { type: 'plain_text', text: '💼 New Quote Request', emoji: true } },
-                    {
-                        type: 'section',
-                        fields: [
-                            { type: 'mrkdwn', text: `*Name:*\n${name}` },
-                            { type: 'mrkdwn', text: `*Email:*\n${email}` },
-                            { type: 'mrkdwn', text: `*Hotel:*\n${hotel}` },
-                            { type: 'mrkdwn', text: `*Rooms:*\n${rooms || '—'}` }
-                        ]
-                    },
-                    { type: 'section', text: { type: 'mrkdwn', text: `*Services Required:*\n${checked}` } },
-                    { type: 'section', text: { type: 'mrkdwn', text: `*Project Details:*\n${details || '—'}` } },
-                    { type: 'context', elements: [{ type: 'mrkdwn', text: `Sent from gggtech.co.uk/get-a-quote — ${new Date().toLocaleString('en-GB')}` }] }
-                ]
+                form: 'Quote request',
+                Name: name,
+                Email: email,
+                Hotel: hotel,
+                Rooms: rooms || '—',
+                'Services required': checked,
+                'Project details': details || '—',
+                page: window.location.pathname
             };
 
             btn.disabled = true;
             btn.textContent = 'Sending…';
             try {
-                const _w = ['https://hooks.slack.com','services','TEZNE83FU','B0AMYENET0C','FsdjIZld2qoqzD0eGwzhLWqW'].join('/');
-                await fetch(_w, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+                const res = await fetch('https://n8n.londonos.uk/webhook/3c354327-6275-4e23-8067-01210d88de81', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+                if (!res.ok) throw new Error('HTTP ' + res.status);
                 btn.textContent = '✓ Quote Request Sent!';
                 btn.style.background = '#10b981';
                 this.reset();

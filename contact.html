@@ -463,6 +463,8 @@
             }
         });
 
+        const NOTIFY_WEBHOOK_URL = 'https://n8n.londonos.uk/webhook/3c354327-6275-4e23-8067-01210d88de81';
+
         document.getElementById('contact-form').addEventListener('submit', async function(e) {
             e.preventDefault();
             const btn = this.querySelector('button[type="submit"]');
@@ -482,43 +484,28 @@
                 other: 'Other Inquiry'
             };
 
+            // Flat fields for the n8n notifications webhook, which formats them
+            // for Slack and the notifications dashboard
             const payload = {
-                blocks: [
-                    {
-                        type: 'header',
-                        text: { type: 'plain_text', text: '📬 New Contact Form Submission', emoji: true }
-                    },
-                    {
-                        type: 'section',
-                        fields: [
-                            { type: 'mrkdwn', text: `*Name:*\n${firstName} ${lastName}` },
-                            { type: 'mrkdwn', text: `*Email:*\n${email}` },
-                            { type: 'mrkdwn', text: `*Phone:*\n${phone || '—'}` },
-                            { type: 'mrkdwn', text: `*Interested In:*\n${serviceLabels[service] || service}` }
-                        ]
-                    },
-                    {
-                        type: 'section',
-                        text: { type: 'mrkdwn', text: `*Message:*\n${message}` }
-                    },
-                    {
-                        type: 'context',
-                        elements: [{ type: 'mrkdwn', text: `Sent from gggtech.co.uk/contact — ${new Date().toLocaleString('en-GB')}` }]
-                    }
-                ]
+                form: 'Contact form',
+                Name: `${firstName} ${lastName}`.trim(),
+                Email: email,
+                Phone: phone || '—',
+                'Interested in': serviceLabels[service] || service,
+                Message: message,
+                page: window.location.pathname
             };
 
             btn.disabled = true;
             btn.textContent = 'Sending…';
 
             try {
-                const _w = ['https://hooks.slack.com','services','TEZNE83FU','B0AMYENET0C','FsdjIZld2qoqzD0eGwzhLWqW'].join('/');
-                await fetch(_w, {
+                const res = await fetch(NOTIFY_WEBHOOK_URL, {
                     method: 'POST',
-                    mode: 'no-cors',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(payload)
                 });
+                if (!res.ok) throw new Error('HTTP ' + res.status);
                 btn.textContent = '✓ Message Sent!';
                 btn.classList.remove('from-[#2563eb]', 'to-[#1a5bc7]');
                 btn.classList.add('from-[#10b981]', 'to-[#059669]');

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHSTKJKDQ9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XHSTKJKDQ9');
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/fav.ico">
+    <title>Hotel PMS Downtime Contingency Plan Guide | GGG Technologies</title>
+    <meta name="description" content="When your hotel PMS goes down, check-in stops. Learn the causes and build a tested downtime plan: offline reports, key-card fallback, failover and recovery.">
+    <meta name="keywords" content="hotel pms downtime, pms outage plan, hotel contingency plan, property management system failure, hotel business continuity, pms backup procedures">
+    <meta name="author" content="GGG Technologies">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Hotel PMS Downtime: How to Build a Contingency Plan">
+    <meta property="og:description" content="When your hotel PMS goes down, check-in stops. Learn the causes and build a tested downtime plan: offline reports, key-card fallback, failover and recovery.">
+    <meta property="og:image" content="https://gggtech.co.uk/assets/images/2250496388.jpg">
+    <meta property="og:url" content="https://gggtech.co.uk/insights/hotel-pms-downtime-plan">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:published_time" content="2026-11-01T00:00:00+00:00">
+    <meta property="article:section" content="PMS &amp; Systems">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hotel PMS Downtime: How to Build a Contingency Plan">
+    <meta name="twitter:description" content="When your hotel PMS goes down, check-in stops. Learn the causes and build a tested downtime plan: offline reports, key-card fallback, failover and recovery.">
+    <meta name="twitter:image" content="https://gggtech.co.uk/assets/images/2250496388.jpg">
+    <link rel="canonical" href="https://gggtech.co.uk/insights/hotel-pms-downtime-plan">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Hotel PMS Downtime: How to Build a Contingency Plan",
+  "description": "When your hotel PMS goes down, check-in stops. Learn the causes and build a tested downtime plan: offline reports, key-card fallback, failover and recovery.",
+  "image": "https://gggtech.co.uk/assets/images/2250496388.jpg",
+  "datePublished": "2026-11-01T00:00:00+00:00",
+  "dateModified": "2026-11-01T00:00:00+00:00",
+  "author": {
+    "@type": "Organization",
+    "name": "GGG Technologies Team",
+    "url": "https://gggtech.co.uk"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GGG Technologies",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://gggtech.co.uk/assets/images/fav.ico"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://gggtech.co.uk/insights/hotel-pms-downtime-plan"
+  },
+  "articleSection": "PMS & Systems",
+  "inLanguage": "en-GB"
+}
+    </script>
+    <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gggtech.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Insights", "item": "https://gggtech.co.uk/insights"}, {"@type": "ListItem", "position": 3, "name": "Hotel PMS Downtime Plan", "item": "https://gggtech.co.uk/insights/hotel-pms-downtime-plan"}]}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does a cloud PMS remove the need for a downtime plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A cloud PMS removes the need to maintain your own server, but it depends completely on your internet connection and the vendor's platform. You still need offline reports, a backup internet connection and manual procedures."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should offline reports be printed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At least once per shift, and always before the night shift starts, when support is thinnest. Many hotels also export copies automatically to an encrypted local device so they are available even if printers are down."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can we issue key cards if the PMS is down?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In many cases, yes. Most lock systems can encode keys directly from their own software when the PMS interface is unavailable. Check how your system works, make sure the encoder is on a UPS, and train duty managers on the manual process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should we take payments during PMS downtime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use your payment terminals directly and record each transaction on a manual folio so it can be posted to the PMS later. Never write card numbers down. Make sure your terminals can operate independently of the PMS, ideally with their own backup connectivity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should we test the plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Review the plan and checklist quarterly and run at least one drill per year, plus a refresher whenever you change PMS, lock system, internet provider or key staff."
+      }
+    }
+  ]
+}
+    </script>
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/fonts.css" rel="stylesheet">
+    <script src="/assets/fontawesome/fontawesome.js" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --accent-color: #2563eb;
+            --accent2-color: #10b981;
+            --accent3-color: #f59e0b;
+            --accent4-color: #8b5cf6;
+            --primary-color: #1a3a5c;
+            --dark-background-color: #0d1b2a;
+            --font-family-body: 'Inter', sans-serif;
+            --font-family-heading: 'Outfit', sans-serif;
+        }
+        body { font-family: var(--font-family-body); }
+        h1, h2, h3, h4, h5, h6 { font-family: var(--font-family-heading); }
+        .prose h2 { font-family: var(--font-family-heading); font-size: 1.6rem; font-weight: 800; color: #1a3a5c; margin-top: 2.5rem; margin-bottom: 1rem; }
+        .prose h3 { font-family: var(--font-family-heading); font-size: 1.2rem; font-weight: 700; color: #1a3a5c; margin-top: 1.75rem; margin-bottom: 0.75rem; }
+        .prose p { color: #374151; line-height: 1.8; margin-bottom: 1.25rem; }
+        .prose ul { list-style: none; padding: 0; margin-bottom: 1.25rem; }
+        .prose ul li { color: #374151; line-height: 1.8; padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
+        .prose ul li::before { content: ''; position: absolute; left: 0; top: 0.65em; width: 6px; height: 6px; background: #2563eb; border-radius: 50%; }
+        .prose ol { padding-left: 1.5rem; margin-bottom: 1.25rem; list-style: decimal; }
+        .prose ol li { color: #374151; line-height: 1.8; margin-bottom: 0.5rem; }
+        .prose strong { color: #1a3a5c; font-weight: 700; }
+        .prose a { color: #2563eb; text-decoration: underline; }
+        .prose .table-wrap { overflow-x: auto; margin: 1.5rem 0; border: 1px solid #e5e7eb; border-radius: 1rem; background: #fff; }
+        .prose table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+        .prose th { background: #1a3a5c; color: #fff; text-align: left; padding: 0.75rem 1rem; font-family: var(--font-family-heading); font-weight: 700; }
+        .prose td { color: #374151; padding: 0.75rem 1rem; border-top: 1px solid #e5e7eb; vertical-align: top; line-height: 1.6; }
+        .prose tbody tr:nth-child(even) td { background: #f9fafb; }
+        .toc-link { transition: color 0.2s; }
+        .toc-link:hover { color: #2563eb; }
+        .toc-link.active { color: #2563eb; font-weight: 600; }
+        @media (max-width: 1024px) { .toc-sidebar { display: none; } }
+    </style>
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+</head>
+<body class="bg-[#f8fafc]">
+
+    <!-- Header -->
+    <header id="global-header">
+        <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0f172a]/95 backdrop-blur-md border-b border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <a href="/" class="flex items-center gap-4 group">
+                        <div class="sm:block">
+                            <div class="text-white font-bold text-xl tracking-tight">GGG Technologies</div>
+                            <div class="text-cyan-400 text-xs font-medium tracking-wide">Hotel IT Solutions</div>
+                        </div>
+                    </a>
+                    <div class="hidden lg:flex items-center gap-1">
+                        <a href="/" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">Home</a>
+                        <div class="relative group/menu">
+                            <button class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10 flex items-center gap-1">
+                                Services <i class="fa-solid fa-chevron-down text-xs transition-transform group-hover/menu:rotate-180" aria-hidden="true"></i>
+                            </button>
+                            <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-300">
+                                <div class="bg-white rounded-2xl shadow-2xl p-8 w-[700px] grid grid-cols-4 gap-8">
+                                    <div>
+                                        <div class="flex items-center gap-3 mb-4"><div class="w-14 h-10 bg-[#2563eb]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-headset text-[#2563eb]" aria-hidden="true"></i></div><span class="font-bold text-[#1a3a5c]">IT Support</span></div>
+                                        <ul class="space-y-3">
+                                            <li><a href="/services/it-support-maintenance" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">IT Support &amp; Maintenance</a></li>
+                                            <li><a href="/services/24-7-helpdesk" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">24/7 Helpdesk</a></li>
+                                            <li><a href="/services/on-site-support" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">On-Site Support</a></li>
+                                            <li><a href="/services/remote-support" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Remote Support</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-[#10b981]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-wifi text-[#10b981]" aria-hidden="true"></i></div><span class="font-bold text-[#1a3a5c]">Networks</span></div>
+                                        <ul class="space-y-3">
+                                            <li><a href="/services/network-wifi-solutions" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Network &amp; WiFi</a></li>
+                                            <li><a href="/services/guest-wifi" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Guest WiFi</a></li>
+                                            <li><a href="/services/cabling-infrastructure" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Cabling Infrastructure</a></li>
+                                            <li><a href="/services/firewall-security" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Firewall &amp; Security</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-[#f59e0b]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-shield-halved text-[#f59e0b]" aria-hidden="true"></i></div><span class="font-bold text-[#1a3a5c]">Security</span></div>
+                                        <ul class="space-y-3">
+                                            <li><a href="/services/cyber-security" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Cyber Security</a></li>
+                                            <li><a href="/services/cctv-security" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">CCTV &amp; Surveillance</a></li>
+                                            <li><a href="/services/access-control" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Access Control</a></li>
+                                            <li><a href="/services/pci-compliance" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">PCI DSS Compliance</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-[#8b5cf6]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-hotel text-[#8b5cf6]" aria-hidden="true"></i></div><span class="font-bold text-[#1a3a5c]">Hotel Systems</span></div>
+                                        <ul class="space-y-3">
+                                            <li><a href="/services/pms-integration" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">PMS Integration</a></li>
+                                            <li><a href="/services/voice-solutions" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Voice Solutions</a></li>
+                                            <li><a href="/services/digital-signage" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Digital Signage</a></li>
+                                            <li><a href="/services/smart-room" class="text-gray-600 hover:text-[#2563eb] transition-colors text-sm">Smart Room Tech</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative group/menu2">
+                            <button class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10 flex items-center gap-1">
+                                Areas <i class="fa-solid fa-chevron-down text-xs transition-transform group-hover/menu2:rotate-180" aria-hidden="true"></i>
+                            </button>
+                            <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover/menu2:opacity-100 group-hover/menu2:visible transition-all duration-300">
+                                <div class="bg-white rounded-2xl shadow-2xl p-8 w-[800px]">
+                                    <div class="flex items-center gap-3 mb-6"><div class="w-10 h-10 bg-[#2563eb]/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-map-location-dot text-[#2563eb]" aria-hidden="true"></i></div><span class="font-bold text-[#1a3a5c]">Coverage Areas</span></div>
+                                    <div class="grid grid-cols-5 gap-1">
+                                        <a href="/areas/london" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all"><i class="fa-solid fa-city mb-2" style="color:#2563eb" aria-hidden="true"></i><div class="font-semibold text-[#1a3a5c] text-sm">London</div><div class="text-xs text-gray-400">Greater London</div></a>
+                                        <a href="/areas/central-london" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all"><i class="fa-solid fa-building-columns mb-2" style="color:#1d4ed8" aria-hidden="true"></i><div class="font-semibold text-[#1a3a5c] text-sm">Central London</div><div class="text-xs text-gray-400">West End &amp; City</div></a>
+                                        <a href="/areas/mayfair" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all"><i class="fa-solid fa-gem mb-2" style="color:#8b5cf6" aria-hidden="true"></i><div class="font-semibold text-[#1a3a5c] text-sm">Mayfair</div><div class="text-xs text-gray-400">Luxury Hotels</div></a>
+                                        <a href="/areas/kensington" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all"><i class="fa-solid fa-landmark mb-2" style="color:#0ea5e9" aria-hidden="true"></i><div class="font-semibold text-[#1a3a5c] text-sm">Kensington</div><div class="text-xs text-gray-400">Museums &amp; Hotels</div></a>
+                                        <a href="/areas/chelsea" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all"><i class="fa-solid fa-hotel mb-2" style="color:#ec4899" aria-hidden="true"></i><div class="font-semibold text-[#1a3a5c] text-sm">Chelsea</div><div class="text-xs text-gray-400">Boutique Hotels</div></a>
+                                        <a href="/areas/canary-wharf" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all"><i class="fa-solid fa-building mb-2" style="color:#06b6d4" aria-hidden="true"></i><div class="font-semibold text-[#1a3a5c] text-sm">Canary Wharf</div><div class="text-xs text-gray-400">Financial District</div></a>
+                                        <a href="/areas/westminster" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all"><i class="fa-solid fa-landmark-dome mb-2" style="color:#3b82f6" aria-hidden="true"></i><div class="font-semibold text-[#1a3a5c] text-sm">Westminster</div><div class="text-xs text-gray-400">Government District</div></a>
+                                        <a href="/areas/soho" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all"><i class="fa-solid fa-music mb-2" style="color:#f59e0b" aria-hidden="true"></i><div class="font-semibold text-[#1a3a5c] text-sm">Soho</div><div class="text-xs text-gray-400">Entertainment Hub</div></a>
+                                        <a href="/areas/shoreditch" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all"><i class="fa-solid fa-microchip mb-2" style="color:#14b8a6" aria-hidden="true"></i><div class="font-semibold text-[#1a3a5c] text-sm">Shoreditch</div><div class="text-xs text-gray-400">Tech &amp; Lifestyle</div></a>
+                                        <a href="/areas/south-east" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all"><i class="fa-solid fa-map mb-2" style="color:#10b981" aria-hidden="true"></i><div class="font-semibold text-[#1a3a5c] text-sm">South East</div><div class="text-xs text-gray-400">Kent, Sussex, Surrey</div></a>
+                                        <a href="/areas/midlands" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all"><i class="fa-solid fa-industry mb-2" style="color:#8b5cf6" aria-hidden="true"></i><div class="font-semibold text-[#1a3a5c] text-sm">Midlands</div><div class="text-xs text-gray-400">Birmingham &amp; Beyond</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/solutions" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">Solutions</a>
+                        <a href="/industries" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">Industries</a>
+                        <a href="/insights" class="px-4 py-2 text-cyan-400 font-medium transition-colors rounded-lg bg-white/10">Insights</a>
+                        <a href="/about" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">About</a>
+                        <a href="/contact" class="px-4 py-2 text-white hover:text-cyan-400 font-medium transition-colors rounded-lg hover:bg-white/10">Contact</a>
+                    </div>
+                    <div class="hidden lg:block">
+                        <a href="/book-a-visit" class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#2563eb] to-[#1a5bc7] text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-[#2563eb]/30 transition-all duration-300">
+                            Get Free Assessment <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <button data-landingsite-mobile-menu-toggle="" class="lg:hidden p-2 text-white" aria-label="Toggle menu" aria-expanded="false">
+                        <i class="fa-solid fa-bars text-2xl" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div data-landingsite-mobile-menu="" class="lg:hidden bg-[#0d2438] border-t border-white/10 hidden">
+                <div class="px-4 py-6 space-y-2">
+                    <a href="/" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Home</a>
+                    <a href="/services" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Services</a>
+                    <a href="/areas" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Areas We Cover</a>
+                    <a href="/solutions" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Solutions</a>
+                    <a href="/industries" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Industries</a>
+                    <a href="/insights" class="block text-[#2563eb] font-medium py-3 px-4 rounded-lg bg-white/5">Insights</a>
+                    <a href="/about" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">About</a>
+                    <a href="/contact" class="block text-white hover:text-[#2563eb] font-medium py-3 px-4 rounded-lg hover:bg-white/5">Contact</a>
+                    <a href="/book-a-visit" class="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-[#2563eb] to-[#10b981] text-white font-semibold rounded-lg mt-4 w-full">Get Free Assessment</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+
+        <!-- Article Hero — full bleed image with overlay -->
+        <div class="relative min-h-[580px] lg:min-h-[640px] flex items-end overflow-hidden">
+            <!-- Background image -->
+            <img src="/assets/images/2175440788.jpg" alt="Hotel duty manager using a tablet in the hotel lobby" class="absolute inset-0 w-full h-full object-cover object-center">
+            <!-- Gradient overlay: dark at bottom, semi-dark at top -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/75 to-[#0f172a]/40"></div>
+            <!-- Subtle grid pattern overlay -->
+            <div class="absolute inset-0 opacity-10" style="background-image: url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\");"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-14 pt-32">
+                <!-- Breadcrumb -->
+                <nav class="flex items-center gap-2 text-sm text-white/50 mb-8" aria-label="Breadcrumb">
+                    <a href="/" class="hover:text-white transition-colors">Home</a>
+                    <i class="fa-solid fa-chevron-right text-xs opacity-50"></i>
+                    <a href="/insights" class="hover:text-white transition-colors">Insights</a>
+                    <i class="fa-solid fa-chevron-right text-xs opacity-50"></i>
+                    <span class="text-white/70">Hotel PMS Downtime Plan</span>
+                </nav>
+
+                <div class="max-w-3xl">
+                    <!-- Category + meta row -->
+                    <div class="flex flex-wrap items-center gap-3 mb-6">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#8b5cf6] text-white text-xs font-bold rounded-full uppercase tracking-widest">
+                            <i class="fa-solid fa-hotel text-xs"></i> PMS &amp; Systems
+                        </span>
+                        <span class="flex items-center gap-1.5 text-white/60 text-sm">
+                            <i class="fa-regular fa-clock text-xs"></i> 10 min read
+                        </span>
+                        <span class="text-white/30 text-sm hidden sm:inline">•</span>
+                        <span class="flex items-center gap-1.5 text-white/60 text-sm">
+                            <i class="fa-regular fa-calendar text-xs"></i> 1 November 2026
+                        </span>
+                    </div>
+
+                    <!-- Title -->
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.25rem] font-black text-white leading-[1.1] tracking-tight mb-6">
+                        Hotel PMS Downtime:<br class="hidden sm:block"> How to Build a<br class="hidden sm:block"> Contingency Plan
+                    </h1>
+
+                    <!-- Standfirst -->
+                    <p class="text-lg sm:text-xl text-white/75 leading-relaxed max-w-2xl mb-8">
+                        When the property management system goes down, the front desk stops. A tested downtime plan keeps guests checking in, keys working and revenue recorded until it comes back — here is how to build one.
+                    </p>
+
+                    <!-- Author + share row -->
+                    <div class="flex items-center justify-between flex-wrap gap-4 pt-6 border-t border-white/15">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#2563eb] to-[#10b981] flex items-center justify-center text-white font-black text-sm flex-shrink-0">GG</div>
+                            <div>
+                                <p class="text-sm font-bold text-white">GGG Technologies Team</p>
+                                <p class="text-xs text-white/50">Hotel IT Specialists · London, UK</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-white/40 text-xs font-medium uppercase tracking-wider mr-1">Share</span>
+                            <a href="https://twitter.com/intent/tweet?url=https://gggtech.co.uk/insights/hotel-pms-downtime-plan" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white/70 hover:text-white transition-all" aria-label="Share on Twitter"><i class="fa-brands fa-x-twitter text-xs"></i></a>
+                            <a href="https://www.linkedin.com/shareArticle?url=https://gggtech.co.uk/insights/hotel-pms-downtime-plan" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white/70 hover:text-white transition-all" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Article Body -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="lg:grid lg:grid-cols-[1fr_320px] lg:gap-16">
+
+                <!-- Main Content -->
+                <div>
+                <div class="prose max-w-none">
+
+                    <p>The property management system is the centre of a hotel's operation. It knows who is in which room, who is arriving, who owes what, which rooms are clean and which key cards should open which doors. When it becomes unavailable — even for an hour — reception staff suddenly have no answers to the most basic questions.</p>
+
+                    <p>Every PMS will go down at some point. Whether you run an on-premise system or a cloud platform such as Oracle OPERA Cloud, Mews or Protel, the question is not <em>if</em> but <em>how well your team copes when it happens</em>. This guide walks through the common causes of PMS downtime and gives you a step-by-step plan to keep the hotel running until normal service returns.</p>
+
+                    <h2 id="causes">What Causes PMS Downtime?</h2>
+
+                    <p>"The PMS is down" can mean very different things. Diagnosing which one you are facing determines what you do next.</p>
+
+                    <h3 id="internet-outage">1. Internet outage</h3>
+                    <p>For a cloud PMS, losing the hotel's internet connection is effectively the same as losing the PMS. Leased line faults, roadworks cutting cables, and router or firewall failures are all common culprits. If you have only one connection, you have a single point of failure.</p>
+
+                    <h3 id="vendor-outage">2. Cloud PMS vendor outage</h3>
+                    <p>Occasionally the problem is at the vendor's end — a platform incident, a failed update or a problem with their hosting provider. You cannot fix it yourself, so your plan needs to cover operating without the system and knowing who to contact for status updates.</p>
+
+                    <h3 id="interface-failures">3. Interface failures</h3>
+                    <p>Often the PMS itself is fine but an <strong>interface</strong> has failed: the link to the key-card encoder, the POS, the payment gateway, the call accounting system or the channel manager. The symptoms are partial — rooms can be checked in but keys will not encode, or restaurant bills do not post to rooms — and they are easy to misdiagnose.</p>
+
+                    <h3 id="power">4. Power failure</h3>
+                    <p>A power cut takes out on-premise servers, network switches, WiFi and front desk PCs at the same time. Without uninterruptible power supplies (UPS), even a brief interruption can corrupt databases or leave equipment needing a manual restart.</p>
+
+                    <h3 id="ransomware">5. Ransomware and cyber attacks</h3>
+                    <p>A ransomware incident can make the PMS and every connected system unusable for days, not hours. It is the scenario where a downtime plan matters most — and where good, isolated backups make the difference between a bad week and a disaster. We cover the wider threat picture in our guide to <a href="/insights/hotel-cybersecurity-threats">cybersecurity threats facing UK hotels</a>.</p>
+
+                    <h2 id="impact">The Impact on Check-in and Checkout</h2>
+
+                    <p>Without a plan, PMS downtime quickly turns into a queue at reception. Staff cannot see which rooms are clean and vacant, cannot encode keys, cannot take payment against a folio and cannot produce bills. Departing guests may leave without settling, arriving guests may be given rooms that are already occupied, and charges from the bar and restaurant can be lost entirely. There is also a safety dimension: in an emergency, you need to know who is in the building.</p>
+
+                    <h2 id="downtime-plan">Your Step-by-Step PMS Downtime Plan</h2>
+
+                    <h3 id="offline-reports">Step 1: Produce offline reports every shift</h3>
+                    <p>The foundation of any downtime plan is information you already hold before the system fails. Schedule your PMS to print or export a set of reports at every shift change (or at least at the start of the night shift), and save copies to an encrypted local device as well as on paper:</p>
+                    <ul>
+                        <li>In-house guest list by room, with departure dates</li>
+                        <li>Today's and tomorrow's arrivals, including special requests and guarantee status</li>
+                        <li>Departures with current folio balances</li>
+                        <li>Room status / housekeeping report</li>
+                        <li>Guest ledger and deposits held</li>
+                        <li>Group and event lists for the next 48 hours</li>
+                        <li>An emergency evacuation (fire roll-call) list</li>
+                    </ul>
+                    <p>These reports contain personal data, so store them securely and destroy old copies under your data protection policy.</p>
+
+                    <h3 id="manual-packs">Step 2: Prepare manual check-in packs</h3>
+                    <p>Keep a sealed downtime box at reception containing pre-printed registration cards, manual folio and charge sheets, a room-move log, a key-issue log, pens and a printed copy of the plan itself. Staff should never need to improvise forms while guests are waiting.</p>
+                    <p>Do <strong>not</strong> include forms that ask for card numbers. Take payments on payment terminals instead, so card details are never written down — see our <a href="/insights/pci-dss-4-hotels-guide">PCI DSS v4.0 guide for hotels</a> for why this matters.</p>
+
+                    <h3 id="key-cards">Step 3: Plan your key-card encoder fallback</h3>
+                    <p>Most hotel lock systems have their own management software alongside the PMS interface, and many can encode keys directly from that software when the PMS link is down. Find out now how your system behaves, make sure duty managers have their own credentials, and print short instructions for cutting a guest key, a duplicate key and a master key manually. If the lock server itself is on-premise, put it on a UPS.</p>
+
+                    <h3 id="failover-internet">Step 4: Add 4G/5G failover internet</h3>
+                    <p>For a cloud PMS, a backup internet connection is the most valuable investment you can make. A firewall or router with automatic failover to a 4G/5G connection (or a second fixed line from a different provider) keeps reception online when the primary line fails. Prioritise the failover link for operational traffic — PMS, payments, key system — rather than guest WiFi, which can quickly consume a mobile connection. Our <a href="/services/network-wifi-solutions">network and WiFi solutions</a> include designing this kind of resilient connectivity.</p>
+
+                    <h3 id="ups">Step 5: Protect key equipment with UPS</h3>
+                    <p>Put a UPS on the core network switches, firewall, broadband/failover routers, any on-premise servers, the key-card encoder and at least one front desk PC and printer. The aim is to ride through short power cuts and allow a controlled shutdown in longer ones. UPS batteries wear out, so test and replace them on a schedule.</p>
+
+                    <h3 id="roles">Step 6: Define roles and escalation</h3>
+                    <p>Decide in advance who declares "downtime mode", who calls IT support, who calls the PMS vendor, who manages the front desk queue and who updates the general manager. Write the escalation path down with names and phone numbers, and include out-of-hours contacts — outages rarely happen at 10am on a Tuesday.</p>
+
+                    <h3 id="vendor-contacts">Step 7: Keep vendor contacts and account details to hand</h3>
+                    <p>Keep a printed contact sheet with support numbers, your customer or site IDs, and contract references for your PMS vendor, internet provider, lock system supplier, payment provider, POS supplier and IT support partner. Note where each vendor publishes status updates.</p>
+
+                    <h3 id="guest-communication">Step 8: Script your guest communication</h3>
+                    <p>Give front desk staff a short, calm script so they are not improvising under pressure. For example:</p>
+                    <div class="bg-[#f0f9ff] border border-[#2563eb]/20 rounded-2xl p-6 my-6">
+                        <p class="mb-0"><em>"Thank you for your patience. Our booking system is temporarily unavailable, so we're checking guests in manually today. It will only take a few minutes, your reservation is safe, and we'll send your final bill as soon as the system is back."</em></p>
+                    </div>
+                    <p>Have a version ready for departing guests explaining how their bill will be finalised, and decide in advance what goodwill gesture, if any, managers can offer during long outages.</p>
+
+                    <h3 id="recovery">Step 9: Recover and reconcile</h3>
+                    <p>The outage is not over when the PMS comes back. Before returning to normal operation:</p>
+                    <ul>
+                        <li>Enter every manual check-in, checkout and room move into the PMS</li>
+                        <li>Post all manual charges from the bar, restaurant and other outlets</li>
+                        <li>Reconcile payment terminal totals against posted payments</li>
+                        <li>Check room status with housekeeping so no room is double-sold</li>
+                        <li>Confirm interfaces (keys, POS, payments, channel manager) are working and that availability has resynchronised with OTAs</li>
+                        <li>Securely file or destroy paper records and hold a short debrief</li>
+                    </ul>
+
+                    <h2 id="checklist">PMS Downtime Readiness Checklist</h2>
+
+                    <p>Print this table and keep it with your downtime box. Review it at least quarterly.</p>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr><th>Item</th><th>What good looks like</th><th>Owner</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><strong>Shift reports</strong></td><td>In-house, arrivals, departures, room status and evacuation lists printed and exported every shift</td><td>Front office</td></tr>
+                                <tr><td><strong>Downtime box</strong></td><td>Registration cards, folio/charge sheets, key log and printed plan, checked monthly</td><td>Front office manager</td></tr>
+                                <tr><td><strong>Key encoder fallback</strong></td><td>Manual encoding tested; duty managers have their own credentials</td><td>Duty managers</td></tr>
+                                <tr><td><strong>Failover internet</strong></td><td>Automatic 4G/5G or second-line failover, tested and prioritised for operations</td><td>IT partner</td></tr>
+                                <tr><td><strong>UPS</strong></td><td>Core network, servers, encoder and one front desk PC protected; batteries tested</td><td>IT partner</td></tr>
+                                <tr><td><strong>Backups</strong></td><td>On-premise systems backed up off-site and offline; restore tested</td><td>IT partner</td></tr>
+                                <tr><td><strong>Payments</strong></td><td>Payment terminals able to work independently of the PMS</td><td>Finance</td></tr>
+                                <tr><td><strong>Contact sheet</strong></td><td>Vendor numbers, account IDs and escalation path printed and current</td><td>General manager</td></tr>
+                                <tr><td><strong>Guest script</strong></td><td>Arrival and departure scripts printed at reception</td><td>Front office manager</td></tr>
+                                <tr><td><strong>Reconciliation process</strong></td><td>Written steps for re-entering data and reconciling payments</td><td>Finance / front office</td></tr>
+                                <tr><td><strong>Drills</strong></td><td>Tabletop or live drill completed and lessons recorded</td><td>General manager</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2 id="testing">Testing Your Plan with Drills</h2>
+
+                    <p>A plan nobody has rehearsed will fail on the night. Build testing into the calendar:</p>
+                    <ul>
+                        <li><strong>Tabletop exercise:</strong> walk the management team through a scenario — "the internet has failed at 6pm on a Friday with 40 arrivals" — and check who does what.</li>
+                        <li><strong>Live front desk drill:</strong> during a quiet period, check in a test guest using only the downtime box, cut a key manually and reconcile afterwards.</li>
+                        <li><strong>Failover test:</strong> unplug the primary internet connection (with your IT partner's agreement) and confirm the PMS and payments stay up.</li>
+                        <li><strong>Restore test:</strong> for on-premise systems, prove that backups can actually be restored.</li>
+                    </ul>
+                    <p>Include night staff and new starters, and update the plan after every drill or real incident.</p>
+
+                    <h2 id="faqs">Frequently Asked Questions</h2>
+
+                    <h3 id="faq-cloud">Does a cloud PMS remove the need for a downtime plan?</h3>
+                    <p>No. A cloud PMS removes the need to maintain your own server, but it depends completely on your internet connection and the vendor's platform. You still need offline reports, a backup internet connection and manual procedures.</p>
+
+                    <h3 id="faq-reports">How often should offline reports be printed?</h3>
+                    <p>At least once per shift, and always before the night shift starts, when support is thinnest. Many hotels also export copies automatically to an encrypted local device so they are available even if printers are down.</p>
+
+                    <h3 id="faq-keys">Can we issue key cards if the PMS is down?</h3>
+                    <p>In many cases, yes. Most lock systems can encode keys directly from their own software when the PMS interface is unavailable. Check how your system works, make sure the encoder is on a UPS, and train duty managers on the manual process.</p>
+
+                    <h3 id="faq-payments">How should we take payments during PMS downtime?</h3>
+                    <p>Use your payment terminals directly and record each transaction on a manual folio so it can be posted to the PMS later. Never write card numbers down. Make sure your terminals can operate independently of the PMS, ideally with their own backup connectivity.</p>
+
+                    <h3 id="faq-testing">How often should we test the plan?</h3>
+                    <p>Review the plan and checklist quarterly and run at least one drill per year, plus a refresher whenever you change PMS, lock system, internet provider or key staff.</p>
+
+                    <h2 id="support">How GGG Technologies Can Help</h2>
+
+                    <p>GGG Technologies has supported more than 500 hotels since 2010. We help hotels design resilient PMS environments through our <a href="/services/pms-integration">PMS integration</a> and <a href="/services/pms-hotel-systems">PMS and hotel systems</a> services, protect data with <a href="/solutions/disaster-recovery-backup">disaster recovery and backup</a>, and provide a UK-based <a href="/services/24-7-helpdesk">24/7 helpdesk</a> with a 1-hour response as part of our <a href="/solutions/24-7-it-support">24/7 IT support</a> — so someone is there when the PMS fails at 2am.</p>
+
+                    <p>For more practical guidance, read our articles on <a href="/insights/hotel-wifi-problems-guide">fixing hotel WiFi problems</a>, <a href="/insights/hotel-it-support-costs-uk">hotel IT support costs in the UK</a> and <a href="/insights/how-to-choose-hotel-it-support-company">how to choose a hotel IT support company</a>. Ready to talk? <a href="/get-a-quote">Request a quote</a> or call <a href="tel:+442036424958">+44 20 3642 4958</a>.</p>
+
+                </div><!-- end .prose -->
+
+                <!-- CTA Box — outside .prose to avoid CSS override -->
+                <div class="mt-10 rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
+                    <div class="bg-[#1a3a5c] px-8 py-6 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-[#10b981] flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-hotel text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xl font-black text-white leading-tight mb-0.5" style="font-family:var(--font-family-heading)">Is your hotel ready for PMS downtime?</p>
+                            <p class="text-white/70 text-sm">Free on-site assessment — no obligation.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-8 py-6">
+                        <p class="text-gray-600 mb-6" style="font-family:var(--font-family-body)">Our engineers will review your PMS interfaces, internet resilience, power protection and backups, and help you build a downtime plan your team can actually use.</p>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="/book-a-visit" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#2563eb] text-white font-bold rounded-xl hover:bg-[#1a5bc7] transition-colors shadow-sm" style="font-family:var(--font-family-body)">
+                                <i class="fa-solid fa-calendar-check"></i> Book Free Assessment
+                            </a>
+                            <a href="/services/pms-integration" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-[#1a3a5c] font-bold rounded-xl hover:bg-gray-100 transition-colors border border-gray-200 shadow-sm" style="font-family:var(--font-family-body)">
+                                <i class="fa-solid fa-hotel" style="color:#8b5cf6"></i> View PMS Services
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div><!-- end first column wrapper -->
+
+                <!-- Sidebar TOC -->
+                <aside class="toc-sidebar">
+                    <div class="sticky top-28">
+                        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 mb-6">
+                            <h4 class="text-sm font-bold text-[#1a3a5c] uppercase tracking-widest mb-4">In This Article</h4>
+                            <nav>
+                                <ul class="space-y-2 text-sm">
+                                    <li><a href="#causes" class="toc-link text-gray-600 hover:text-[#2563eb] font-semibold">Causes of Downtime</a></li>
+                                    <li class="pl-3 border-l-2 border-gray-100 space-y-2">
+                                        <div><a href="#internet-outage" class="toc-link text-gray-500 hover:text-[#2563eb]">1. Internet Outage</a></div>
+                                        <div><a href="#vendor-outage" class="toc-link text-gray-500 hover:text-[#2563eb]">2. Vendor Outage</a></div>
+                                        <div><a href="#interface-failures" class="toc-link text-gray-500 hover:text-[#2563eb]">3. Interface Failures</a></div>
+                                        <div><a href="#power" class="toc-link text-gray-500 hover:text-[#2563eb]">4. Power Failure</a></div>
+                                        <div><a href="#ransomware" class="toc-link text-gray-500 hover:text-[#2563eb]">5. Ransomware</a></div>
+                                    </li>
+                                    <li><a href="#impact" class="toc-link text-gray-600 hover:text-[#2563eb]">Impact on the Front Desk</a></li>
+                                    <li><a href="#downtime-plan" class="toc-link text-gray-600 hover:text-[#2563eb] font-semibold">Step-by-Step Plan</a></li>
+                                    <li class="pl-3 border-l-2 border-gray-100 space-y-2">
+                                        <div><a href="#offline-reports" class="toc-link text-gray-500 hover:text-[#2563eb]">Offline Reports</a></div>
+                                        <div><a href="#manual-packs" class="toc-link text-gray-500 hover:text-[#2563eb]">Manual Check-in Packs</a></div>
+                                        <div><a href="#key-cards" class="toc-link text-gray-500 hover:text-[#2563eb]">Key-Card Fallback</a></div>
+                                        <div><a href="#failover-internet" class="toc-link text-gray-500 hover:text-[#2563eb]">Failover Internet</a></div>
+                                        <div><a href="#ups" class="toc-link text-gray-500 hover:text-[#2563eb]">UPS Protection</a></div>
+                                        <div><a href="#roles" class="toc-link text-gray-500 hover:text-[#2563eb]">Roles &amp; Escalation</a></div>
+                                        <div><a href="#vendor-contacts" class="toc-link text-gray-500 hover:text-[#2563eb]">Vendor Contacts</a></div>
+                                        <div><a href="#guest-communication" class="toc-link text-gray-500 hover:text-[#2563eb]">Guest Communication</a></div>
+                                        <div><a href="#recovery" class="toc-link text-gray-500 hover:text-[#2563eb]">Recovery &amp; Reconciliation</a></div>
+                                    </li>
+                                    <li><a href="#checklist" class="toc-link text-gray-600 hover:text-[#2563eb]">Readiness Checklist</a></li>
+                                    <li><a href="#testing" class="toc-link text-gray-600 hover:text-[#2563eb]">Testing &amp; Drills</a></li>
+                                    <li><a href="#faqs" class="toc-link text-gray-600 hover:text-[#2563eb]">FAQs</a></li>
+                                    <li><a href="#support" class="toc-link text-gray-600 hover:text-[#2563eb]">How We Can Help</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <!-- Sidebar CTA -->
+                        <div class="rounded-2xl p-6" style="background:linear-gradient(135deg, rgba(139,92,246,0.10), rgba(37,99,235,0.10)); border:1px solid rgba(139,92,246,0.20);">
+                            <div class="w-10 h-10 bg-[#8b5cf6] rounded-xl flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-hotel text-white"></i>
+                            </div>
+                            <h4 class="font-black text-[#1a3a5c] mb-2">Free Resilience Review</h4>
+                            <p class="text-sm text-gray-600 mb-4">We will check your PMS, internet failover, UPS and backups and show you where the gaps are.</p>
+                            <a href="/book-a-visit" class="block text-center px-4 py-2.5 bg-[#2563eb] text-white font-bold rounded-xl text-sm hover:bg-[#1a5bc7] transition-colors">Book Free Assessment</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Back to Insights -->
+            <div class="mt-16 pt-8 border-t border-gray-200">
+                <a href="/insights" class="inline-flex items-center gap-2 text-[#1a3a5c] font-bold hover:text-[#2563eb] transition-colors">
+                    <i class="fa-solid fa-arrow-left text-sm"></i> Back to All Insights
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0d1b2a] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+                <div class="col-span-2 lg:col-span-2">
+                    <a href="/" class="inline-block mb-6"><div class="flex items-center gap-3"><div><div class="text-white font-bold text-lg">GGG Technologies</div><div class="text-cyan-400 text-xs">Hotel IT Solutions</div></div></div></a>
+                    <p class="text-white/70 mb-6 leading-relaxed">GGG Technologies provides specialized IT support and infrastructure solutions for hotels across the UK. Your trusted partner for reliable, secure, and scalable hotel technology.</p>
+                    <div class="flex items-center gap-4"><a href="https://www.facebook.com/1366767743191681" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#2563eb] transition-colors"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a href="https://www.instagram.com/londonos.uk/" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#2563eb] transition-colors"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company/londonos/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#2563eb] transition-colors"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a><a href="https://www.threads.com/@londonos.uk" target="_blank" rel="noopener" aria-label="Threads" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#2563eb] transition-colors"><i class="fa-brands fa-threads" aria-hidden="true"></i></a><a href="https://www.youtube.com/@mrlondonos" target="_blank" rel="noopener" aria-label="YouTube" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#2563eb] transition-colors"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></div>
+                </div>
+                <div><h4 class="text-lg font-bold mb-6 text-white">Services</h4><ul class="space-y-3"><li><a href="/services/it-support-maintenance" class="text-white/70 hover:text-white transition-colors">IT Support & Maintenance</a></li><li><a href="/services/network-wifi-solutions" class="text-white/70 hover:text-white transition-colors">Network & WiFi Solutions</a></li><li><a href="/services/cyber-security" class="text-white/70 hover:text-white transition-colors">Cyber Security</a></li><li><a href="/services/pms-hotel-systems" class="text-white/70 hover:text-white transition-colors">PMS & Hotel Systems</a></li><li><a href="/services/cctv-security" class="text-white/70 hover:text-white transition-colors">CCTV & Security</a></li><li><a href="/services" class="text-white/70 hover:text-white transition-colors">View All Services</a></li></ul></div>
+                <div><h4 class="text-lg font-bold mb-6 text-white">Solutions</h4><ul class="space-y-3"><li><a href="/solutions/24-7-it-support" class="text-white/70 hover:text-white transition-colors">24/7 IT Support</a></li><li><a href="/solutions/it-consultancy-project-management" class="text-white/70 hover:text-white transition-colors">IT Consultancy</a></li><li><a href="/solutions/cyber-security" class="text-white/70 hover:text-white transition-colors">Cyber Security</a></li><li><a href="/solutions/disaster-recovery-backup" class="text-white/70 hover:text-white transition-colors">Disaster Recovery</a></li><li><a href="/solutions" class="text-white/70 hover:text-white transition-colors">View All Solutions</a></li></ul></div>
+                <div><h4 class="text-lg font-bold mb-6 text-white">Company</h4><ul class="space-y-3"><li><a href="/areas" class="text-white/70 hover:text-white transition-colors">Areas We Cover</a></li><li><a href="/about" class="text-white/70 hover:text-white transition-colors">About Us</a></li><li><a href="/industries" class="text-white/70 hover:text-white transition-colors">Industries</a></li><li><a href="/faq" class="text-white/70 hover:text-white transition-colors">FAQ</a></li><li><a href="/insights" class="text-white/70 hover:text-white transition-colors">Insights</a></li><li><a href="/contact" class="text-white/70 hover:text-white transition-colors">Contact</a></li><li><a href="/book-a-visit" class="text-white/70 hover:text-white transition-colors">Book a Visit</a></li><li><a href="/get-a-quote" class="text-white/70 hover:text-white transition-colors">Get a Quote</a></li></ul></div>
+            </div>
+        </div>
+        <div class="border-t border-white/10"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6"><div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4"><div class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-sm"><a href="tel:+442036424958" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors"><i class="fa-solid fa-phone text-[#2563eb]"></i>+44 20 3642 4958</a><a href="mailto:info@gggtech.co.uk" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors"><i class="fa-solid fa-envelope text-[#2563eb]"></i>info@gggtech.co.uk</a><div class="flex items-center gap-2 text-white/70"><i class="fa-solid fa-location-dot text-[#2563eb]"></i>London, United Kingdom</div></div><div class="text-sm text-white/50">© 2026 GGG Technologies. All rights reserved.</div></div></div></div>
+        <div class="border-t border-white/10"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4"><div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-white/50"><a href="#" class="hover:text-white transition-colors">Privacy Policy</a><span class="hidden sm:block">•</span><a href="#" class="hover:text-white transition-colors">Terms of Service</a><span class="hidden sm:block">•</span><a href="#" class="hover:text-white transition-colors">Cookie Policy</a></div></div></div>
+    </footer>
+
+    <script>
+        // Mobile menu
+        document.querySelector('[data-landingsite-mobile-menu-toggle]')?.addEventListener('click', function() {
+            const menu = document.querySelector('[data-landingsite-mobile-menu]');
+            if (menu) {
+                menu.classList.toggle('hidden');
+                this.setAttribute('aria-expanded', menu.classList.contains('hidden') ? 'false' : 'true');
+            }
+        });
+
+        // TOC active state on scroll
+        const headings = document.querySelectorAll('h2[id], h3[id]');
+        const tocLinks = document.querySelectorAll('.toc-link');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    tocLinks.forEach(l => l.classList.remove('active'));
+                    const active = document.querySelector(`.toc-link[href="#${entry.target.id}"]`);
+                    if (active) active.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-20% 0px -70% 0px' });
+        headings.forEach(h => observer.observe(h));
+    </script>
+    <script src="/assets/js/track.js" defer></script>
+</body>
+</html>

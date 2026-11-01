@@ -1,10 +1,18 @@
+# GGG Technologies — robots.txt
+# Everything is crawlable, including /assets/ (CSS, JS, fonts and images are
+# needed by Google to render pages and to index images).
+
 User-agent: *
 Allow: /
 
-Sitemap: https://gggtech.co.uk/sitemap.xml
-
 # AI crawlers — welcome, full access
 User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-Web
@@ -13,14 +21,13 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-User-agent: CCBot
-Allow: /
-
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Googlebot
+User-agent: Google-Extended
 Allow: /
 
-# Disallow internal/utility paths
-Disallow: /assets/
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://gggtech.co.uk/sitemap.xml

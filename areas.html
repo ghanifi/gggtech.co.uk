@@ -13,20 +13,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/assets/images/fav.ico">
-    <title>Areas We Cover | Hotel IT Support Across the UK | GGG Technologies</title>
-    <meta name="description" content="GGG Technologies provides on-site hotel IT support across London, the South East, Midlands, and nationwide. Find out if we cover your area.">
-    <meta name="keywords" content="hotel it support areas, london hotel it, south east hotel it, midlands hotel it, uk hotel it support">
+    <title>Hotel IT Support Areas: London &amp; UK | GGG Technologies</title>
+    <meta name="description" content="Hotel IT support across London &amp; the UK, from Mayfair, Westminster and Canary Wharf to the South East and Midlands. 24/7 remote support and on-site engineers.">
+    <meta name="keywords" content="hotel it support london, hotel it support uk, hotel it support areas, mayfair hotel it, canary wharf hotel it, south east hotel it support">
     <meta name="author" content="GGG Technologies">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Areas We Cover | Hotel IT Support Across the UK | GGG Technologies">
-    <meta property="og:description" content="On-site hotel IT support across London, the South East, Midlands, and nationwide. Find out if we cover your area.">
+    <meta property="og:title" content="Hotel IT Support Areas: London &amp; UK | GGG Technologies">
+    <meta property="og:description" content="Hotel IT support across London &amp; the UK, from Mayfair, Westminster and Canary Wharf to the South East and Midlands. 24/7 remote support and on-site engineers.">
     <meta property="og:image" content="https://gggtech.co.uk/assets/images/2206124236.jpg">
     <meta property="og:url" content="https://gggtech.co.uk/areas">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_GB">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Areas We Cover | GGG Technologies">
-    <meta name="twitter:description" content="On-site hotel IT support across the UK.">
+    <meta name="twitter:title" content="Hotel IT Support Areas: London &amp; UK | GGG Technologies">
+    <meta name="twitter:description" content="Hotel IT support across London &amp; the UK, from Mayfair, Westminster and Canary Wharf to the South East and Midlands. 24/7 remote support and on-site engineers.">
     <meta name="twitter:image" content="https://gggtech.co.uk/assets/images/2206124236.jpg">
     <link rel="canonical" href="https://gggtech.co.uk/areas">
     <script type="application/ld+json">
@@ -47,12 +47,69 @@
     "postalCode": "EC2A 4NE",
     "addressCountry": "GB"
   },
-  "areaServed": "United Kingdom",
+  "areaServed": [{"@type": "Country", "name": "United Kingdom"}, {"@type": "City", "name": "London"}],
+  "openingHours": "Mo-Su 00:00-23:59",
   "image": "https://gggtech.co.uk/assets/images/2206124236.jpg"
 }
 </script>
     <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://gggtech.co.uk/"},{"@type":"ListItem","position":2,"name":"Areas","item":"https://gggtech.co.uk/areas"}]}
+    </script>
+    <script type="application/ld+json" id="faq-jsonld">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you provide hotel IT support across all of London?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We support hotels in every London borough, from Mayfair, Westminster and Kensington to Shoreditch, the South Bank and Canary Wharf. Our office is at 86-90 Paul Street in Shoreditch (EC2A), close to central London's main hotel districts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you support hotels outside London?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We support hotels throughout the UK, including the South East, South West, Midlands and East Anglia, as well as hotel groups with properties in several regions. Remote support and monitoring work the same everywhere, and we arrange on-site engineers when a visit is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly will you respond if my hotel is outside London?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our 1-hour response applies to every hotel we support, wherever it is. Our UK-based team starts working on the issue remotely straight away. If an engineer needs to attend, we arrange a visit and agree on-site response targets for your location as part of your support plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you support a hotel group with properties in different regions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Multi-site groups get one helpdesk, consistent network and security standards across every property, and central monitoring, with on-site engineers arranged locally for each hotel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it cost more to support a hotel outside London?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every hotel pays a fixed monthly fee, quoted per property after a free assessment. The quote reflects the size of the property, the systems we support and the level of on-site cover you need, so you know the full cost before you commit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "My area isn't listed. Can you still help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Very likely. The areas on this page are where we work most often, not a complete list. Call us on +44 20 3642 4958 or email info@gggtech.co.uk with your location and we'll confirm how we can support your hotel."
+      }
+    }
+  ]
+}
     </script>
     <link href="/assets/css/main.css" rel="stylesheet">
     <link href="/assets/css/fonts.css" rel="stylesheet">
@@ -67,6 +124,10 @@
         }
         body { font-family: var(--font-family-body); }
         h1, h2, h3, h4, h5, h6 { font-family: var(--font-family-heading); }
+        .faq-item summary { list-style: none; cursor: pointer; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item .faq-icon { transition: transform 0.2s ease; }
+        .faq-item[open] .faq-icon { transform: rotate(45deg); }
     </style>
     <link rel="stylesheet" href="/assets/css/tailwind.css">
 </head>
@@ -230,7 +291,7 @@
                                             <div class="font-semibold text-[#1a3a5c] text-sm">South East</div>
                                             <div class="text-xs text-gray-400">Kent, Sussex, Surrey</div>
                                         </a>
-                                        <a href="/areas/midlands" class="group/item p-4 rounded-xl border border-gray-100 hover;border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
+                                        <a href="/areas/midlands" class="group/item p-4 rounded-xl border border-gray-100 hover:border-[#2563eb] hover:bg-[#2563eb]/5 transition-all">
                                             <i class="fa-solid fa-industry mb-2" style="color: #8b5cf6;" aria-hidden="true"></i>
                                             <div class="font-semibold text-[#1a3a5c] text-sm">Midlands</div>
                                             <div class="text-xs text-gray-400">Birmingham &amp; Beyond</div>
@@ -280,67 +341,176 @@
         </nav>
     </header>
 
-    <main class="pt-32 pb-20">
+    <main id="main" class="pt-32 pb-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h1 class="text-4xl lg:text-6xl font-black text-[#1a3a5c] mb-6">Areas We Cover</h1>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">While our headquarters is in London, our network of engineers provides on-site support to hotels across the entire United Kingdom.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- London -->
-                <div class="group bg-[#f8fafc] rounded-3xl p-8 border border-transparent hover:border-[#2563eb] transition-all">
-                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-[#2563eb] transition-colors">
-                        <i class="fa-solid fa-city text-2xl text-[#2563eb] group-hover:text-white"></i>
-                    </div>
-                    <h2 class="text-2xl font-bold text-[#1a3a5c] mb-4">London</h2>
-                    <p class="text-gray-500 mb-6">Comprehensive 24/7 on-site support for all London boroughs. 1-hour emergency response guaranteed.</p>
-                    <ul class="space-y-2 text-sm text-gray-600 mb-8">
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Canary Wharf & City</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> West End & Kensington</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Heathrow Area</li>
-                    </ul>
-                    <a href="/areas/london" class="font-bold text-[#2563eb] flex items-center gap-2">View Details <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-
-                <!-- South East -->
-                <div class="group bg-[#f8fafc] rounded-3xl p-8 border border-transparent hover:border-[#10b981] transition-all">
-                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-[#10b981] transition-colors">
-                        <i class="fa-solid fa-map text-2xl text-[#10b981] group-hover:text-white"></i>
-                    </div>
-                    <h2 class="text-2xl font-bold text-[#1a3a5c] mb-4">South East</h2>
-                    <p class="text-gray-500 mb-6">Expert coverage across the home counties, serving coastal and rural hotels alike.</p>
-                    <ul class="space-y-2 text-sm text-gray-600 mb-8">
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Kent & Sussex</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Surrey & Berkshire</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Hampshire</li>
-                    </ul>
-                    <a href="/areas/south-east" class="font-bold text-[#10b981] flex items-center gap-2">View Details <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-
-                <!-- Midlands -->
-                <div class="group bg-[#f8fafc] rounded-3xl p-8 border border-transparent hover:border-[#f59e0b] transition-all">
-                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-[#f59e0b] transition-colors">
-                        <i class="fa-solid fa-building text-2xl text-[#f59e0b] group-hover:text-white"></i>
-                    </div>
-                    <h2 class="text-2xl font-bold text-[#1a3a5c] mb-4">Midlands</h2>
-                    <p class="text-gray-500 mb-6">Dedicated regional team based in Birmingham, serving the heart of England.</p>
-                    <ul class="space-y-2 text-sm text-gray-600 mb-8">
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> West & East Midlands</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Birmingham & Coventry</li>
-                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Leicester & Nottingham</li>
-                    </ul>
-                    <a href="/areas/midlands" class="font-bold text-[#f59e0b] flex items-center gap-2">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                <span class="inline-block px-4 py-1 bg-[#2563eb]/10 text-[#2563eb] text-sm font-semibold rounded-full mb-4">Coverage</span>
+                <h1 class="text-4xl lg:text-6xl font-black text-[#1a3a5c] mb-6">Hotel IT Support Areas: London &amp; the UK</h1>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">From our London base at 86-90 Paul Street (EC2A), we provide 24/7 IT support to hotels across every London district and throughout the UK, combining fast remote fixes with on-site engineers when a visit is needed.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                    <a href="/book-a-visit" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#2563eb] text-white font-bold rounded-full hover:bg-[#1a5bc7] transition-all">Book a Free Assessment <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="tel:+442036424958" class="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-[#1a3a5c] text-[#1a3a5c] font-semibold rounded-full hover:bg-[#1a3a5c] hover:text-white transition-all"><i class="fa-solid fa-phone" aria-hidden="true"></i> +44 20 3642 4958</a>
                 </div>
             </div>
 
-            <div class="mt-20 bg-[#1a3a5c] rounded-[3rem] p-10 lg:p-20 text-white relative overflow-hidden text-center">
+            <!-- Intro -->
+            <section class="grid lg:grid-cols-2 gap-12 items-start mb-20" aria-labelledby="coverage-intro-heading">
+                <div>
+                    <h2 id="coverage-intro-heading" class="text-3xl lg:text-4xl font-black text-[#1a3a5c] mb-6">One hotel IT team, wherever your property is</h2>
+                    <div class="space-y-4 text-gray-600 leading-relaxed">
+                        <p>GGG Technologies has supported hotels since 2010 and today looks after more than 500 properties across the UK. Whether you run a boutique hotel in Mayfair, a business hotel in Canary Wharf or a country house in the South West, you get the same service: a UK-based helpdesk that answers 24/7, a 1-hour response to every issue, and engineers who understand hotel systems.</p>
+                        <p>London is our home. Our office in Shoreditch sits within easy reach of the West End, the City, Westminster, Kensington and the Docklands, which is why so many London hotels rely on us for day-to-day support, WiFi upgrades, PMS issues and cyber security.</p>
+                        <p>Outside the capital, we support hotels across the South East, South West, Midlands and East Anglia, as well as groups with properties spread across the country. Most hotel IT problems can be fixed remotely, so distance rarely slows us down, and when an issue needs hands-on work we arrange an engineer to attend your property.</p>
+                    </div>
+                </div>
+                <div class="bg-[#f5f8fb] rounded-3xl p-8">
+                    <h3 class="text-xl font-bold text-[#1a3a5c] mb-6">The same standard everywhere</h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check-circle text-[#10b981] mt-1" aria-hidden="true"></i><span><strong class="text-[#1a3a5c]">24/7 UK-based helpdesk</strong> for staff, day and night</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check-circle text-[#10b981] mt-1" aria-hidden="true"></i><span><strong class="text-[#1a3a5c]">1-hour response</strong> to every issue, in London and across the UK</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check-circle text-[#10b981] mt-1" aria-hidden="true"></i><span><strong class="text-[#1a3a5c]">Proactive monitoring</strong> of networks, WiFi, firewalls and servers</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check-circle text-[#10b981] mt-1" aria-hidden="true"></i><span><strong class="text-[#1a3a5c]">On-site engineers</strong> dispatched when a remote fix isn't enough</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-check-circle text-[#10b981] mt-1" aria-hidden="true"></i><span><strong class="text-[#1a3a5c]">Fixed monthly fee</strong>, quoted per property after a free assessment</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- London -->
+            <section class="mb-20" aria-labelledby="london-areas-heading">
+                <div class="mb-10">
+                    <span class="inline-block px-4 py-1 bg-[#2563eb]/10 text-[#2563eb] text-sm font-semibold rounded-full mb-4">London</span>
+                    <h2 id="london-areas-heading" class="text-3xl lg:text-4xl font-black text-[#1a3a5c] mb-4">Hotel IT support across London</h2>
+                    <p class="text-gray-600 max-w-3xl">We support hotels in every London borough. These are the districts where we work most often; choose yours for local information.</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <a href="/areas/london" class="group bg-[#f8fafc] rounded-2xl p-6 border border-transparent hover:border-[#2563eb] transition-all"><i class="fa-solid fa-city text-xl text-[#2563eb] mb-3" aria-hidden="true"></i><h3 class="font-bold text-[#1a3a5c] mb-1 group-hover:text-[#2563eb]">London</h3><p class="text-sm text-gray-500">Hotel IT support across all of Greater London.</p></a>
+                    <a href="/areas/central-london" class="group bg-[#f8fafc] rounded-2xl p-6 border border-transparent hover:border-[#2563eb] transition-all"><i class="fa-solid fa-building-columns text-xl text-[#2563eb] mb-3" aria-hidden="true"></i><h3 class="font-bold text-[#1a3a5c] mb-1 group-hover:text-[#2563eb]">Central London</h3><p class="text-sm text-gray-500">The West End, the City and surrounding districts.</p></a>
+                    <a href="/areas/mayfair" class="group bg-[#f8fafc] rounded-2xl p-6 border border-transparent hover:border-[#2563eb] transition-all"><i class="fa-solid fa-gem text-xl text-[#8b5cf6] mb-3" aria-hidden="true"></i><h3 class="font-bold text-[#1a3a5c] mb-1 group-hover:text-[#2563eb]">Mayfair</h3><p class="text-sm text-gray-500">Discreet support for luxury and five-star hotels.</p></a>
+                    <a href="/areas/westminster" class="group bg-[#f8fafc] rounded-2xl p-6 border border-transparent hover:border-[#2563eb] transition-all"><i class="fa-solid fa-landmark-dome text-xl text-[#3b82f6] mb-3" aria-hidden="true"></i><h3 class="font-bold text-[#1a3a5c] mb-1 group-hover:text-[#2563eb]">Westminster</h3><p class="text-sm text-gray-500">Victoria, St James's and the government district.</p></a>
+                    <a href="/areas/kensington" class="group bg-[#f8fafc] rounded-2xl p-6 border border-transparent hover:border-[#2563eb] transition-all"><i class="fa-solid fa-landmark text-xl text-[#0ea5e9] mb-3" aria-hidden="true"></i><h3 class="font-bold text-[#1a3a5c] mb-1 group-hover:text-[#2563eb]">Kensington</h3><p class="text-sm text-gray-500">Hotels near the museums, Earl's Court and High Street Ken.</p></a>
+                    <a href="/areas/chelsea" class="group bg-[#f8fafc] rounded-2xl p-6 border border-transparent hover:border-[#2563eb] transition-all"><i class="fa-solid fa-hotel text-xl text-[#ec4899] mb-3" aria-hidden="true"></i><h3 class="font-bold text-[#1a3a5c] mb-1 group-hover:text-[#2563eb]">Chelsea</h3><p class="text-sm text-gray-500">Boutique and townhouse hotels.</p></a>
+                    <a href="/areas/soho" class="group bg-[#f8fafc] rounded-2xl p-6 border border-transparent hover:border-[#2563eb] transition-all"><i class="fa-solid fa-music text-xl text-[#f59e0b] mb-3" aria-hidden="true"></i><h3 class="font-bold text-[#1a3a5c] mb-1 group-hover:text-[#2563eb]">Soho</h3><p class="text-sm text-gray-500">Lifestyle hotels in the heart of the West End.</p></a>
+                    <a href="/areas/covent-garden" class="group bg-[#f8fafc] rounded-2xl p-6 border border-transparent hover:border-[#2563eb] transition-all"><i class="fa-solid fa-masks-theater text-xl text-[#ef4444] mb-3" aria-hidden="true"></i><h3 class="font-bold text-[#1a3a5c] mb-1 group-hover:text-[#2563eb]">Covent Garden</h3><p class="text-sm text-gray-500">Busy theatreland and tourist hotels.</p></a>
+                    <a href="/areas/bloomsbury" class="group bg-[#f8fafc] rounded-2xl p-6 border border-transparent hover:border-[#2563eb] transition-all"><i class="fa-solid fa-book text-xl text-[#a855f7] mb-3" aria-hidden="true"></i><h3 class="font-bold text-[#1a3a5c] mb-1 group-hover:text-[#2563eb]">Bloomsbury</h3><p class="text-sm text-gray-500">Hotels around the universities and King's Cross.</p></a>
+                    <a href="/areas/paddington" class="group bg-[#f8fafc] rounded-2xl p-6 border border-transparent hover:border-[#2563eb] transition-all"><i class="fa-solid fa-train-subway text-xl text-[#0ea5e9] mb-3" aria-hidden="true"></i><h3 class="font-bold text-[#1a3a5c] mb-1 group-hover:text-[#2563eb]">Paddington</h3><p class="text-sm text-gray-500">Transport-hub hotels with high guest turnover.</p></a>
+                    <a href="/areas/south-bank" class="group bg-[#f8fafc] rounded-2xl p-6 border border-transparent hover:border-[#2563eb] transition-all"><i class="fa-solid fa-water text-xl text-[#22c55e] mb-3" aria-hidden="true"></i><h3 class="font-bold text-[#1a3a5c] mb-1 group-hover:text-[#2563eb]">South Bank</h3><p class="text-sm text-gray-500">Riverside hotels from Waterloo to London Bridge.</p></a>
+                    <a href="/areas/shoreditch" class="group bg-[#f8fafc] rounded-2xl p-6 border border-transparent hover:border-[#2563eb] transition-all"><i class="fa-solid fa-microchip text-xl text-[#14b8a6] mb-3" aria-hidden="true"></i><h3 class="font-bold text-[#1a3a5c] mb-1 group-hover:text-[#2563eb]">Shoreditch</h3><p class="text-sm text-gray-500">Our home district: design-led and tech-savvy hotels.</p></a>
+                    <a href="/areas/canary-wharf" class="group bg-[#f8fafc] rounded-2xl p-6 border border-transparent hover:border-[#2563eb] transition-all"><i class="fa-solid fa-building text-xl text-[#06b6d4] mb-3" aria-hidden="true"></i><h3 class="font-bold text-[#1a3a5c] mb-1 group-hover:text-[#2563eb]">Canary Wharf</h3><p class="text-sm text-gray-500">Business hotels and serviced apartments in Docklands.</p></a>
+                </div>
+            </section>
+
+            <!-- UK Regions -->
+            <section class="mb-20" aria-labelledby="uk-regions-heading">
+                <div class="mb-10">
+                    <span class="inline-block px-4 py-1 bg-[#10b981]/10 text-[#10b981] text-sm font-semibold rounded-full mb-4">UK Regions</span>
+                    <h2 id="uk-regions-heading" class="text-3xl lg:text-4xl font-black text-[#1a3a5c] mb-4">Hotel IT support across the UK</h2>
+                    <p class="text-gray-600 max-w-3xl">Coastal hotels, country houses, city-centre properties and multi-site groups outside London get the same 24/7 support and 1-hour response.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="/areas/south-east" class="group bg-[#f8fafc] rounded-3xl p-8 border border-transparent hover:border-[#10b981] transition-all">
+                        <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-[#10b981] transition-colors"><i class="fa-solid fa-map text-2xl text-[#10b981] group-hover:text-white" aria-hidden="true"></i></div>
+                        <h3 class="text-2xl font-bold text-[#1a3a5c] mb-3">South East</h3>
+                        <p class="text-gray-500">Kent, Sussex, Surrey, Berkshire and Hampshire, from coastal hotels to rural retreats.</p>
+                    </a>
+                    <a href="/areas/south-west" class="group bg-[#f8fafc] rounded-3xl p-8 border border-transparent hover:border-[#10b981] transition-all">
+                        <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-[#10b981] transition-colors"><i class="fa-solid fa-umbrella-beach text-2xl text-[#10b981] group-hover:text-white" aria-hidden="true"></i></div>
+                        <h3 class="text-2xl font-bold text-[#1a3a5c] mb-3">South West</h3>
+                        <p class="text-gray-500">Seaside, spa and country-house hotels where reliable connectivity can be hard to come by.</p>
+                    </a>
+                    <a href="/areas/midlands" class="group bg-[#f8fafc] rounded-3xl p-8 border border-transparent hover:border-[#f59e0b] transition-all">
+                        <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-[#f59e0b] transition-colors"><i class="fa-solid fa-industry text-2xl text-[#f59e0b] group-hover:text-white" aria-hidden="true"></i></div>
+                        <h3 class="text-2xl font-bold text-[#1a3a5c] mb-3">Midlands</h3>
+                        <p class="text-gray-500">Birmingham, Coventry, Leicester, Nottingham and the wider East and West Midlands.</p>
+                    </a>
+                    <a href="/areas/east-anglia" class="group bg-[#f8fafc] rounded-3xl p-8 border border-transparent hover:border-[#8b5cf6] transition-all">
+                        <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-[#8b5cf6] transition-colors"><i class="fa-solid fa-wheat-awn text-2xl text-[#8b5cf6] group-hover:text-white" aria-hidden="true"></i></div>
+                        <h3 class="text-2xl font-bold text-[#1a3a5c] mb-3">East Anglia</h3>
+                        <p class="text-gray-500">Norfolk, Suffolk, Cambridgeshire and Essex, including historic and coastal properties.</p>
+                    </a>
+                    <a href="/areas/nationwide" class="group bg-[#f8fafc] rounded-3xl p-8 border border-transparent hover:border-[#2563eb] transition-all">
+                        <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-[#2563eb] transition-colors"><i class="fa-solid fa-earth-europe text-2xl text-[#2563eb] group-hover:text-white" aria-hidden="true"></i></div>
+                        <h3 class="text-2xl font-bold text-[#1a3a5c] mb-3">Nationwide</h3>
+                        <p class="text-gray-500">Remote-first support for hotels anywhere in the UK, plus multi-site groups with properties in several regions.</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- How response works -->
+            <section class="mb-20 bg-[#0d1b2a] rounded-3xl p-8 lg:p-14 text-white" aria-labelledby="response-heading">
+                <span class="inline-block px-4 py-1 bg-[#f59e0b]/20 text-[#f59e0b] text-sm font-semibold rounded-full mb-4">How Response Works</span>
+                <h2 id="response-heading" class="text-3xl lg:text-4xl font-black mb-6">Remote first, on site when it matters</h2>
+                <p class="text-white/70 max-w-3xl mb-10 leading-relaxed">Most hotel IT issues, such as a locked PMS account, a WiFi access point that has dropped off or a misbehaving card terminal, can be diagnosed and fixed remotely in minutes. That's why every call starts with our remote team, wherever you are. When something physically needs attention, we send an engineer.</p>
+                <div class="grid md:grid-cols-3 gap-6 mb-10">
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+                        <span class="block text-4xl font-black text-[#2563eb] mb-3">1</span>
+                        <h3 class="text-lg font-bold mb-2">You call, email or we spot it</h3>
+                        <p class="text-white/60 text-sm leading-relaxed">Your team contacts our 24/7 helpdesk, or our monitoring flags a problem first. Either way, we respond within 1 hour.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+                        <span class="block text-4xl font-black text-[#10b981] mb-3">2</span>
+                        <h3 class="text-lg font-bold mb-2">We fix it remotely</h3>
+                        <p class="text-white/60 text-sm leading-relaxed">Our UK-based engineers connect securely to your systems and resolve the issue, keeping you updated until it's closed.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+                        <span class="block text-4xl font-black text-[#f59e0b] mb-3">3</span>
+                        <h3 class="text-lg font-bold mb-2">We dispatch an engineer</h3>
+                        <p class="text-white/60 text-sm leading-relaxed">If hardware, cabling or a site visit is needed, we send an engineer to your hotel and keep the remote team on the case until they arrive.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border-l-4 border-[#2563eb] pl-6">
+                        <h3 class="text-xl font-bold mb-2">In London</h3>
+                        <p class="text-white/60 leading-relaxed">Our Shoreditch base means engineers can reach central London hotels quickly. Your agreed on-site response targets are set out in your support plan.</p>
+                    </div>
+                    <div class="border-l-4 border-[#10b981] pl-6">
+                        <h3 class="text-xl font-bold mb-2">Across the UK</h3>
+                        <p class="text-white/60 leading-relaxed">Outside London, remote support handles most issues. For on-site work we arrange an engineer to attend, and we plan scheduled visits and projects in advance.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="max-w-4xl mx-auto mb-20" aria-labelledby="areas-faq-heading">
+                <div class="text-center mb-10">
+                    <span class="inline-block px-4 py-1 bg-[#2563eb]/10 text-[#2563eb] text-sm font-semibold rounded-full mb-4">FAQ</span>
+                    <h2 id="areas-faq-heading" class="text-3xl lg:text-4xl font-black text-[#1a3a5c]">Coverage questions</h2>
+                </div>
+                <div class="space-y-4">
+                    <details class="faq-item group bg-[#f5f8fb] rounded-2xl border border-[#e5e7eb] p-6">
+                        <summary class="flex items-center justify-between gap-4 font-bold text-lg text-[#1a3a5c]">Do you provide hotel IT support across all of London?<i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0" aria-hidden="true"></i></summary>
+                        <div class="faq-answer mt-4 text-gray-600 leading-relaxed">Yes. We support hotels in every London borough, from Mayfair, Westminster and Kensington to Shoreditch, the South Bank and Canary Wharf. Our office is at 86-90 Paul Street in Shoreditch (EC2A), close to central London's main hotel districts.</div>
+                    </details>
+                    <details class="faq-item group bg-[#f5f8fb] rounded-2xl border border-[#e5e7eb] p-6">
+                        <summary class="flex items-center justify-between gap-4 font-bold text-lg text-[#1a3a5c]">Do you support hotels outside London?<i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0" aria-hidden="true"></i></summary>
+                        <div class="faq-answer mt-4 text-gray-600 leading-relaxed">Yes. We support hotels throughout the UK, including the South East, South West, Midlands and East Anglia, as well as hotel groups with properties in several regions. Remote support and monitoring work the same everywhere, and we arrange on-site engineers when a visit is required.</div>
+                    </details>
+                    <details class="faq-item group bg-[#f5f8fb] rounded-2xl border border-[#e5e7eb] p-6">
+                        <summary class="flex items-center justify-between gap-4 font-bold text-lg text-[#1a3a5c]">How quickly will you respond if my hotel is outside London?<i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0" aria-hidden="true"></i></summary>
+                        <div class="faq-answer mt-4 text-gray-600 leading-relaxed">Our 1-hour response applies to every hotel we support, wherever it is. Our UK-based team starts working on the issue remotely straight away. If an engineer needs to attend, we arrange a visit and agree on-site response targets for your location as part of your support plan.</div>
+                    </details>
+                    <details class="faq-item group bg-[#f5f8fb] rounded-2xl border border-[#e5e7eb] p-6">
+                        <summary class="flex items-center justify-between gap-4 font-bold text-lg text-[#1a3a5c]">Can you support a hotel group with properties in different regions?<i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0" aria-hidden="true"></i></summary>
+                        <div class="faq-answer mt-4 text-gray-600 leading-relaxed">Yes. Multi-site groups get one helpdesk, consistent network and security standards across every property, and central monitoring, with on-site engineers arranged locally for each hotel.</div>
+                    </details>
+                    <details class="faq-item group bg-[#f5f8fb] rounded-2xl border border-[#e5e7eb] p-6">
+                        <summary class="flex items-center justify-between gap-4 font-bold text-lg text-[#1a3a5c]">Does it cost more to support a hotel outside London?<i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0" aria-hidden="true"></i></summary>
+                        <div class="faq-answer mt-4 text-gray-600 leading-relaxed">Every hotel pays a fixed monthly fee, quoted per property after a free assessment. The quote reflects the size of the property, the systems we support and the level of on-site cover you need, so you know the full cost before you commit.</div>
+                    </details>
+                    <details class="faq-item group bg-[#f5f8fb] rounded-2xl border border-[#e5e7eb] p-6">
+                        <summary class="flex items-center justify-between gap-4 font-bold text-lg text-[#1a3a5c]">My area isn't listed. Can you still help?<i class="faq-icon fa-solid fa-plus text-[#2563eb] flex-shrink-0" aria-hidden="true"></i></summary>
+                        <div class="faq-answer mt-4 text-gray-600 leading-relaxed">Very likely. The areas on this page are where we work most often, not a complete list. Call us on +44 20 3642 4958 or email info@gggtech.co.uk with your location and we'll confirm how we can support your hotel.</div>
+                    </details>
+                </div>
+            </section>
+
+            <div class="bg-[#1a3a5c] rounded-[3rem] p-10 lg:p-20 text-white relative overflow-hidden text-center">
                 <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
                 <h2 class="text-3xl lg:text-5xl font-black mb-6">Don't see your area?</h2>
-                <p class="text-white/70 text-lg mb-10 max-w-2xl mx-auto">We also provide 24/7 remote support and can deploy engineers nationwide for major projects and installations.</p>
-                <a href="/contact" class="inline-flex items-center gap-3 px-8 py-4 bg-[#2563eb] text-white font-bold rounded-full hover:bg-[#1a5bc7] transition-all">
-                    Inquire About Your Location <i class="fa-solid fa-phone"></i>
-                </a>
+                <p class="text-white/70 text-lg mb-10 max-w-2xl mx-auto">We provide 24/7 remote support to hotels anywhere in the UK and deploy engineers nationwide for on-site work, projects and installations. Tell us where you are and we'll confirm cover.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/contact" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#2563eb] text-white font-bold rounded-full hover:bg-[#1a5bc7] transition-all">Enquire About Your Location <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="tel:+442036424958" class="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-[#1a3a5c] transition-all"><i class="fa-solid fa-phone" aria-hidden="true"></i> +44 20 3642 4958</a>
+                </div>
             </div>
         </div>
     </main>
@@ -373,5 +543,6 @@
             }
         });
     </script>
+    <script src="/assets/js/track.js" defer></script>
 </body>
 </html>
